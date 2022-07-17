@@ -4,8 +4,8 @@ import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
-import { Pagination, Autoplay } from "swiper";
-import { Row, Col } from 'react-bootstrap';
+import { Pagination,Autoplay } from "swiper";
+
 const propTypes = {
   ...SectionSplitProps.types
 }
@@ -38,6 +38,18 @@ const WhyCoin = ({
     className
   );
 
+  const innerClasses = classNames(
+    'features-split-inner section-inner',
+    topDivider && 'has-top-divider',
+    bottomDivider && 'has-bottom-divider'
+  );
+
+  const splitClasses = classNames(
+    'split-wrap',
+    invertMobile && 'invert-mobile',
+    invertDesktop && 'invert-desktop',
+    alignTop && 'align-top'
+  );
 
   const sectionHeader = {
     title: 'WHY BOJI?',
@@ -48,87 +60,73 @@ const WhyCoin = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container">
-        <SectionHeader data={sectionHeader} className="center-content" />
+      <div className="container why-boji">
+        <div className={innerClasses}>
+          <SectionHeader data={sectionHeader} className="center-content" />
+          <div className={splitClasses}>
 
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={10}
+              centeredSlides={true}
+              pagination={{
+                clickable: true,
+                type: 'custom'
+              }}
+              modules={[Pagination,Autoplay]}
+              loop={true}
+              className="mySwiper"
+              allowSlideNext={true}
+              allowTouchMove={true}
+              // autoplay={{
+              //   delay:2500,
+              //   disableOnInteraction:false,
+              //   pauseOnMouseEnter:true,
+              // }}
+            >
 
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
-          centeredSlides={true}
-          pagination={{
-            clickable: true,
-            type: 'custom'
-          }}
-          modules={[Pagination, Autoplay]}
-          loop={true}
-          className="mySwiper"
-          allowSlideNext={true}
-          allowTouchMove={true}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          //   pauseOnMouseEnter: true,
-          // }}
-        >
-        
-            <SwiperSlide>
-              <Row>
-                <Col sm={12} md={5}>
-                 
-                    <Image
-                      src={require('./../../assets/images/kishu.png')}
-                      alt="Features split 02"
-                      width={300}
-                      height={300} />
-                 </Col>
-
-                  <Col sm={12} md={7} className='m-auto'>
-                    <div >
-                      <h3 >
+              <SwiperSlide>
+                <div className="split-item">
+                  <div 
+                    >
+                      <img className='m-auto mb-4' alt='img-12'  style={{width:'500px'}} src={require('../../assets/images/kishu.png')}></img>
+                  </div>
+                  
+                    <div className='split-item-info'>
+                      <h3 className="mt-0 mb-12">
                         Instant Usage Rewards
                       </h3>
-                      <p>
+                      <p className="m-0">
                         For every active user transaction a 2% KISHU reward is granted to holders'; decentralized wallets only, fostering a healthy distributed network and community usage. The more KISHU is actively used, the more rewards are granted!
                       </p>
                     </div>
-                    </Col>
-                
-              </Row>
-            </SwiperSlide>
-
-
-          
-            <SwiperSlide>
-              <Row>
-                <Col sm={12} md={5}>
                   
-                    <Image
-                      src={require('./../../assets/images/kishu.png')}
-                      alt="Features split 02"
-                      width={300}
-                      height={300} />
-               
-                </Col>
+                </div>
+              </SwiperSlide>
 
-                <Col sm={12} md={7} className='m-auto'>
-                 
-
-                    <div>
-                      <h3 >
+              <SwiperSlide>
+                <div className="split-item">
+                  <div>
+                   
+                      <img className='m-auto mb-4' style={{width:'500px'}} alt='img-13' src={require('./../../assets/images/kishu.png')}></img>
+                  </div>
+                  
+                   
+                    <div className='split-item-info'>
+                      <h3 className="mt-0 mb-12">
                         Community Powered
                       </h3>
-                      <p>
+                      <p className="m-0">
                         BOJI is fully decentralized and owned by its fun, vibrant community. Our enthusiast volunteers welcome and embrace diverse perspectives to build KISHU into the best community in crypto.
                       </p>
                     </div>
                   
-                </Col>
-              </Row>
-            </SwiperSlide>
-          
-        </Swiper>
+                </div>
+              </SwiperSlide>
+            </Swiper>
 
+          </div>
+        </div>
       </div>
     </section>
   );

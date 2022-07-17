@@ -4,8 +4,9 @@ import Image from '../elements/Image'
 
 const Footer = () => {
   return (
+    <footer>
     <div className='container'>
-       <footer>
+       
         <Row className='text-center'>
             <Col sm={12} md={3} xl={3}>
             <div className='mb-4'>
@@ -24,7 +25,7 @@ const Footer = () => {
             </div>
             </Col>
 
-            <Col sm={12} md={3} xl={3}>
+            <Col sm={12} md={3} xl={3} className='mb-4'>
             <div className='mb-4'>
                 LEGAL
             </div>
@@ -41,7 +42,7 @@ const Footer = () => {
             </div>
             </Col>
 
-            <Col sm={12} md={3} xl={3}>
+            <Col sm={12} md={3} xl={3}  className='mb-4'>
             <div className='mb-4'>
                 SOCIALS
             </div>
@@ -97,7 +98,7 @@ const Footer = () => {
             </div>
             </Col>
 
-            <Col sm={12} md={3} xl={3}>
+            <Col sm={12} md={3} xl={3}  className='mb-4'>
             <div className='mb-4'>
                 GET IN TOUCH
             </div>
@@ -110,8 +111,9 @@ const Footer = () => {
             </div>
             </Col>
         </Row>
-       </footer>
+       
     </div>
+    </footer>
   )
 }
 

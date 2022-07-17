@@ -3,7 +3,6 @@ import React from 'react';
 import Hero from '../components/sections/Hero';
 import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
-import Testimonial from '../components/sections/Testimonial';
 import WhyCoin from '../components/sections/WhyCoin';
 import CardSlider from '../components/sections/CardSlider';
 import Media from '../components/sections/Media'
@@ -31,7 +30,6 @@ const Home = () => {
       <Team/>
       <Media/>
       <CardSlider/>
-      <Testimonial topDivider />
       <Footer/>
     </>
   );
