@@ -1,0 +1,20 @@
+.tokenomics {
+	.percent {
+		color: rgba(245, 230, 189, 0.5);
+		margin: 0 0 12px;
+		line-height: 1;
+		font-size: 65px;
+	}
+	.info {
+		 @media (max-width:768px) {
+			text-align: center;
+			img {
+				margin: auto;
+			}
+		 }
+	}
+}
+
+.nft-item {
+	border: 1px solid;
+}

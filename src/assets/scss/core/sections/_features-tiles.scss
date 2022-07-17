@@ -1,0 +1,38 @@
+.about {
+
+	// .tech-audit {
+	// 	border: 1px solid black;
+	// 	border-radius: 20px;
+	// 	.tech-audit-main {
+	// 		padding: 15px 15px 0 15px
+	// 	}
+	// }
+	.tech-audit-main {
+		border-radius: 20px;
+		text-align: center;
+		margin: auto;
+		padding-top: 10px;
+		background-color: rgb(49, 48, 48);
+		margin-top: 20px;
+		color: white;
+		.circle {
+			color: green;
+		}
+	}
+	
+	.audit-report {
+		border: 2px solid rgb(255, 182, 0);
+		border-radius: 100px;
+		color: white;
+		
+		a {
+			color: white;
+		}
+		&:hover {
+			background-color: red;
+			border: none;
+			color: white !important;
+			border: 2px solid transparent;
+		}
+	}
+}
