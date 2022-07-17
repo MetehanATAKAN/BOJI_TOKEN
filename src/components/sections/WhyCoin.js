@@ -3,7 +3,6 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-import Roll from 'react-reveal/Roll';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 import { Pagination,Autoplay } from "swiper";
 

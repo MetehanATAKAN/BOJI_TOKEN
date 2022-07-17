@@ -4,7 +4,6 @@ import Hero from '../components/sections/Hero';
 import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
 import Testimonial from '../components/sections/Testimonial';
-import Cta from '../components/sections/Cta';
 import WhyCoin from '../components/sections/WhyCoin';
 import CardSlider from '../components/sections/CardSlider';
 import Media from '../components/sections/Media'
@@ -34,7 +33,6 @@ const Home = () => {
       <CardSlider/>
       <Testimonial topDivider />
       <Footer/>
-      {/* <Cta split /> */}
     </>
   );
 }

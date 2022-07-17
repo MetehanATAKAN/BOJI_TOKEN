@@ -1,11 +1,7 @@
 import React, { useState, useRef } from 'react';
 import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
-import ButtonGroup from '../elements/ButtonGroup';
-import Button from '../elements/Button';
 import Image from '../elements/Image';
-import Modal from '../elements/Modal';
-import Roll from 'react-reveal/Roll';
 import Bounce from 'react-reveal/Bounce';
 import { Row, Col, Overlay, Tooltip } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
@@ -34,12 +30,7 @@ const Hero = ({
 
   const [show, setShow] = useState(false);
   const target = useRef(null);
-  const [adressItem, setAdressItem] = useState([
-    { value: 'BSC', label: 'BSC' }
-  ])
-
-
-
+ 
   const outerClasses = classNames(
     'hero section center-content',
     topOuterDivider && 'has-top-divider',
@@ -49,11 +40,6 @@ const Hero = ({
     className
   );
 
-  const innerClasses = classNames(
-    'hero-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
-  );
 
   const copyAdress = async (adress) => {
     await navigator.clipboard.writeText(adress);
