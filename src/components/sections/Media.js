@@ -28,6 +28,17 @@ const Media = () => {
         modules={[Pagination]}
         loop={true}
         className="mySwiper"
+        breakpoints={{
+          998:{
+            slidesPerView:4
+          },
+          762:{
+            slidesPerView:2
+          },
+          200:{
+            slidesPerView:1
+          }
+        }}
       >
         <SwiperSlide>
         <Image

@@ -15,6 +15,12 @@
 	}
 }
 
-.nft-item {
-	border: 1px solid;
+.nft-collections {
+	.nft-item {
+		border: 1px solid;
+		text-align: center;
+		img {
+			margin: auto;
+		}
+	}
 }

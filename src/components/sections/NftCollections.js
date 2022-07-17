@@ -9,11 +9,11 @@ const NftCollections = () => {
         title: 'NFT COLLECTIONS',
     };
     return (
-        <div className='container'>
+        <div className='container nft-collections'>
             <SectionHeader data={sectionHeader} className="center-content" />
 
             <Row>
-                <Col>
+                <Col sm={12} md={3}>
                 <div className='nft-item'>
                     <Image
                         src={require('./../../assets/images/mainBoji.png')}
@@ -21,8 +21,10 @@ const NftCollections = () => {
                         width={300}
                         height={300} />
                 </div>
+
+                    <div className='text-center'>metehan</div>
                 </Col>
-                <Col>
+                <Col sm={12} md={3}>
                 <div className='nft-item'>
                     <Image
                         src={require('./../../assets/images/mainBoji.png')}
@@ -30,8 +32,9 @@ const NftCollections = () => {
                         width={300}
                         height={300} />
                 </div>
+                <div className='text-center'>metehan</div>
                 </Col>
-                <Col>
+                <Col sm={12} md={3}>
                 <div className='nft-item'>
                     <Image
                         src={require('./../../assets/images/mainBoji.png')}
@@ -39,33 +42,17 @@ const NftCollections = () => {
                         width={300}
                         height={300} />
                 </div>
+                <div className='text-center'>metehan</div>
                 </Col>
-                <Col>
-                <div className='nft-item'>
+                <Col sm={12} md={3}>
+                <div  className='nft-item'>
                     <Image
                         src={require('./../../assets/images/mainBoji.png')}
                         alt="Features split 02"
                         width={300}
                         height={300} />
                 </div>
-                </Col>
-            </Row>
-
-            <Row>
-                <Col>
-                      metehan  
-                </Col>
-
-                <Col>
-                atakan
-                </Col>
-
-                <Col>
-                      metehan  
-                </Col>
-
-                <Col>
-                      metehan  
+                <div className='text-center'>metehan</div>
                 </Col>
             </Row>
         </div>

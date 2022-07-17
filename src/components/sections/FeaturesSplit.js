@@ -50,7 +50,7 @@ const FeaturesSplit = ({
       <div className="container tokenomics">
       <SectionHeader data={sectionHeader} className="center-content" />
         <Row className='info'>
-          <Col sm={12} md={4}>
+          <Col sm={12} md={4} className='mb-4'>
             <Image
               src={require('./../../assets/images/mainBoji.png')}
               alt="Features split 02"
@@ -59,8 +59,6 @@ const FeaturesSplit = ({
           </Col>
 
           <Col sm={12} md={8}>
-            <h4>BOJI TOKEN</h4>
-
             <p>
               <span>Token: BOJI</span>
             </p>
@@ -77,15 +75,19 @@ const FeaturesSplit = ({
         </Row>
 
         <Row className='text-center mt-5'>
-          <Col sm={12} md={4} >
+          <Col sm={12} md={3} className='mb-3' >
             <p className='percent'>1%</p>
             <p>Holders Rewards Distribution</p>
           </Col>
-          <Col sm={12} md={4}>
+          <Col sm={12} md={3} className='mb-3'>
             <p className='percent'>3%</p>
             <p>Liquidity Fee</p>
           </Col>
-          <Col sm={12} md={4}>
+          <Col sm={12} md={3} className='mb-3'>
+            <p className='percent'>4%</p>
+            <p>Marketing Fee</p>
+          </Col>
+          <Col sm={12} md={3} className='mb-3'>
             <p className='percent'>4%</p>
             <p>Marketing Fee</p>
           </Col>

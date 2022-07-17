@@ -15,10 +15,6 @@ const Community = () => {
             name: 'Twitter'
         },
         {
-            image: require('../../assets/images/reddit.svg'),
-            name: 'Reddit'
-        },
-        {
             image: require('../../assets/images/discord.svg'),
             name: 'Discord'
         },
@@ -38,7 +34,7 @@ const Community = () => {
             <Row style={{textAlign:'-webkit-center'}}>
                 {
                     community.map(community => (
-                        <Col>
+                        <Col xs={12} sm={3} className='mb-4'>
                             <a href='#/'>
                                 <div>
                                     <Image

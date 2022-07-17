@@ -22,13 +22,23 @@ const RoadMap = () => {
         speed={500}
         centeredSlides={false}
         centeredSlidesBounds={true}
+        breakpoints={{
+          // 992: {
+          //   width:992,
+          //   slidesPerView:3
+          // },
+          768 :{
+            width:768,
+            slidesPerView:2
+          },
+
+          200: {
+            width:310,
+            slidesPerView:1
+          }
+        }}
       >
         <div className='timeline'>
-          {/* <SwiperSlide className='swiper-start'>
-            <div class="status">
-              <div class="icn-start"></div>
-            </div>
-          </SwiperSlide> */}
           <SwiperSlide >
             {/* <div className="timestamp"> <span className="date">Phase 1</span> </div> */}
             <div className="timeline_icn"></div>

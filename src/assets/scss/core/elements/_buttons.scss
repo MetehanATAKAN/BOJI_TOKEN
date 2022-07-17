@@ -490,6 +490,9 @@ $borderW: 2px;
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+	// @media (max-width:992px) {
+	// 	width: 310px !important;
+	// }
   }
   
   .swiper-slide img {
