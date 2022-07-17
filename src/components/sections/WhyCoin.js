@@ -65,16 +65,16 @@ const WhyCoin = ({
           className="mySwiper"
           allowSlideNext={true}
           allowTouchMove={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          //   pauseOnMouseEnter: true,
+          // }}
         >
         
             <SwiperSlide>
               <Row>
-                <Col sm={12} md={6}>
+                <Col sm={12} md={5}>
                  
                     <Image
                       src={require('./../../assets/images/kishu.png')}
@@ -83,7 +83,7 @@ const WhyCoin = ({
                       height={396} />
                  </Col>
 
-                  <Col sm={12} md={6} className='m-auto'>
+                  <Col sm={12} md={7} className='m-auto'>
                     <div className='split-item-info'>
                       <h3 className="mt-0 mb-12">
                         Instant Usage Rewards
@@ -101,7 +101,7 @@ const WhyCoin = ({
           
             <SwiperSlide>
               <Row>
-                <Col sm={12} md={6}>
+                <Col sm={12} md={5}>
                   
                     <Image
                       src={require('./../../assets/images/kishu.png')}
@@ -111,7 +111,7 @@ const WhyCoin = ({
                
                 </Col>
 
-                <Col sm={12} md={6} className='m-auto'>
+                <Col sm={12} md={7} className='m-auto'>
                  
 
                     <div className='split-item-info'>
