@@ -79,16 +79,16 @@ const WhyCoin = ({
                     <Image
                       src={require('./../../assets/images/kishu.png')}
                       alt="Features split 02"
-                      width={528}
-                      height={396} />
+                      width={300}
+                      height={300} />
                  </Col>
 
                   <Col sm={12} md={7} className='m-auto'>
-                    <div className='split-item-info'>
-                      <h3 className="mt-0 mb-12">
+                    <div >
+                      <h3 >
                         Instant Usage Rewards
                       </h3>
-                      <p className="m-0">
+                      <p>
                         For every active user transaction a 2% KISHU reward is granted to holders'; decentralized wallets only, fostering a healthy distributed network and community usage. The more KISHU is actively used, the more rewards are granted!
                       </p>
                     </div>
@@ -106,19 +106,19 @@ const WhyCoin = ({
                     <Image
                       src={require('./../../assets/images/kishu.png')}
                       alt="Features split 02"
-                      width={528}
-                      height={396} />
+                      width={300}
+                      height={300} />
                
                 </Col>
 
                 <Col sm={12} md={7} className='m-auto'>
                  
 
-                    <div className='split-item-info'>
-                      <h3 className="mt-0 mb-12">
+                    <div>
+                      <h3 >
                         Community Powered
                       </h3>
-                      <p className="m-0">
+                      <p>
                         BOJI is fully decentralized and owned by its fun, vibrant community. Our enthusiast volunteers welcome and embrace diverse perspectives to build KISHU into the best community in crypto.
                       </p>
                     </div>
