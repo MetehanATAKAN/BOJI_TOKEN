@@ -2,7 +2,6 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
-import Image from '../elements/Image';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 import { Pagination,Autoplay } from "swiper";
 
