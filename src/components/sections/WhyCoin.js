@@ -77,11 +77,11 @@ const WhyCoin = ({
               className="mySwiper"
               allowSlideNext={true}
               allowTouchMove={true}
-              // autoplay={{
-              //   delay:2500,
-              //   disableOnInteraction:false,
-              //   pauseOnMouseEnter:true,
-              // }}
+              autoplay={{
+                delay:2500,
+                disableOnInteraction:false,
+                pauseOnMouseEnter:true,
+              }}
             >
 
               <SwiperSlide>
