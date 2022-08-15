@@ -7,7 +7,6 @@ import SectionHeader from './partials/SectionHeader';
 
 const AsSeenIn = () => {
 
-  const [isSlideHidden, setisSlideHidden] = useState(localStorage.getItem('language') );
   const [selectLanguage, setSelectLanguage] = useState('');
   console.log('isSlideHidden', selectLanguage);
 

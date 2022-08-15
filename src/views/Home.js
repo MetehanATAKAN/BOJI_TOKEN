@@ -1,4 +1,4 @@
-import React , { useEffect, useState } from 'react';
+import React  from 'react';
 // import sections
 import Hero from '../components/sections/Hero';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
@@ -16,32 +16,6 @@ import About from '../components/sections/About';
 import OurPartners from '../components/sections/OurPartners';
 
 const Home = () => {
-
-  const [country, setCountry] = useState('');
-  const [ipAdress, setIpAdress] = useState('');
-
-  useEffect(() => {
-   fetch(`http://ip-api.com/json/${ipAdress}`)
-   .then(response => response.json())
-   .then(result=>{
-    if(result.country === 'Turkey'){
-      setCountry('Turkey');
-    }
-    else {
-      setCountry('Other');
-    }
-   })
-   .catch(error=>console.log(error))
-  }, [ipAdress])
-  
-  
-
-  useEffect(() => {
-    fetch('https://api64.ipify.org?format=json')
-    .then(response=>response.json())
-    .then(response=>setIpAdress(response.ip))
-    .catch(error=>console.log(error))
-  }, [])
 
   return (
     
