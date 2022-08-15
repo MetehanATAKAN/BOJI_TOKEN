@@ -33,7 +33,8 @@ const Header = ({
 }) => {
 
   const [isActive, setIsactive] = useState(false);
-  const [isSelectLanguage, setIsSelectLanguage] = useState(true);
+  const [isSelectLanguage, setIsSelectLanguage] = useState(localStorage.getItem('language') === 'Turkey' ? false : true);
+  
 
   const nav = useRef(null);
   const hamburger = useRef(null);
@@ -80,16 +81,46 @@ const Header = ({
     className
   );
 
-  const changeLanguage2 = () => {
+  const [ipAdress, setIpAdress] = useState('');
+
+  useEffect(() => {
+   fetch(`http://ip-api.com/json/${ipAdress}`)
+   .then(response => response.json())
+   .then(result=>{
+    if(result.country === 'Turkey'){
+      setIsSelectLanguage(false);
+      i18n.changeLanguage('tr');
+    }
+    else {
+      setIsSelectLanguage(true);
+      i18n.changeLanguage('en');
+    }
+    localStorage.setItem('language', result.country);
+   })
+   .catch(error=>console.log(error))
+  }, [ipAdress])
+  
+  
+
+  useEffect(() => {
+    fetch('https://api64.ipify.org?format=json')
+    .then(response=>response.json())
+    .then(response=>setIpAdress(response.ip))
+    .catch(error=>console.log(error))
+  }, [])
+  
+  
+
+  const changeLanguage2 = (lng) => {
     setIsSelectLanguage(!isSelectLanguage);
     console.log(isSelectLanguage);
 
     if (isSelectLanguage === true) {
-      localStorage.setItem('i18nextLnga', 'tr');
+      localStorage.setItem('language', 'tr');
       i18n.changeLanguage('tr');
     }
     else {
-      localStorage.setItem('i18nextLnga', 'en');
+      localStorage.setItem('language', 'en');
       i18n.changeLanguage('en');
     }
   }
@@ -139,16 +170,10 @@ const Header = ({
 
                   </div>
                   <div className='language-switch' style={{ marginRight: '15px' }}>
-                    {/* <label className='language-tr'  style={{marginRight:'10px'}}>TR</label>
                     <label class="switch">
-                      <input type="checkbox" checked={isSelectLanguage} onChange={()=>changeLanguage2(isSelectLanguage === false ?'tr':'en')}  />
-                      <span class="slider round"></span>
-                    </label>
-                    <label className='language-en'  style={{marginLeft:'10px'}}>EN</label> */}
-
-                    <label class="switch">
-                      <input type="checkbox" class="checkbox" checked={isSelectLanguage} onChange={() => changeLanguage2(isSelectLanguage === false ? 'tr' : 'en')} />
+                      <input type="checkbox" class="checkbox" checked={isSelectLanguage} onChange={() => changeLanguage2(localStorage.getItem('language') === 'Turkey' ? 'Turkey' : 'En')} />
                       <span class="toggle-thumb">
+                        
                         <div style={{ marginLeft: '10px' }}>
                           <Image
                             src={require('../../assets/images/united.png')}
@@ -156,6 +181,7 @@ const Header = ({
                             width={15}
                             height={32} />
                         </div>
+
                         <div style={{ marginRight: '10px' }}>
                           <Image
                             src={require('../../assets/images/turkey.png')}
@@ -163,11 +189,6 @@ const Header = ({
                             width={15}
                             height={32} />
                         </div>
-                        {/* <i class="fa-solid fa-circle-trash" style={{fill:'#4ADE80',transform:'-ms-filter:'}}></i>
-     <i class="fa-solid fa-circle-trash" style={{fill:'#F87171',transform:'-ms-filter:'}}></i> */}
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style={{fill:'#4ADE80',transform:'-ms-filter:'}} ><path d="M10 15.586L6.707 12.293 5.293 13.707 10 18.414 19.707 8.707 18.293 7.293z"></path></svg>
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style={{fill:'#F87171',transform:'-ms-filter:'}} ><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"></path></svg> */}
 
                       </span>
                     </label>

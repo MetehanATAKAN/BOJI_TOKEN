@@ -58,7 +58,7 @@ const FeaturesSplit = ({
               height={300} />
           </Col>
 
-          <Col sm={12} md={8}>
+          <Col sm={12} md={8} className='m-auto'>
             <p>
               <span>Token: BOJI</span>
             </p>

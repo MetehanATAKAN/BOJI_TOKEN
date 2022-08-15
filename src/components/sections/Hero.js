@@ -60,18 +60,23 @@ const Hero = ({
       <div className="container">
 
         <Row className='main-row'>
-          <Col md={12} lg={6} >
+          <Col md={12} lg={6} className='d-flex flex-column justify-content-between' >
             <Bounce left>
               <h3 className="mt-0 mb-12 " style={{ color: 'black' }}>
-                The World's First Light-Speed Boji Coin with Zero Fees and Smart Contracts.
+               {
+                t(
+                  'A Decentralized Web3 Token that Envolved into a Boji Ecosystem'
+                )
+               }
               </h3>
               <p className="m-0 mb-12">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               {
+                t('BOJI is an organization that aims to bring all the possibilities offered by Web3 Technology to its community under one roof, using advanced blockchain-based applications. In addition, the BOJI project aims to move civilization forward by connecting real life with digital currencies, using elements such as IoT and VR-based blockchain applications.')
+               }
               </p>
               <div className='button-group' style={{ marginTop: '25px', display: 'flex', justifyContent: 'space-evenly' }}>
 
                 <button class="blob-btn">
-                  {/* (t{' Buy Now'}) */}
                   {t('Buy Now')}
                   <span class="blob-btn__inner">
                     <span class="blob-btn__blobs">
@@ -84,7 +89,7 @@ const Hero = ({
                 </button>
 
                 <button class="blob-btn">
-                  Read Whitepaper
+                 {t('Read Whitepaper')}
                   <span class="blob-btn__inner">
                     <span class="blob-btn__blobs">
                       <span class="blob-btn__blob"></span>
@@ -116,7 +121,7 @@ const Hero = ({
             </Bounce>
           </Col>
 
-          <Col md={12} lg={6}>
+          <Col md={12} lg={6} className='d-flex flex-column justify-content-between' >
             <Bounce right>
 
               <Image

@@ -40,39 +40,16 @@
 <!--Font Awesome-->
 <script src="https://kit.fontawesome.com/ea73e03268.js" crossorigin="anonymous"></script>
 
-<!--Rubic-->
-<script type="text/javascript" src="https://widgets.rubic.exchange/iframe/bundle.min.js"></script>
-<script defer type="text/javascript">
-  // describe widget configuration and saving to a global variable for future use
-  var configuration = {
-      from: 'BNB',
-      to: '0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164',
-      fromChain: 'BSC',
-      toChain: 'BSC',
-      amount: 0.05,
-      iframe: 'horizontal',
-      hideSelectionFrom: true,
-      hideSelectionTo: true,
-      theme: 'dark',
-      background: '#382929',
-      injectTokens: {
-          'bsc': [
-              '0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164'
-          ]
-      },
-      slippagePercent: {
-          instantTrades: 12,
-          crossChain: 12
-      },
-      fee: 0.075,
-      feeTarget: '0x62CfD12242C27bCDDF4f357a64a8dA39C505c5aE'
-  }
+<script type="text/javascript">
+	
+	var items = document.querySelectorAll('.circle-menu-box a.menu-item');
 
-  // prevent accidental changes to the object, for example, when re-creating a widget for another theme
-  Object.freeze(configuration);
+	for(var i = 0, l = items.length; i < l; i++) {
+	  items[i].style.left = (40 - 35*Math.cos(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
+	  
+	  items[i].style.top = (40 + 35*Math.sin(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
+	}
 
-  // create widget
-  rubicWidget.init(configuration);
 </script>
 
 </html>

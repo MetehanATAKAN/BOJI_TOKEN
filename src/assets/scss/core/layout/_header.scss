@@ -82,6 +82,8 @@
 
 .header-nav-right {
 	margin: auto;
+	// display: flex;
+	// flex-direction: column;
 
 	+ .header-nav-right {
 		flex-grow: 0;
@@ -92,7 +94,9 @@
 	display: none;
 }
 
-@include media( '<=medium' ) {
+@media (max-width:768px) {
+	
+
 
 	.header-nav-toggle {
 		display: block;
@@ -103,7 +107,7 @@
 			position: absolute;
 			left: 0;
 			right: 0;
-			top: 100%;
+			top: 35%;
 			z-index: 9999;
 			background: color-bg(menu-mobile);
 			max-height: 0;
@@ -112,6 +116,7 @@
 	        transition: max-height .25s ease-in-out, opacity .15s;
 
 			&.is-active {
+				max-height: 500px !important;
 				opacity: 1;
 			}
 

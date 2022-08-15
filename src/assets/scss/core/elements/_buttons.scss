@@ -540,6 +540,9 @@ $borderW: 2px;
 		text-align: start;
 		color: rgba(255,255,255,0.6);
 		font-size: 14px;
+		ul {
+			list-style: none;
+		}
 	}
 		h5 {
 			margin-right: 250px;
@@ -624,113 +627,6 @@ $borderW: 2px;
   }
   
 
-  // Switch
-
-//   .switch {
-// 	position: relative;
-// 	display: inline-block;
-// 	width: 60px;
-// 	height: 34px;
-//   }
-  
-//   .switch input { 
-// 	opacity: 0;
-// 	width: 0;
-// 	height: 0;
-//   }
-  
-//   .slider {
-// 	position: absolute;
-// 	cursor: pointer;
-// 	top: 0;
-// 	left: 0;
-// 	right: 0;
-// 	bottom: 0;
-// 	background-color: #ccc;
-// 	-webkit-transition: .4s;
-// 	transition: .4s;
-//   }
-  
-//   .slider:before {
-// 	position: absolute;
-// 	content: "";
-// 	height: 26px;
-// 	width: 26px;
-// 	left: 4px;
-// 	bottom: 4px;
-// 	background-color: white;
-// 	-webkit-transition: .4s;
-// 	transition: .4s;
-//   }
-  
-//   input:checked + .slider {
-// 	background-color: #2196F3;
-//   }
-  
-//   input:focus + .slider {
-// 	box-shadow: 0 0 1px #2196F3;
-//   }
-  
-//   input:checked + .slider:before {
-// 	-webkit-transform: translateX(26px);
-// 	-ms-transform: translateX(26px);
-// 	transform: translateX(26px);
-//   }
-  
-//   /* Rounded sliders */
-//   .slider.round {
-// 	border-radius: 34px;
-//   }
-  
-//   .slider.round:before {
-// 	border-radius: 50%;
-//   }
-
-
-  /// About info
-  /// 
-  .about-card {
-	.about-item {
-		border: 1px solid;
-		border-radius: 10px;
-		box-shadow: 5px 10px;
-		
-		.about-item-content {
-			padding: 20px;
-			text-align: center;
-			img {
-				margin: auto;
-				width: 50px !important;
-				height: 50px !important;
-			}
-		}
-	  }
-	//   :hover {
-	// 		transform: translateY(20px);
-	// 	}
-  }
-  .about-card-info {
-	margin-top: 30px !important;
-	border: 1px solid;
-  }
-//   .body-wrap {
-// 	background-image: url(../../../images/xxx.png) !important;
-// 	background-repeat: repeat;
-// 	width: 100%;
-// 	height: 100%;
-// 	z-index: 9;
-// 	// opacity: 0.6;
-//   }
-//   body {
-// 	background-color: #141414 !important;
-// 	background-image: url(../../../images/sonson.png) !important;
-// 	background-repeat: no-repeat;
-// 	background-size: contain;
-// 	height: 100%;
-// 	width: 100%;
-// 	z-index: 1;
-//   }
-
 body {
 	background-color: #141414 !important;
     position: relative;
@@ -760,28 +656,6 @@ body {
     padding-bottom: 100.833333333333333%;
 	}
   }
-
-  /// new cardd
-  /// 
-  /// 
-  ///
-  /// 
-  /// 
-  ///
-  /// 
-  ///  
-//   .language-switch {
-// 	input:checked + .slider:before {
-		
-// 	}
-// 	.slider:before {
-// 		content: url(../../../images/BojiIcon.png) !important;
-// 		height: 26px !important;
-//     	width: 26px !important;
-// 	}
-//   }
-  
-
 
 .switch {
 	display: inline-block;
@@ -867,5 +741,8 @@ body {
 	}
 }
 
+.apexcharts-canvas {
+	margin: auto;
+}
 
   

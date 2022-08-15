@@ -51,7 +51,7 @@ const WhyCoin = ({
   );
 
   const sectionHeader = {
-    title: 'WHY BOJI?',
+    title: 'FAQ',
   };
 
   return (
