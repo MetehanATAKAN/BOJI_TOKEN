@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
-import Image from '../elements/Image';
 import { Row, Col } from 'react-bootstrap';
 import Bounce from 'react-reveal/Bounce';
 import { useTranslation } from 'react-i18next';
@@ -38,7 +37,7 @@ const About = ({
 
   const { t } = useTranslation();
 
-  const [cards, setCards] = useState([
+  const [cards] = useState([
     {
       imageUrl: require('../../assets/images/mainBoji.png'),
       frontHeader: 'Web3',

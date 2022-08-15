@@ -4,7 +4,7 @@ import SectionHeader from './partials/SectionHeader';
 
 const RoadMap = () => {
 
-  const [phase, setPhase] = useState([
+  const [phase] = useState([
     {
       phaseHeader:'Phase 1',
       phaseItem: [
@@ -145,96 +145,7 @@ const RoadMap = () => {
               </SwiperSlide>
             ))
           }
-          {/* <SwiperSlide >
-            <div className="timeline_icn"></div>
-            <div className="status">
-              <h5>Phase 1</h5>
-              <div className="mgt-timeline-text">
-
-                <ul>
-                  <li>✓ Concept Design</li>
-                  <li>✓ Website Launch</li>
-                  <li>✓ Token Launch</li>
-                  <li>✓ Social Media Channels</li>
-                  <li>✓ Marketing Strategy</li>
-                  <li>✓ Community Building</li>
-                  <li>✓ Whitepaper</li>
-                </ul>
-
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="timeline_icn"></div>
-            <div className="status">
-              <h5>Phase 2</h5>
-              <div className='mgt-timeline-text'>
-
-                <ul>
-                  <li> ✓ Launch BOJI’s NFT </li>
-                  <li> ✓ RunBOJI Game Launch  </li>
-                  <li> ✓ Tier 4 Exchange Listing  </li>
-                  <li> ✓ Coingecko Listing  </li>
-                  <li> ✓ Coinmarketcap Listing  </li>
-                  <li> ✓ Audit Report  </li>
-                  <li> ✓ Airdrop  </li>
-                  <li> ✓ Whitepaper and Pitchdeck Upgrade  </li>
-                  <li> ✓ PR Strategies  </li>
-                  <li> ✓ Community AMA  </li>
-                  <li> ✓ Social Media Presence on all continents  </li>
-                  <li> ✓Surprise Event  </li>
-                </ul>
-
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="timeline_icn"></div>
-            <div className="status">
-              <h5>Phase 3</h5>
-              <div className='mgt-timeline-text'>
-                <ul>
-                  <li> Website v2  </li>
-                  <li> Bojilogy Web3 Launch  </li>
-                  <li> BojiSwap Launch  </li>
-                  <li> BojiForce NFT Launch  </li>
-                  <li> Marketing Campaigns  </li>
-                  <li> Bojilogy Mobile Version Launch  </li>
-                  <li> Tier 3 Exchange Listing  </li>
-                  <li> Event For Charity  </li>
-                  <li> Airdrop  </li>
-                </ul>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            
-            <div className="timeline_icn"></div>
-            <div className="status">
-              <h5>Phase 4</h5>
-              <div className='mgt-timeline-text'>
-                <ul >
-                  <li> Audit Report (Certik, Hacken)  </li>
-                  <li> Tier2 Exchange Listing  </li>
-                  <li> Runboji v2  </li>
-                  <li>  </li>
-                  <li>  </li>
-                  <li>  </li>
-                </ul>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="timeline_icn"></div>
-            <div className="status">
-              <h5>Phase 5</h5>
-              <div className='mgt-timeline-text'>
-                <ul>
-                  <li>NFT Marketplace</li>
-                </ul>
-              </div>
-            </div>
-          </SwiperSlide> */}
+          
         </div>
       </Swiper>
     </div>

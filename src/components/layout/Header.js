@@ -98,7 +98,7 @@ const Header = ({
     localStorage.setItem('language', result.country);
    })
    .catch(error=>console.log(error))
-  }, [ipAdress])
+  }, [i18n, ipAdress])
   
   
 
