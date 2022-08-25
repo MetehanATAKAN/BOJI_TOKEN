@@ -1,8 +1,11 @@
 import React, { useState} from 'react'
+import { useTranslation } from 'react-i18next';
 import Image from '../elements/Image';
 import SectionHeader from './partials/SectionHeader'
 
 const Ecosystem = () => {
+
+  const { t } = useTranslation();
 
   const [ecosystemItems] = useState([
     {
@@ -101,37 +104,14 @@ const Ecosystem = () => {
 
           <div className='back'>
               <p style={{padding:'5px'}}>
-                {item.backInfo}
+                {t(item.backInfo)}
               </p>
           </div>
         </a>
       ))
     }
   
-    {/* <a href='#/' className="menu-item">
-      <span className="fa fa-home" />
-    </a>
-    <a href='#/' className="menu-item">
-      <span className="fa fa-tag" />
-    </a>
-    <a href='#/' className="menu-item">
-      <span className="fa fa-info-circle" />
-    </a>
-    <a href='#/' className="menu-item">
-      <span className="fa fa-comments" />
-    </a>
-    <a href='#/' className="menu-item">
-      <span className="fa fa-folder-open" />
-    </a>
-    <a href='#/' className="menu-item">
-      <span className="fa fa-group" />
-    </a>
-    <a href='#/' className="menu-item">
-      <span className="fa fa-newspaper-o" />
-    </a>
-    <a href='#/' className="menu-item">
-      <span className="fa fa-sitemap" />
-    </a> */}
+  
   </div>
 </div>
 
