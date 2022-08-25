@@ -48,6 +48,13 @@
 	width: 200px;
 	height: 300px;
 	perspective: 1000px;
+
+	&:hover {
+		height: 500px;
+		.flip-card-inner {
+			transform: rotateY(180deg);
+		}
+	}
   }
   
   .flip-card-inner {
@@ -62,12 +69,11 @@
 	border-radius: 5px;
   }
   
-  .flip-card:hover .flip-card-inner {
-	transform: rotateY(180deg);
-	.flip-card {
-		height: 500px;
-	}
-  }
+//   .flip-card:hover .flip-card-inner {
+// 	transform: rotateY(180deg);
+// 	background-color: red !important;
+  
+//   }
   
   .flip-card-front, .flip-card-back {
 	position: absolute;

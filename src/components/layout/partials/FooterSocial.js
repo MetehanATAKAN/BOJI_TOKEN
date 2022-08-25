@@ -61,6 +61,15 @@ const FooterSocial = ({
             </svg>
           </a>
         </div>
+
+        {/* <div className='header-social'>
+          <a href="https://google.com/">
+            <p
+             >
+             price
+            </p>
+          </a>
+        </div> */}
       </div>
     </div>
   );

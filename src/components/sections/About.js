@@ -75,6 +75,7 @@ const About = ({
     <section
       {...props}
       className={outerClasses}
+      id='about'
     >
       <SectionHeader data={sectionHeader} className="center-content" />
       <div className='container about'>

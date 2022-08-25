@@ -49,7 +49,7 @@ const RoadMap = () => {
         'Event For Charity ',
         'Airdrop ',
       ],
-      isPhaseCompleted: false,
+      isPhaseCompleted: 'continues',
     },
     {
       phaseHeader:'Phase 4',
@@ -92,7 +92,7 @@ const RoadMap = () => {
   };
 
   return (
-    <div className='container'>
+    <div id='roadmap' className='container'>
       <SectionHeader data={sectionHeader} className="center-content" />
       <Swiper
         className='swiper-container timelines-content'
@@ -125,7 +125,7 @@ const RoadMap = () => {
           {
             phase.map((item,index)=>(
               <SwiperSlide>
-                <div className='timeline_icn' style={item.isPhaseCompleted === true ? {backgroundColor:'green'} : null } ></div>
+                <div className='timeline_icn' style={item.isPhaseCompleted === true ? {backgroundColor:'green'} : item.isPhaseCompleted === 'continues' ? { backgroundColor:'yellow'} : null } ></div>
                 <div className='status'>
                   {
                     item.isPhaseCompleted === true
@@ -135,8 +135,12 @@ const RoadMap = () => {
                   <div className='mgt-timeline-text'>
                     <ul>
                       {
-                        item.phaseItem.map((item,index)=>(
-                          <li>{item}</li>
+                        item.isPhaseCompleted === true
+                        ?item.phaseItem.map((item,index)=>(
+                          <li> <del>{item}</del> </li>
+                        ))
+                        :item.phaseItem.map((item,index)=>(
+                          <li> {item} </li>
                         ))
                       }
                     </ul>

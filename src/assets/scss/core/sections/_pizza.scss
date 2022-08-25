@@ -18,17 +18,8 @@ body {
 	font-family: 'cambria', sans-serif;
 }
 
-@media (min-width:768px){
-	.container {
-		width:900px;
-	}
 
-}
-.container {
-	margin:10px auto;
-	position: relative;
-	overflow: hidden;
-}
+
 .page-title {
 	margin:17px auto;
 	text-align: center;
@@ -53,6 +44,68 @@ body {
 	height: 600px;
 	position: relative;
 	margin:30px auto;
+	a {
+
+		transition: transform 0.4s;
+		transform-style: preserve-3d;
+		&:hover {
+			background-color: rgb(56, 52, 52) !important;
+			transform:  scale(2.5) rotateY(180deg) ;
+			@media (max-width:692px) {
+				background-color: rgb(56, 52, 52) !important;
+				transform:  scale(1.8) rotateY(180deg) ;
+			}
+		}
+		
+	}
+
+	.back, .front{
+	
+	
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	}
+
+	.front {
+		
+		color: white;
+		font-size: 12px;
+		margin-bottom: 5px;
+
+		@media (max-width:506px) {
+			font-size: 8px ;
+		  }
+	  }
+	  
+	.back {
+		position:absolute;
+		// background-color: #000000;
+		color: white;
+		transform: rotateY(180deg);
+		height: 100%;
+    font-size: 5px;
+    left: 0;
+    top: 30%;
+	  }
+
+	  @media (max-width:692px) {
+		width:500px;
+		height: 500px;
+		position: relative;
+		margin: 0 0 20px 5px;
+	  }
+	  @media (max-width:506px) {
+		width:350px;
+		height: 350px;
+		position: relative;
+		margin: 0 0 20px 30px;
+	  }
+	  @media (max-width:398px) {
+		width:300px;
+		height: 300px;
+		position: relative;
+		margin: 0 0 20px 20px;
+	  }
 }
 	.circle-menu-box a.menu-item {
 		display: block;
@@ -60,9 +113,8 @@ body {
 		border-radius: 100%;
 		margin:20px;
 		text-align: center;
-		width:100px;
-		height:100px;
-		background-color:#fff;
+		width:130px;
+		height:130px;
 		color:#777;
 		padding:27px;
 		position: absolute;
@@ -72,13 +124,38 @@ body {
 		-moz-transition:all 0.5s;
 		-webkit-transition:all 0.5s;
 		-o-transition:all 0.5s;
+
+		img {
+			margin: auto;
+		}
+
+		@media (max-width:692px) {
+			width:100px;
+			height:100px;
+		  }
+
+		  @media (max-width:506px) {
+			width:75px;
+			height:75px;
+		  }
+		  @media (max-width:368px) {
+			width:65px;
+			height:65px;
+		  }
 	}
 
 	.circle-menu-box a.menu-item:hover {
-		transform:scale(1.5);
-		-webkit-transform:scale(1.5);
-		-moz-transform:scale(1.5);
-		-o-transform:scale(1.5);
+		// transform:scale(4.5);
+		z-index: 1;
+		// width:450px;
+		// height: 100%;
+		// -webkit-transform:scale(1.5);
+		// -moz-transform:scale(1.5);
+		// -o-transform:scale(1.5);
 		color:#fff;
 		background: #ff3333;
+	}
+
+	.apexcharts-legend {
+		top: 150px !important;
 	}

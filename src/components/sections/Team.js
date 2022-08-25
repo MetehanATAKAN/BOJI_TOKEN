@@ -5,10 +5,34 @@ import SectionHeader from './partials/SectionHeader'
 const Team = () => {
 
     const teamsInfo = [
-        { image: require('../../assets/images/team1.png'), name: 'Elomont', title: 'Founder & CEO' },
-        { image: require('../../assets/images/team2.png'), name: 'Milltay', title: 'Co-Founder & Brand Director' },
-        { image: require('../../assets/images/team3.png'), name: 'Shuttlecock', title: 'Operations Director' },
-        { image: require('../../assets/images/team4.png'), name: 'Bobster', title: 'Communications Director' },
+        {
+            image: require('../../assets/images/team1.png'),
+            name: 'Elomont',
+            title: 'Founder & CEO',
+            instagram:'https://www.google.com.tr/?hl=tr',
+            twitter:'https://www.google.com.tr/?hl=tr'
+        },
+        {
+            image: require('../../assets/images/team2.png'),
+            name: 'Milltay',
+            title: 'Co-Founder & Brand Director',
+            instagram:'https://www.google.com.tr/?hl=tr',
+            twitter:'https://www.google.com.tr/?hl=tr'
+        },
+        {
+            image: require('../../assets/images/team3.png'),
+            name: 'Shuttlecock',
+            title: 'Operations Director',
+            instagram:'https://www.google.com.tr/?hl=tr',
+            twitter:'https://www.google.com.tr/?hl=tr'
+        },
+        {
+            image: require('../../assets/images/team4.png'),
+            name: 'Bobster',
+            title: 'Communications Director',
+            instagram:'https://www.google.com.tr/?hl=tr',
+            twitter:'https://www.google.com.tr/?hl=tr'
+        },
     ]
 
     const sectionHeader = {
@@ -31,6 +55,14 @@ const Team = () => {
                                 } </div>
                                 <div className='name'>  {team.name} </div>
                                 <div className='title'> {team.title} </div>
+                                <div className='social'>
+                                    <a href={team.instagram}>
+                                    <i className="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href={team.instagram}>
+                                    <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </div>
                             </Col>
                         ))
                     }

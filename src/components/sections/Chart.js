@@ -29,7 +29,64 @@ const Chart2 = () => {
                   breakpoint: 1000,
                   options: {
                     chart: {
-                      width: 400,
+                      width: 700,
+                      height: 700 
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: true
+                      }
+                    },
+
+                    legend: {
+                      position: "bottom",
+                      fontSize:'12px'
+                    }
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  options: {
+                    chart: {
+                      width: 550,
+                      height: 550 
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: true
+                      }
+                    },
+
+                    legend: {
+                      position: "bottom",
+                      fontSize:'12px'
+                    }
+                  }
+                },
+                {
+                  breakpoint: 578,
+                  options: {
+                    chart: {
+                      width: 450,
+                      height: 450 
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: true
+                      }
+                    },
+
+                    legend: {
+                      position: "bottom",
+                      fontSize:'12px'
+                    }
+                  }
+                },
+                {
+                  breakpoint: 468,
+                  options: {
+                    chart: {
+                      width: 374,
                       height: 400 
                     },
                     plotOptions: {
@@ -43,7 +100,45 @@ const Chart2 = () => {
                       fontSize:'12px'
                     }
                   }
-                }
+                },
+                {
+                  breakpoint: 382,
+                  options: {
+                    chart: {
+                      width: 338,
+                      height: 400 
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: true
+                      }
+                    },
+
+                    legend: {
+                      position: "bottom",
+                      fontSize:'9px'
+                    }
+                  }
+                },
+                {
+                  breakpoint: 335,
+                  options: {
+                    chart: {
+                      width: 275,
+                      height: 400 
+                    },
+                    plotOptions: {
+                      bar: {
+                        horizontal: true
+                      }
+                    },
+
+                    legend: {
+                      position: "bottom",
+                      fontSize:'9px'
+                    }
+                  }
+                },
               ]
               
           }}

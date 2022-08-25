@@ -39,7 +39,7 @@ const Header = ({
   const nav = useRef(null);
   const hamburger = useRef(null);
 
-  const { t, i18n } = useTranslation();
+  const {  i18n } = useTranslation();
 
 
   useEffect(() => {
@@ -125,6 +125,53 @@ const Header = ({
     }
   }
 
+  const [selectorLink] = useState([
+    {
+      href:'#asSeenIn',
+      name:'As Seen In'
+    },
+    {
+      href:'#about',
+      name:'About'
+    },
+    {
+      href:'#ourpartners',
+      name:'Our Partners'
+    },
+    {
+      href:'#ecosystem',
+      name:'Ecosystem'
+    },
+    {
+      href:'#tokenomics',
+      name:'Tokenomics'
+    },
+    {
+      href:'#roadmap',
+      name:'Roadmap'
+    },
+    // {
+    //   href:'#tokendistribution',
+    //   name:'Token Distribution'
+    // },
+    // {
+    //   href:'#team',
+    //   name:'Team'
+    // },
+    // {
+    //   href:'#media',
+    //   name:'Media'
+    // },
+    // {
+    //   href:'#community',
+    //   name:'Community'
+    // },
+    // {
+    //   href:'#faq',
+    //   name:'FAQ'
+    // },
+  ])
+
   return (
     <header
       {...props}
@@ -163,10 +210,12 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
 
-                    <a href='#0'> {t('Our Team')} </a>
-                    <a href='#1'>Partners</a>
-                    <a href='#2'>Community</a>
-                    <a href='#3'>Contact</a>
+                      {
+                        selectorLink.map((itemm,index)=>(
+                          <a href={itemm.href} key={index}>{itemm.name}</a>
+                        ))
+                      }
+
 
                   </div>
                   <div className='language-switch' style={{ marginRight: '15px' }}>

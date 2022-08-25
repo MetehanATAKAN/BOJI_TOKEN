@@ -165,11 +165,11 @@ const AsSeenIn = () => {
   
 
   return (
-    <div className='container'>
+    <div id='asSeenIn' className='container'>
       <SectionHeader data={sectionHeader} className="center-content"  />
        <Splide
       options={{
-        type: "loop",
+        type:'loop',
         gap: "10px",
         drag: "free",
         arrows: false,

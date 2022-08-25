@@ -31,7 +31,7 @@ const OurPartners = () => {
       ])
     
   return (
-    <div className='container'>
+    <div id='ourpartners' className='container'>
     <SectionHeader data={sectionHeader} className="center-content"  />
      <Splide
     options={{

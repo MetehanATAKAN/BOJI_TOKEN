@@ -46,6 +46,7 @@ const FeaturesSplit = ({
     <section
       {...props}
       className={outerClasses}
+      id='tokenomics'
     >
       <div className="container tokenomics">
       <SectionHeader data={sectionHeader} className="center-content" />
