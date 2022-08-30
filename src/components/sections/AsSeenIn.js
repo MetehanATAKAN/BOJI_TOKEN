@@ -7,7 +7,6 @@ import SectionHeader from './partials/SectionHeader';
 
 const AsSeenIn = () => {
 
-  const [selectLanguage, setSelectLanguage] = useState('');
 
   const [slideItem] = useState([
     {
@@ -78,56 +77,56 @@ const AsSeenIn = () => {
     },
   ])
 
-  const [slideItem2] = useState([
-    {
-      itemHref:'https://www.dha.com.tr/english/phenomenal-dog-boji-turned-into-cryptocurrency-boji-token-2098215',
-      itemImage:require('../../assets/images/dha.png'),
-      imageAlt:'DHA',
-      country:'other'
-    },
-    // {
-    //   itemHref:'https://www.youtube.com/watch?v=4Jf325QzWIM',
-    //   itemImage:require('../../assets/images/kanald.png'),
-    //   imageAlt:'KANAL D',
-    //   country:'other'
-    // },
-    {
-      itemHref:'https://mobile.twitter.com/BojiTr/status/1554428637776060417',
-      itemImage:require('../../assets/images/fortune.png'),
-      imageAlt:'FORTUNE',
-      country:'other'
-    },
-    {
-      itemHref:'https://finance.yahoo.com/news/boji-token-emerges-leading-crypto-150000247.html',
-      itemImage:require('../../assets/images/yahoo.png'),
-      imageAlt:'YAHOO',
-      country:'other'
-    },
-    {
-      itemHref:'https://www.benzinga.com/pressreleases/22/07/g28001561/boji-token-emerges-as-the-leading-crypto-community-in-istanbul-that-works-for-animal-welfare',
-      itemImage:require('../../assets/images/benzinga.png'),
-      imageAlt:'BENZİNGA',
-      country:'other'
-    },
-    {
-      itemHref:'https://www.globenewswire.com/en/news-release/2022/07/08/2476673/0/en/Boji-Token-emerges-as-the-leading-crypto-community-in-Istanbul-that-works-for-animal-welfare.html',
-      itemImage:require('../../assets/images/global.svg'),
-      imageAlt:'GLOBAL NEWSWIRE',
-      country:'other'
-    },
-    {
-      itemHref:'https://www.hurriyetdailynews.com/istanbuls-famous-stray-dog-boji-becomes-cryptocurrency-175282',
-      itemImage:require('../../assets/images/hurriyetDaily.png'),
-      imageAlt:'HURRIYET DAILY NEWS',
-      country:'other'
-    },
-    {
-      itemHref:'https://nftcable.io/news/istanbuls-top-crypto-community-that-promotes-animal-welfare-is-boji-token/',
-      itemImage:require('../../assets/images/nftCable.png'),
-      imageAlt:'NFT CABLE',
-      country:'other'
-    },
-  ])
+  // const [slideItem2] = useState([
+  //   {
+  //     itemHref:'https://www.dha.com.tr/english/phenomenal-dog-boji-turned-into-cryptocurrency-boji-token-2098215',
+  //     itemImage:require('../../assets/images/dha.png'),
+  //     imageAlt:'DHA',
+  //     country:'other'
+  //   },
+  //   {
+  //     itemHref:'https://www.youtube.com/watch?v=4Jf325QzWIM',
+  //     itemImage:require('../../assets/images/kanald.png'),
+  //     imageAlt:'KANAL D',
+  //     country:'other'
+  //   },
+  //   {
+  //     itemHref:'https://mobile.twitter.com/BojiTr/status/1554428637776060417',
+  //     itemImage:require('../../assets/images/fortune.png'),
+  //     imageAlt:'FORTUNE',
+  //     country:'other'
+  //   },
+  //   {
+  //     itemHref:'https://finance.yahoo.com/news/boji-token-emerges-leading-crypto-150000247.html',
+  //     itemImage:require('../../assets/images/yahoo.png'),
+  //     imageAlt:'YAHOO',
+  //     country:'other'
+  //   },
+  //   {
+  //     itemHref:'https://www.benzinga.com/pressreleases/22/07/g28001561/boji-token-emerges-as-the-leading-crypto-community-in-istanbul-that-works-for-animal-welfare',
+  //     itemImage:require('../../assets/images/benzinga.png'),
+  //     imageAlt:'BENZİNGA',
+  //     country:'other'
+  //   },
+  //   {
+  //     itemHref:'https://www.globenewswire.com/en/news-release/2022/07/08/2476673/0/en/Boji-Token-emerges-as-the-leading-crypto-community-in-Istanbul-that-works-for-animal-welfare.html',
+  //     itemImage:require('../../assets/images/global.svg'),
+  //     imageAlt:'GLOBAL NEWSWIRE',
+  //     country:'other'
+  //   },
+  //   {
+  //     itemHref:'https://www.hurriyetdailynews.com/istanbuls-famous-stray-dog-boji-becomes-cryptocurrency-175282',
+  //     itemImage:require('../../assets/images/hurriyetDaily.png'),
+  //     imageAlt:'HURRIYET DAILY NEWS',
+  //     country:'other'
+  //   },
+  //   {
+  //     itemHref:'https://nftcable.io/news/istanbuls-top-crypto-community-that-promotes-animal-welfare-is-boji-token/',
+  //     itemImage:require('../../assets/images/nftCable.png'),
+  //     imageAlt:'NFT CABLE',
+  //     country:'other'
+  //   },
+  // ])
 
   const sectionHeader = {
     title: 'AS SEEN IN',
@@ -142,12 +141,6 @@ const AsSeenIn = () => {
    fetch(`http://ip-api.com/json/${ipAdress}`)
    .then(response => response.json())
    .then(result=>{
-    if(result.country === 'Turkey'){
-      setSelectLanguage('Turkey');
-    }
-    else {
-      setSelectLanguage('Other');
-    }
     localStorage.setItem('language', result.country);
    })
    .catch(error=>console.log(error))
