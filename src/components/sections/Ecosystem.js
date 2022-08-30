@@ -66,7 +66,7 @@ const Ecosystem = () => {
     },
     {
       id:8,
-      header:'BOJI TOKEN',
+      header:'boji.shop shop',
       imageSrc: require('../../assets/images/BOJI MP.png'),
       imageAlt: 'boji.shop',
       bgColor: '#DB415E',
@@ -90,7 +90,7 @@ const Ecosystem = () => {
     {
       ecosystemItems.map(item=>(
         
-        <a href='/#' className='menu-item' style={{backgroundColor:item.bgColor}} >
+        <a href='/#' className={ `menu-item ${item.header}` } style={{backgroundColor:item.bgColor}} >
           
           <div className='front' style={{display:'flex',flexDirection:'column'}}>
           <span> {item.header} </span>

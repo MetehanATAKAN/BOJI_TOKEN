@@ -9,7 +9,8 @@
 // 	max-width: 100%;
 // 	height: auto;
 // }
-ul,ol {
+ul,
+ol {
 	list-style-type: none;
 }
 
@@ -21,141 +22,201 @@ body {
 
 
 .page-title {
-	margin:17px auto;
+	margin: 17px auto;
 	text-align: center;
-	color:#fff;
+	color: #fff;
 	font-size: 17px;
 }
+
 .page-title h1 {
-	font-size:40px;
+	font-size: 40px;
 	line-height: 1;
 }
-.page-title a{
-	color:#ff7777;
+
+.page-title a {
+	color: #ff7777;
 	text-decoration: none;
 }
-.page-title a:hover{
+
+.page-title a:hover {
 	text-decoration: underline;
 	color: #ff3333;
 }
 
 .circle-menu-box {
-	width:600px;
+	width: 600px;
 	height: 600px;
 	position: relative;
-	margin:30px auto;
+	margin: 30px auto;
+
 	a {
 
 		transition: transform 0.4s;
 		transform-style: preserve-3d;
+
 		&:hover {
 			background-color: rgb(56, 52, 52) !important;
-			transform:  scale(2.5) rotateY(180deg) ;
+			transform: scale(2.5) rotateY(180deg);
+
 			@media (max-width:692px) {
 				background-color: rgb(56, 52, 52) !important;
-				transform:  scale(1.8) rotateY(180deg) ;
+				transform: scale(1.8) rotateY(180deg);
 			}
 		}
-		
+
 	}
 
-	.back, .front{
-	
-	
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+	.back,
+	.front {
+
+
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 	}
 
 	.front {
-		
+
 		color: white;
 		font-size: 12px;
 		margin-bottom: 5px;
 
 		@media (max-width:506px) {
-			font-size: 8px ;
-		  }
-	  }
-	  
+			font-size: 8px;
+		}
+	}
+
 	.back {
-		position:absolute;
+		position: absolute;
 		// background-color: #000000;
 		color: white;
 		transform: rotateY(180deg);
 		height: 100%;
-    font-size: 5px;
-    left: 0;
-    top: 30%;
-	  }
+		font-size: 5px;
+		left: 0;
+		top: 30%;
+	}
 
-	  @media (max-width:692px) {
-		width:500px;
+	.TOKEN {
+		&:hover {
+			background-color: #E88DA4 !important;
+			color: white !important;
+		}
+	}
+	.Wallet {
+		&:hover {
+			background-color: #EFB42D !important;
+			color: white !important;
+		}
+	}
+	.NFT {
+		&:hover {
+			background-color: #99BF55 !important;
+			color: white !important;
+		}
+	}
+	.Bojify {
+		&:hover {
+			background-color: #6FC7EA !important;
+			color: white !important;
+		}
+	}
+	.Charity {
+		&:hover {
+			background-color: #4426BE !important;
+			color: white !important;
+		}
+	}
+	.Earn {
+		&:hover {
+			background-color: #5500B5 !important;
+			color: white !important;
+		}
+	}
+	.v2 {
+		&:hover {
+			background-color: #A28BEE !important;
+			color: white !important;
+		}
+	}
+	.shop {
+		&:hover {
+			background-color: #DB415E !important;
+			color: white !important;
+		}
+	}
+
+	@media (max-width:692px) {
+		width: 500px;
 		height: 500px;
 		position: relative;
 		margin: 0 0 20px 5px;
-	  }
-	  @media (max-width:506px) {
-		width:350px;
+	}
+
+	@media (max-width:506px) {
+		width: 350px;
 		height: 350px;
 		position: relative;
 		margin: 0 0 20px 30px;
-	  }
-	  @media (max-width:398px) {
-		width:300px;
+	}
+
+	@media (max-width:398px) {
+		width: 300px;
 		height: 300px;
 		position: relative;
 		margin: 0 0 20px 20px;
-	  }
+	}
 }
-	.circle-menu-box a.menu-item {
-		display: block;
-		text-decoration: none;
-		border-radius: 100%;
-		margin:20px;
-		text-align: center;
-		width:130px;
-		height:130px;
-		color:#777;
-		padding:27px;
-		position: absolute;
-		font-size: 27px;
 
-		transition:all 0.5s;
-		-moz-transition:all 0.5s;
-		-webkit-transition:all 0.5s;
-		-o-transition:all 0.5s;
+.circle-menu-box a.menu-item {
+	display: block;
+	text-decoration: none;
+	border-radius: 100%;
+	margin: 20px;
+	text-align: center;
+	width: 130px;
+	height: 130px;
+	color: #777;
+	padding: 27px;
+	position: absolute;
+	font-size: 27px;
 
-		img {
-			margin: auto;
-		}
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
 
-		@media (max-width:692px) {
-			width:100px;
-			height:100px;
-		  }
-
-		  @media (max-width:506px) {
-			width:75px;
-			height:75px;
-		  }
-		  @media (max-width:368px) {
-			width:65px;
-			height:65px;
-		  }
+	img {
+		margin: auto;
 	}
 
-	.circle-menu-box a.menu-item:hover {
-		// transform:scale(4.5);
-		z-index: 1;
-		// width:450px;
-		// height: 100%;
-		// -webkit-transform:scale(1.5);
-		// -moz-transform:scale(1.5);
-		// -o-transform:scale(1.5);
-		color:#fff;
-		background: #ff3333;
+	@media (max-width:692px) {
+		width: 100px;
+		height: 100px;
 	}
 
-	.apexcharts-legend {
-		top: 150px !important;
+	@media (max-width:506px) {
+		width: 75px;
+		height: 75px;
 	}
+
+	@media (max-width:368px) {
+		width: 65px;
+		height: 65px;
+	}
+}
+
+.circle-menu-box a.menu-item:hover {
+	// transform:scale(4.5);
+	z-index: 1;
+	// width:450px;
+	// height: 100%;
+	// -webkit-transform:scale(1.5);
+	// -moz-transform:scale(1.5);
+	// -o-transform:scale(1.5);
+	color: #fff;
+	background: #ff3333;
+}
+
+.apexcharts-legend {
+	top: 150px !important;
+}

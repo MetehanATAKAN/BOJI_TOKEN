@@ -8,7 +8,6 @@ import SectionHeader from './partials/SectionHeader';
 const AsSeenIn = () => {
 
   const [selectLanguage, setSelectLanguage] = useState('');
-  console.log('isSlideHidden', selectLanguage);
 
   const [slideItem] = useState([
     {
@@ -17,12 +16,12 @@ const AsSeenIn = () => {
       imageAlt:'DHA',
       country:'other'
     },
-    {
-      itemHref:'https://www.youtube.com/watch?v=4Jf325QzWIM',
-      itemImage:require('../../assets/images/kanald.png'),
-      imageAlt:'DHA',
-      country:'other'
-    },
+    // {
+    //   itemHref:'https://www.youtube.com/watch?v=4Jf325QzWIM',
+    //   itemImage:require('../../assets/images/kanald.png'),
+    //   imageAlt:'YOUTUBE',
+    //   country:'other'
+    // },
     {
       itemHref:'https://mobile.twitter.com/BojiTr/status/1554428637776060417',
       itemImage:require('../../assets/images/fortune.png'),
@@ -185,20 +184,7 @@ const AsSeenIn = () => {
       extensions={{ AutoScroll }}
     >
       {
-        selectLanguage === 'Turkey'
-        ?slideItem.map((item,index)=>(
-          <SplideSlide key={index}>
-            <a href={item.itemHref} target={'_blank'}  rel="noopener noreferrer" >
-              <Image 
-              src={item.itemImage} 
-              alt={item.imageAlt}
-              width={150}
-              height={150} 
-              />
-            </a>
-          </SplideSlide>
-        ))
-        :slideItem2.map((item,index)=>(
+        slideItem.map((item,index)=>(
           <SplideSlide key={index}>
             <a href={item.itemHref} target={'_blank'}  rel="noopener noreferrer" >
               <Image 

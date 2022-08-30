@@ -102,7 +102,7 @@ const Hero = ({
               </div>
               <div className='contract-adress'>
                 <div >
-                  <select name="adress" id="adress">
+                  <select style={{borderRadius:'100px',outline:'none'}} name="adress" id="adress">
                     <option value="BSC">BSC</option>
 
                   </select>
