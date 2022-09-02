@@ -13,7 +13,7 @@ const NftCollections = () => {
             <SectionHeader data={sectionHeader} className="center-content" />
 
             <Row>
-                <Col sm={12} md={3}>
+                <Col sm={12} md={3} className='nft-main'>
                 <div className='nft-item'>
                     <Image
                         src={require('./../../assets/images/mainBoji.png')}
@@ -22,9 +22,23 @@ const NftCollections = () => {
                         height={300} />
                 </div>
 
-                    <div className='text-center'>metehan</div>
+                    <div 
+                    className='text-center'
+                    style={{
+                        height:'35px',
+                        width:'35px',
+                        margin:'auto',
+                        marginTop:'15px'
+                    }}  
+                    >
+                    <a href='#/' >
+                    <Image
+                        src={require('./../../assets/images/opensea3.png')}
+                        />
+                    </a>
+                    </div>
                 </Col>
-                <Col sm={12} md={3}>
+                <Col sm={12} md={3} className='nft-main'>
                 <div className='nft-item'>
                     <Image
                         src={require('./../../assets/images/mainBoji.png')}
@@ -32,9 +46,23 @@ const NftCollections = () => {
                         width={300}
                         height={300} />
                 </div>
-                <div className='text-center'>metehan</div>
+                <div 
+                    className='text-center'
+                    style={{
+                        height:'35px',
+                        width:'35px',
+                        margin:'auto',
+                        marginTop:'15px'
+                    }}  
+                    >
+                    <a href='#/' >
+                    <Image
+                        src={require('./../../assets/images/opensea3.png')}
+                        />
+                    </a>
+                </div>
                 </Col>
-                <Col sm={12} md={3}>
+                <Col sm={12} md={3} className='nft-main'>
                 <div className='nft-item'>
                     <Image
                         src={require('./../../assets/images/mainBoji.png')}
@@ -42,9 +70,23 @@ const NftCollections = () => {
                         width={300}
                         height={300} />
                 </div>
-                <div className='text-center'>metehan</div>
+                <div 
+                    className='text-center'
+                    style={{
+                        height:'35px',
+                        width:'35px',
+                        margin:'auto',
+                        marginTop:'15px'
+                    }}  
+                    >
+                <a href='#/' >
+                    <Image
+                        src={require('./../../assets/images/opensea3.png')}
+                        />
+                    </a>
+                </div>
                 </Col>
-                <Col sm={12} md={3}>
+                <Col sm={12} md={3} className='nft-main'>
                 <div  className='nft-item'>
                     <Image
                         src={require('./../../assets/images/mainBoji.png')}
@@ -52,7 +94,21 @@ const NftCollections = () => {
                         width={300}
                         height={300} />
                 </div>
-                <div className='text-center'>metehan</div>
+                <div 
+                    className='text-center'
+                    style={{
+                        height:'35px',
+                        width:'35px',
+                        margin:'auto',
+                        marginTop:'15px'
+                    }}  
+                    >
+                <a href='#/' >
+                    <Image
+                        src={require('./../../assets/images/opensea3.png')}
+                        />
+                    </a>
+                </div>
                 </Col>
             </Row>
         </div>

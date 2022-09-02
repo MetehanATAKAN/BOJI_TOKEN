@@ -56,9 +56,9 @@ const Team = () => {
                                 <div className='name'>  {team.name} </div>
                                 <div className='title'> {team.title} </div>
                                 <div className='social'>
-                                    <a href={team.instagram}>
+                                    {/* <a href={team.instagram}>
                                     <i className="fa-brands fa-instagram"></i>
-                                    </a>
+                                    </a> */}
                                     <a href={team.instagram}>
                                     <i class="fa-brands fa-twitter"></i>
                                     </a>

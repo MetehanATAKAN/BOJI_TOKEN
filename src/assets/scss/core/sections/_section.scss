@@ -5,7 +5,8 @@
 }
 
 .section-header {
-	padding-bottom: $section-header--padding__mobile;
+    padding-bottom: 15px !important;
+	// padding-bottom: $section-header--padding__mobile;
 }
 
 @include media( '>medium' ) {

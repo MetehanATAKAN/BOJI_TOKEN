@@ -90,9 +90,9 @@ const Ecosystem = () => {
     {
       ecosystemItems.map(item=>(
         
-        <a href='/#' className={ `menu-item ${item.header}` } style={{backgroundColor:item.bgColor}} >
+        <div href='/#' className={ `menu-item ${item.header}` } style={{backgroundColor:item.bgColor}} >
           
-          <div className='front' style={{display:'flex',flexDirection:'column'}}>
+          <span className='front' style={{display:'flex',flexDirection:'column'}}>
           <span> {item.header} </span>
           <Image
             src={item.imageSrc}
@@ -100,14 +100,14 @@ const Ecosystem = () => {
             width={30}
             height={30}             
           />
-          </div>
+          </span>
 
-          <div className='back'>
+          <span className='back'>
               <p style={{padding:'5px'}}>
                 {t(item.backInfo)}
               </p>
-          </div>
-        </a>
+          </span>
+        </div>
       ))
     }
   

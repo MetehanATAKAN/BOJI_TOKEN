@@ -30,6 +30,14 @@
 		border-radius: 100%;
 		margin-right: 10px;
 	}
+	.price {
+		border: 1px solid grey;
+		border-radius: 5px;
+		color: #FFFFFF;
+		.div {
+			padding: 5px;
+		}
+	}
 }
 .header-nav {
 	flex-grow: 1;
@@ -94,7 +102,7 @@
 	display: none;
 }
 
-@media (max-width:768px) {
+@media (max-width:1200px) {
 	
 
 
@@ -123,6 +131,28 @@
 			.header-nav-inner {
 				flex-direction: column;
 				padding: $header-nav--padding-v__mobile;
+				.header-nav-right {
+					display: flex;
+					flex-direction: column;
+					a {
+						margin-bottom: 15px;
+					}
+				}
+			}
+			.language-switch {
+				text-align: center;
+			}
+
+			.footer-social {
+				margin: auto;
+				.header {
+					display: flex;
+				flex-direction: column;
+					.header-social {
+						border: none;
+						margin: auto;
+					}
+				}
 			}
 
 			ul {

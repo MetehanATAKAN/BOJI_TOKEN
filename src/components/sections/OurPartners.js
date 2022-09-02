@@ -47,8 +47,19 @@ const OurPartners = () => {
         rewind: false,
         speed: 1
       },
+      breakpoints: {
+        992 : {
+          type:'loop',
+          perPage:'3'
+        },
+        772 : {
+          type:'loop',
+          perPage:'2'
+        },
+      }
     }}
     extensions={{ AutoScroll }}
+
   >
 
     {
