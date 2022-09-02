@@ -129,7 +129,7 @@ const Hero = ({
         <Row className='main-row'>
           <Col md={12} lg={6} className='d-flex flex-column justify-content-between' >
             <Bounce left>
-              <h3 className="mt-0 mb-12 " style={{ color: 'black' }}>
+              <h3 className="mt-0 mb-12 " style={{ color: 'black',fontWeight:'500',lineHeight:'1.2' }}>
                {
                 t(
                   'A Decentralized Web3 Token that Envolved into a Boji Ecosystem'
