@@ -19,11 +19,16 @@
 	.nft-main {
 		margin-bottom: 15px;
 	}
+	.text-center {
+		img {
+			width: 35px;
+			height: 35px;
+			margin: auto;
+			margin-top: 15px;
+		}
+	}
 	.nft-item {
 		border: 1px solid;
 		text-align: center;
-		img {
-			margin: auto;
-		}
 	}
 }

@@ -11,6 +11,7 @@ const Ecosystem = () => {
     {
       id:1,
       header:'BOJI TOKEN',
+      class:'BOJI TOKEN',
       imageSrc: require('../../assets/images/BOJI TOKEN.png'),
       imageAlt: 'BOJI TOKEN',
       bgColor: '#E88DA4',
@@ -18,15 +19,17 @@ const Ecosystem = () => {
     },
     {
       id:2,
-      header:'Boji Wallet',
+      header:'Bojilogy',
+      class: 'Boji Wallet',
       imageSrc: require('../../assets/images/SWAP.png'),
       imageAlt: 'SWAP',
       bgColor: '#EFB42D',
-      backInfo:'It is a decentralized platform where BOJI Token holders can buy and sell tokens, stake and have a referral system.'
+      backInfo:'End users will be able to produce content suitable for the "Bojify" theme themselves, and earn tokens as they are read and shown. Payments are made with BojiToken.'
     },
     {
       id:3,
       header:'BojiForce NFT',
+      class:'NFT',
       imageSrc: require('../../assets/images/NFT.png'),
       imageAlt: 'NFT',
       bgColor: '#99BF55',
@@ -34,15 +37,17 @@ const Ecosystem = () => {
     },
     {
       id:4,
-      header:'Bojify',
+      header:'Boji Swap',
+      class:'Bojify',
       imageSrc: require('../../assets/images/BOJILOGY.png'),
       imageAlt: 'BOJILOGY',
       bgColor: '#6FC7EA',
-      backInfo:'End users will be able to produce content suitable for the "Bojify" theme themselves, and earn tokens as they are read and shown. Payments are made with BojiToken.'
+      backInfo:'It is a decentralized platform where BOJI Token holders can buy and sell tokens, stake and have a referral system.'
     },
     {
       id:5,
       header:'Charity',
+      class:'Charity',
       imageSrc: require('../../assets/images/CHARITY(1).png'),
       imageAlt: 'CHARITY',
       bgColor: '#4426BE',
@@ -51,6 +56,7 @@ const Ecosystem = () => {
     {
       id:6,
       header:'Play to Earn',
+      class:'Earn',
       imageSrc: require('../../assets/images/PLAY TO EARN.png'),
       imageAlt: 'PLAY TO EARN',
       bgColor: '#5500B5',
@@ -59,6 +65,7 @@ const Ecosystem = () => {
     {
       id:7,
       header:'Boji v2 NFT',
+      class:'v2',
       imageSrc: require('../../assets/images/V2 NFT.png'),
       imageAlt: 'V2 NFT',
       bgColor: '#A28BEE',
@@ -66,7 +73,8 @@ const Ecosystem = () => {
     },
     {
       id:8,
-      header:'boji.shop shop',
+      header:'BOJIMP',
+      class:'shop',
       imageSrc: require('../../assets/images/BOJI MP.png'),
       imageAlt: 'boji.shop',
       bgColor: '#DB415E',
@@ -90,7 +98,7 @@ const Ecosystem = () => {
     {
       ecosystemItems.map(item=>(
         
-        <div href='/#' className={ `menu-item ${item.header}` } style={{backgroundColor:item.bgColor}} >
+        <div  className={ `menu-item ${item.class}` } style={{backgroundColor:item.bgColor}} >
           
           <span className='front' style={{display:'flex',flexDirection:'column'}}>
           <span> {item.header} </span>
@@ -110,8 +118,15 @@ const Ecosystem = () => {
         </div>
       ))
     }
-  
-  
+   <div className='logo'>
+      <img 
+      src={require('../.././assets/images/mainBoji.png')} 
+      alt="Boji Icon"
+      width={200}
+      height={200}
+      />
+   
+    </div>
   </div>
 </div>
 

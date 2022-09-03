@@ -6,30 +6,30 @@ const Team = () => {
 
     const teamsInfo = [
         {
-            image: require('../../assets/images/team1.png'),
-            name: 'Elomont',
-            title: 'Founder & CEO',
+            image: require('../../assets/images/paw.png'),
+            name: 'Paw ',
+            title: 'Co-Founder & CTO',
             instagram:'https://www.google.com.tr/?hl=tr',
             twitter:'https://www.google.com.tr/?hl=tr'
         },
         {
-            image: require('../../assets/images/team2.png'),
-            name: 'Milltay',
-            title: 'Co-Founder & Brand Director',
+            image: require('../../assets/images/claw.png'),
+            name: 'Claw ',
+            title: 'Co-Founder & COO',
             instagram:'https://www.google.com.tr/?hl=tr',
             twitter:'https://www.google.com.tr/?hl=tr'
         },
         {
-            image: require('../../assets/images/team3.png'),
-            name: 'Shuttlecock',
-            title: 'Operations Director',
+            image: require('../../assets/images/tail.png'),
+            name: 'Tail ',
+            title: 'CMO',
             instagram:'https://www.google.com.tr/?hl=tr',
             twitter:'https://www.google.com.tr/?hl=tr'
         },
         {
-            image: require('../../assets/images/team4.png'),
-            name: 'Bobster',
-            title: 'Communications Director',
+            image: require('../../assets/images/mouth.png'),
+            name: 'Mouth ',
+            title: 'Communication Director',
             instagram:'https://www.google.com.tr/?hl=tr',
             twitter:'https://www.google.com.tr/?hl=tr'
         },
@@ -39,7 +39,7 @@ const Team = () => {
         title: 'TEAM',
       };
     return (
-        <section className='teams'>
+        <section className='teams' id='team'>
             <div className="container">
             <SectionHeader data={sectionHeader} className="center-content" />
                 <Row style={{textAlign:'-webkit-center'}}>

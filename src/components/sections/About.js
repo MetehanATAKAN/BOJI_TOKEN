@@ -5,6 +5,7 @@ import { Row, Col } from 'react-bootstrap';
 import Bounce from 'react-reveal/Bounce';
 import { useTranslation } from 'react-i18next';
 import SectionHeader from './partials/SectionHeader';
+import Price from '../layout/Price';
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -81,7 +82,7 @@ const About = ({
       <div className='container about'>
         <Bounce left>
           <Row>
-            <p className="m-0">
+            <p className="m-0 ">
               {t(
                 'BOJI is an high-tech blockchain platform for advanced smart contract applications that can be used by millions of users. BOJI core functional objective is to bridge two environments: on-chain and offchain. Every element in our ecosystem is enriched with two different architectures designed intertwined with each other. With the On-Chain architecture, every transaction in the ecosystem elements will be displayed transparently, and after each completed transaction, each service in these elements will be able to work in an integrated manner with each other. The core task of the OffChain architecture is to smooth the operation on the blockchain.'
               )}
@@ -94,20 +95,27 @@ const About = ({
           <div className='tech-audit'>
             <Row className='tech-audit-main'>
               <Col sm={4} md={3} >
-                <p className='font-weight-bold fs-6'>Tech-Audit</p>
+                <p className='font-weight-bold fs-6'>Company : Techrate </p>
               </Col>
 
-              <Col sm={4} md={1} >
+              {/* <Col sm={4} md={1} >
                 <div>
                   <i className="fa-solid fa-circle circle"></i>
                 </div>
-              </Col>
+              </Col> */}
 
               <Col sm={4} md={3}  >
-                <div>
+                <div className='d-flex'>
+              
+                <div style={{marginRight:'10px'}}>
                   <p>
-                    On Board
+                    Status : Completed
                   </p>
+                </div>
+                <div>
+                  <i className="fa-solid fa-circle circle"></i>
+                </div>
+
                 </div>
               </Col>
               <Col md={5}>
@@ -133,7 +141,7 @@ const About = ({
         <Row className='mt-3'>
           {
             cards.map((card, index) => (
-              <Col sm={12} md={6} lg={6} xl={3} key={index}>
+              <Col sm={12} md={6} lg={6} xl={3} key={index} className='about-card'>
                 <div className="flip-card m-auto">
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
@@ -155,6 +163,7 @@ const About = ({
           }
         </Row>
       </div>
+      <Price/>
     </section>
   );
 }

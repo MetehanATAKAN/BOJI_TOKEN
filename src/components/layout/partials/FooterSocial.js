@@ -11,16 +11,25 @@ const FooterSocial = ({
     className
   );
 
-  const [bojiPrice, setBojiPrice] = useState();
 
-  console.log(bojiPrice);
-
+  const [ipAdress, setIpAdress] = useState('');
+  const [country, setCountry] = useState('');
+ console.log(country);
   useEffect(() => {
-    fetch('https://api.pancakeswap.info/api/v2/tokens/0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164')
-    .then(response=>response.json())
-    .then(response=>setBojiPrice(response.data.price.slice(0,17)))
+    fetch(`http://ip-api.com/json/${ipAdress}`)
+    .then(response => response.json())
+    .then(result=>setCountry(result.country))
     .catch(error=>console.log(error))
-  }, [])
+   }, [ipAdress])
+   
+   
+ 
+   useEffect(() => {
+     fetch('https://api64.ipify.org?format=json')
+     .then(response=>response.json())
+     .then(response=>setIpAdress(response.ip))
+     .catch(error=>console.log(error))
+   }, [])
   
 
   return (
@@ -54,11 +63,16 @@ const FooterSocial = ({
             </svg>
           </a>
         </div>
-        <div className='price'>
-          <div>
-          {bojiPrice}
-          </div>
-        </div>
+        <a 
+        href={country !== 'Turkey' ? 'https://pitchdeck.boji.finance/Pitchdeck.pdf' : 'https://trpitchdeck.boji.finance/'} 
+        className='pitchdeck' 
+        target={'_blank'}
+        rel="noopener noreferrer"
+        >
+          <span>
+          Pitchdeck
+          </span>
+        </a>
 
         {/* <div className='header-social'>
           <a href="https://google.com/">

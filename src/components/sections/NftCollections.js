@@ -25,12 +25,11 @@ const NftCollections = () => {
                     <div 
                     className='text-center'
                     style={{
-                        height:'35px',
-                        width:'35px',
                         margin:'auto',
                         marginTop:'15px'
                     }}  
                     >
+                        <div>Boji v1</div>
                     <a href='#/' >
                     <Image
                         src={require('./../../assets/images/opensea3.png')}
@@ -49,12 +48,11 @@ const NftCollections = () => {
                 <div 
                     className='text-center'
                     style={{
-                        height:'35px',
-                        width:'35px',
                         margin:'auto',
                         marginTop:'15px'
                     }}  
                     >
+                        <div>BojiForce NFT</div>
                     <a href='#/' >
                     <Image
                         src={require('./../../assets/images/opensea3.png')}
@@ -73,12 +71,11 @@ const NftCollections = () => {
                 <div 
                     className='text-center'
                     style={{
-                        height:'35px',
-                        width:'35px',
                         margin:'auto',
                         marginTop:'15px'
                     }}  
                     >
+                        <div>Boji v2</div>
                 <a href='#/' >
                     <Image
                         src={require('./../../assets/images/opensea3.png')}
@@ -97,12 +94,11 @@ const NftCollections = () => {
                 <div 
                     className='text-center'
                     style={{
-                        height:'35px',
-                        width:'35px',
                         margin:'auto',
                         marginTop:'15px'
                     }}  
                     >
+                         <div>Soon</div>
                 <a href='#/' >
                     <Image
                         src={require('./../../assets/images/opensea3.png')}

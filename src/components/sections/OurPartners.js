@@ -13,20 +13,24 @@ const OurPartners = () => {
 
       const [slideItem] = useState([
         {
-          itemImage:require('../../assets/images/bscscan.svg'),
+          itemImage:require('../../assets/images/our parterns/bscscan.png'),
           imageAlt:'BSCSCAN',
         },
         {
-          itemImage:require('../../assets/images/coinMarketCap.png'),
+          itemImage:require('../../assets/images/our parterns/cmk.png'),
           imageAlt:'COIN MARKET CAP',
         },
         {
-          itemImage:require('../../assets/images/coinGecko.png'),
+          itemImage:require('../../assets/images/our parterns/coingecko.png'),
           imageAlt:'COIN GECKO',
         },
         {
-          itemImage:require('../../assets/images/azbit.png'),
+          itemImage:require('../../assets/images/our parterns/azbit.png'),
           imageAlt:'AZBIT',
+        },
+        {
+          itemImage:require('../../assets/images/our parterns/coinbrain.png'),
+          imageAlt:'COINBRAIN',
         },
       ])
     

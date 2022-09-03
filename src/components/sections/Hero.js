@@ -53,6 +53,7 @@ const Hero = ({
     {
       id:1,
       header:'BOJI TOKEN',
+      class:'BOJI TOKEN',
       imageSrc: require('../../assets/images/BOJI TOKEN.png'),
       imageAlt: 'BOJI TOKEN',
       bgColor: '#E88DA4',
@@ -60,15 +61,17 @@ const Hero = ({
     },
     {
       id:2,
-      header:'Boji Wallet',
+      header:'Bojilogy',
+      class: 'Boji Wallet',
       imageSrc: require('../../assets/images/SWAP.png'),
       imageAlt: 'SWAP',
       bgColor: '#EFB42D',
-      backInfo:'It is a decentralized platform where BOJI Token holders can buy and sell tokens, stake and have a referral system.'
+      backInfo:'End users will be able to produce content suitable for the "Bojify" theme themselves, and earn tokens as they are read and shown. Payments are made with BojiToken.'
     },
     {
       id:3,
       header:'BojiForce NFT',
+      class:'NFT',
       imageSrc: require('../../assets/images/NFT.png'),
       imageAlt: 'NFT',
       bgColor: '#99BF55',
@@ -76,15 +79,17 @@ const Hero = ({
     },
     {
       id:4,
-      header:'Bojify',
+      header:'Boji Swap',
+      class:'Bojify',
       imageSrc: require('../../assets/images/BOJILOGY.png'),
       imageAlt: 'BOJILOGY',
       bgColor: '#6FC7EA',
-      backInfo:'End users will be able to produce content suitable for the "Bojify" theme themselves, and earn tokens as they are read and shown. Payments are made with BojiToken.'
+      backInfo:'It is a decentralized platform where BOJI Token holders can buy and sell tokens, stake and have a referral system.'
     },
     {
       id:5,
       header:'Charity',
+      class:'Charity',
       imageSrc: require('../../assets/images/CHARITY(1).png'),
       imageAlt: 'CHARITY',
       bgColor: '#4426BE',
@@ -93,6 +98,7 @@ const Hero = ({
     {
       id:6,
       header:'Play to Earn',
+      class:'Earn',
       imageSrc: require('../../assets/images/PLAY TO EARN.png'),
       imageAlt: 'PLAY TO EARN',
       bgColor: '#5500B5',
@@ -101,6 +107,7 @@ const Hero = ({
     {
       id:7,
       header:'Boji v2 NFT',
+      class:'v2',
       imageSrc: require('../../assets/images/V2 NFT.png'),
       imageAlt: 'V2 NFT',
       bgColor: '#A28BEE',
@@ -108,7 +115,8 @@ const Hero = ({
     },
     {
       id:8,
-      header:'boji.shop shop',
+      header:'BOJIMP',
+      class:'shop',
       imageSrc: require('../../assets/images/BOJI MP.png'),
       imageAlt: 'boji.shop',
       bgColor: '#DB415E',
@@ -129,19 +137,19 @@ const Hero = ({
         <Row className='main-row'>
           <Col md={12} lg={6} className='d-flex flex-column justify-content-between' >
             <Bounce left>
-              <h3 className="mt-0 mb-12 " style={{ color: 'black',fontWeight:'500',lineHeight:'1.2' }}>
+              <h3 className="mt-0 mb-12 " style={{ color: '#FFFFFF',fontWeight:'500',lineHeight:'1.2' }}>
                {
                 t(
                   'A Decentralized Web3 Token that Envolved into a Boji Ecosystem'
                 )
                }
               </h3>
-              <p className="m-0 mb-12">
+              <p  >
                {
                 t('BOJI is an organization that aims to bring all the possibilities offered by Web3 Technology to its community under one roof, using advanced blockchain-based applications. In addition, the BOJI project aims to move civilization forward by connecting real life with digital currencies, using elements such as IoT and VR-based blockchain applications.')
                }
               </p>
-              <div className='button-group' style={{ marginTop: '25px', display: 'flex', justifyContent: 'space-evenly' }}>
+              <div className='button-group' style={{ display: 'flex', justifyContent: 'space-evenly' }}>
 
                 <button class="blob-btn">
                   {t('Buy Now')}
@@ -194,7 +202,7 @@ const Hero = ({
     {
       ecosystemItems.map(item=>(
         
-        <div  className={ `menu-item ${item.header}` } style={{backgroundColor:item.bgColor}} >
+        <div  className={ `menu-item ${item.class}` } style={{backgroundColor:item.bgColor}} >
           
           <span className='front' style={{display:'flex',flexDirection:'column'}}>
           <span> {item.header} </span>
@@ -219,11 +227,7 @@ const Hero = ({
       src={require('../.././assets/images/mainBoji.png')} 
       alt="Boji Icon"
       />
-    {/* <Image
-                src={require('../.././assets/images/mainBoji.png')}
-                alt="Boji Icon"
-                width={400}
-                height={300} /> */}
+   
     </div>
   
   
@@ -236,10 +240,10 @@ const Hero = ({
                 height={300} /> */}
 
                     <div className='coin-market d-flex justify-content-evenly'>
-                      <div className='coin-button'>
+                      <div className='coin-button coinmarketcap'>
                         <a href='#/'>
                         <Image
-                src={require('../.././assets/images/coinMarketCap.png')}
+                src={require('../.././assets/images/coinMarketCap3.png')}
                 alt="Coin Gecko"
                 width={150}
                 height={100} />

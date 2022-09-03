@@ -88,7 +88,7 @@ const WhyCoin = ({
                 <div className="split-item">
                   <div 
                     >
-                      <img className='m-auto mb-4' alt='img-12'  style={{width:'500px'}} src={require('../../assets/images/kishu.png')}></img>
+                      <img className='m-auto mb-4' alt='img-12'  style={{width:'500px'}} src={require('../../assets/images/faq.png')}></img>
                   </div>
                   
                     <div className='split-item-info'>
@@ -107,7 +107,7 @@ const WhyCoin = ({
                 <div className="split-item">
                   <div>
                    
-                      <img className='m-auto mb-4' style={{width:'500px'}} alt='img-13' src={require('./../../assets/images/kishu.png')}></img>
+                      <img className='m-auto mb-4' style={{width:'500px'}} alt='img-13' src={require('./../../assets/images/faq.png')}></img>
                   </div>
                   
                    

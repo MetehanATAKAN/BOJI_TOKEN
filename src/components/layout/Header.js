@@ -126,18 +126,18 @@ const Header = ({
   }
 
   const [selectorLink] = useState([
-    {
-      href:'#asSeenIn',
-      name:'As Seen In'
-    },
+    // {
+    //   href:'#asSeenIn',
+    //   name:'As Seen In'
+    // },
     {
       href:'#about',
       name:'About'
     },
-    {
-      href:'#ourpartners',
-      name:'Our Partners'
-    },
+    // {
+    //   href:'#ourpartners',
+    //   name:'Our Partners'
+    // },
     {
       href:'#ecosystem',
       name:'Ecosystem'
@@ -150,14 +150,14 @@ const Header = ({
       href:'#roadmap',
       name:'Roadmap'
     },
-    // {
-    //   href:'#tokendistribution',
-    //   name:'Token Distribution'
-    // },
-    // {
-    //   href:'#team',
-    //   name:'Team'
-    // },
+    {
+      href:'#tokendistribution',
+      name:'Token Distribution'
+    },
+    {
+      href:'#team',
+      name:'Team'
+    },
     // {
     //   href:'#media',
     //   name:'Media'

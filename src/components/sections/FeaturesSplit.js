@@ -1,4 +1,4 @@
-import React from 'react';
+import React , { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
@@ -42,6 +42,29 @@ const FeaturesSplit = ({
     title: 'TOKENOMICS',
   };
 
+  const [marketcap, setMarketcap] = useState();
+  
+  const [data,] = useState({
+    "56": [
+     '0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164'
+    ]
+   });
+   
+
+  useEffect(() => {
+   fetch('https://api.coinbrain.com/public/coin-info',{
+    method: 'POST',
+    headers:{
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data)
+   })
+   .then(response=>response.json())
+   .then(response=>setMarketcap(response[0].marketCapUsd.toString().slice(0,9)))
+   .catch(error=>console.log(error))
+  }, [data])
+  
+
   return (
     <section
       {...props}
@@ -53,10 +76,10 @@ const FeaturesSplit = ({
         <Row className='info'>
           <Col sm={12} md={4} className='mb-4'>
             <Image
-              src={require('./../../assets/images/mainBoji.png')}
-              alt="Features split 02"
-              width={300}
-              height={300} />
+              src={require('./../../assets/images/loco.png')}
+              alt="Loco"
+              width={400}
+              height={400} />
           </Col>
 
           <Col sm={12} md={8} className='m-auto'>
@@ -67,10 +90,13 @@ const FeaturesSplit = ({
               <span>Contract: 0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164</span>
             </p>
             <p>
-              <span>Decimal: 7</span>
+              <span>Decimal: 9</span>
             </p>
             <p>
               <span>Total Supply: 700 Trillion</span>
+            </p>
+            <p>
+              <span>MarketCap: ${marketcap} </span>
             </p>
           </Col>
         </Row>
@@ -81,12 +107,12 @@ const FeaturesSplit = ({
             <p>Holders Rewards Distribution</p>
           </Col>
           <Col sm={12} md={3} className='mb-3'>
-            <p className='percent'>3%</p>
-            <p>Liquidity Fee</p>
+            <p className='percent'>2%</p>
+            <p>Charity Fee</p>
           </Col>
           <Col sm={12} md={3} className='mb-3'>
-            <p className='percent'>4%</p>
-            <p>Marketing Fee</p>
+            <p className='percent'>3%</p>
+            <p>Liquidity Fee</p>
           </Col>
           <Col sm={12} md={3} className='mb-3'>
             <p className='percent'>4%</p>

@@ -33,10 +33,18 @@
 	}
 
 	.coin-market {
+		margin-left: 140px;
+		@media (max-width:992px) {
+			margin: 0 !important;
+		}
+		@media (min-width:1400px) {
+			margin: 0 !important;
+		}
 		.coin-button {
 			// border: 1px solid;
 			border-radius: 15px;
-			background: rgba(255, 255, 255, 0.2);
+			background-color: #FFFFFF;
+			// background: rgba(255, 255, 255, 0.2);
 			border-radius: 100px;
 			margin-top: 20px;
 			img {
@@ -45,6 +53,12 @@
 			@media (min-width:1400px) {
 				margin-top: 0px;
 			}
+		}
+	}
+
+	.coinmarketcap {
+		img {
+			padding-top: 11px !important;
 		}
 	}
 }

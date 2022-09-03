@@ -42,42 +42,56 @@ const Media = () => {
       >
         <SwiperSlide>
         <Image
-                    src={require('../.././assets/images/team1.png')}
+                    src={require('../.././assets/images/media/media1.png')}
                     alt="Boji Icon"
                     width={100}
                     height={600} />
         </SwiperSlide>
         <SwiperSlide>
         <Image
-                    src={require('../.././assets/images/team1.png')}
+                    src={require('../.././assets/images/media/media2.png')}
                     alt="Boji Icon"
                     width={100}
                     height={350} />
         </SwiperSlide>
         <SwiperSlide>
         <Image
-                    src={require('../.././assets/images/team1.png')}
+                    src={require('../.././assets/images/media/media3.png')}
                     alt="Boji Icon"
                     width={100}
                     height={350} />
         </SwiperSlide>
         <SwiperSlide>
         <Image
-                    src={require('../.././assets/images/team1.png')}
+                    src={require('../.././assets/images/media/media4.png')}
                     alt="Boji Icon"
                     width={100}
                     height={350} />
         </SwiperSlide>
         <SwiperSlide>
         <Image
-                    src={require('../.././assets/images/team1.png')}
+                    src={require('../.././assets/images/media/media5.png')}
                     alt="Boji Icon"
                     width={100}
                     height={350} />
         </SwiperSlide>
         <SwiperSlide>
         <Image
-                    src={require('../.././assets/images/team1.png')}
+                    src={require('../.././assets/images/media/media6.png')}
+                    alt="Boji Icon"
+                    width={100}
+                    height={350} />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image
+                    src={require('../.././assets/images/media/media8.png')}
+                    alt="Boji Icon"
+                    width={100}
+                    height={350} />
+        </SwiperSlide>
+        <SwiperSlide>
+        <Image
+                    src={require('../.././assets/images/media/media9.png')}
                     alt="Boji Icon"
                     width={100}
                     height={350} />
