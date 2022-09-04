@@ -58,7 +58,7 @@ const WhyCoin = ({
     title: 'FAQ',
   };
 
-  const [question, setQuestion] = useState([
+  const [question] = useState([
     {
       question:'How does the Auto staking reward system work? Where do I get the rewards?',
       answer:'For every transaction in the BOJI network 1% fee is being distributed to the existing holders. That means you earn Boji Token (BOJI) just by holding it in your wallet. Watch your Boji Token (BOJI) grows in every transaction!'

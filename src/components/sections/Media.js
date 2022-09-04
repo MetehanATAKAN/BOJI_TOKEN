@@ -100,7 +100,7 @@ const Media = () => {
         
       </Swiper>
 
-      {/* <Video/> */}
+      <Video/>
     </div>
   )
 }
