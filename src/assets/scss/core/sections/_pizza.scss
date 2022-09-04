@@ -1,37 +1,3 @@
-// ul,
-// ol {
-// 	list-style-type: none;
-// }
-
-// body {
-// 	background-color: #0273c7;
-// 	font-family: 'cambria', sans-serif;
-// }
-
-
-
-// .page-title {
-// 	margin: 17px auto;
-// 	text-align: center;
-// 	color: #fff;
-// 	font-size: 17px;
-// }
-
-// .page-title h1 {
-// 	font-size: 40px;
-// 	line-height: 1;
-// }
-
-// .page-title a {
-// 	color: #ff7777;
-// 	text-decoration: none;
-// }
-
-// .page-title a:hover {
-// 	text-decoration: underline;
-// 	color: #ff3333;
-// }
-
 .circle-menu-box {
 	width: 600px;
 	height: 600px;
@@ -121,7 +87,7 @@
 		font-size: 5px;
 		left: 0;
 		top: 30%;
-		-webkit-tap-highlight-color: #FFFFFF;
+		-webkit-text-fill-color: #FFFFFF !important;
 	}
 
 	.TOKEN {
@@ -384,7 +350,7 @@
 		font-size: 8px;
 		left: 0;
 		top: 30%;
-		-webkit-tap-highlight-color: #FFFFFF;
+		-webkit-text-fill-color: #FFFFFF !important;
 	}
 
 	.TOKEN {
@@ -404,6 +370,9 @@
 		&:hover {
 			background-color: #EFB42D !important;
 			color: white !important;
+		}
+		.back {
+			font-size: 6px !important;
 		}
 	}
 
@@ -493,20 +462,6 @@
 		position: relative;
 		margin: 0 0 20px 5px;
 	}
-
-	// @media (max-width:506px) {
-	// 	width: 350px;
-	// 	height: 350px;
-	// 	position: relative;
-	// 	margin: 0 0 20px 30px;
-	// }
-
-	// @media (max-width:398px) {
-	// 	width: 300px;
-	// 	height: 300px;
-	// 	position: relative;
-	// 	margin: 0 0 20px 20px;
-	// }
 }
 
 .hero-menu-box .menu-item,

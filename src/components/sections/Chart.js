@@ -20,7 +20,7 @@ const Chart2 = () => {
           type='pie'
           width={900}
           height={550}
-          series={[67,7.5,10,10.2,5]}
+          series={[67.3,7.5,10,10.2,5]}
           options={{
             labels:['Public','Events','Team','Burn','Marketing'],
             legend:{fontSize:'22px',itemMargin:{horizontal:10,vertical:5}},
