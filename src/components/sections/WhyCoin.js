@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 import { Pagination,Autoplay } from "swiper";
+import { Row, Col } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -27,6 +29,8 @@ const WhyCoin = ({
   imageFill,
   ...props
 }) => {
+
+  const { t } = useTranslation();
 
   const outerClasses = classNames(
     'features-split section',
@@ -53,6 +57,21 @@ const WhyCoin = ({
   const sectionHeader = {
     title: 'FAQ',
   };
+
+  const [question, setQuestion] = useState([
+    {
+      question:'How does the Auto staking reward system work? Where do I get the rewards?',
+      answer:'For every transaction in the BOJI network 1% fee is being distributed to the existing holders. That means you earn Boji Token (BOJI) just by holding it in your wallet. Watch your Boji Token (BOJI) grows in every transaction!'
+    },
+    {
+      question:'What is Charity Fee?',
+      answer:'2% of every transaction fees donate to charity for increasing the conditions of animals.'
+    },
+    {
+      question:'Where can I buy $BOJI?',
+      answer:'Currently $BOJI is listed on PancakeSwap and Azbit.'
+    }
+  ])
 
   return (
     <section
@@ -83,45 +102,41 @@ const WhyCoin = ({
                 pauseOnMouseEnter:true,
               }}
             >
-
-              <SwiperSlide>
-                <div className="split-item">
-                  <div 
-                    >
-                      <img className='m-auto mb-4' alt='img-12'  style={{width:'500px'}} src={require('../../assets/images/faq.png')}></img>
-                  </div>
-                  
-                    <div className='split-item-info'>
-                      <h3 className="mt-0 mb-12">
-                        Instant Usage Rewards
-                      </h3>
-                      <p className="m-0">
-                        For every active user transaction a 2% KISHU reward is granted to holders'; decentralized wallets only, fostering a healthy distributed network and community usage. The more KISHU is actively used, the more rewards are granted!
-                      </p>
+              {
+                question.map(item=>(
+                  <SwiperSlide>
+                    <Row className='mt-5'>
+                      <Col sm={5}>
+                      <img className='m-auto mb-4' alt='img-12'   src={require('../../assets/images/faq.png')}></img>
+                      </Col>
+                      <Col sm={7} className='m-auto'>
+                      <h5 className="mt-0 mb-12">
+                          <span style={{color:'red'}}>{t('Question')}: </span>{t(item.question)}
+                        </h5>
+                        <p className="m-0">
+                         <span style={{color:'green'}}>{t('Answer')}: </span>{t(item.answer)}
+                        </p>
+                      </Col>
+                    </Row>
+                  {/* <div className="split-item">
+                    <div 
+                      >
+                        <img className='m-auto mb-4' alt='img-12'  style={{width:'500px'}} src={require('../../assets/images/faq.png')}></img>
                     </div>
-                  
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div className="split-item">
-                  <div>
-                   
-                      <img className='m-auto mb-4' style={{width:'500px'}} alt='img-13' src={require('./../../assets/images/faq.png')}></img>
-                  </div>
-                  
-                   
-                    <div className='split-item-info'>
-                      <h3 className="mt-0 mb-12">
-                        Community Powered
-                      </h3>
-                      <p className="m-0">
-                        BOJI is fully decentralized and owned by its fun, vibrant community. Our enthusiast volunteers welcome and embrace diverse perspectives to build KISHU into the best community in crypto.
-                      </p>
-                    </div>
-                  
-                </div>
-              </SwiperSlide>
+                    
+                      <div className='split-item-info'>
+                        <h3 className="mt-0 mb-12">
+                          <span style={{color:'red'}}>Question: </span>{item.question}
+                        </h3>
+                        <p className="m-0">
+                         <span style={{color:'green'}}>Answer: </span>{item.answer}
+                        </p>
+                      </div>
+                    
+                  </div> */}
+                </SwiperSlide>
+                ))
+              }
             </Swiper>
 
           </div>

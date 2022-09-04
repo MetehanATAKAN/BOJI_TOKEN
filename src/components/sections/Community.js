@@ -1,9 +1,12 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
+import { useTranslation } from 'react-i18next'
 import Image from '../elements/Image'
 import SectionHeader from './partials/SectionHeader'
 
 const Community = () => {
+
+    const { t } = useTranslation();
 
     const community = [
         {
@@ -30,7 +33,7 @@ const Community = () => {
     return (
         <div className='container' style={{maxWidth:'900px'}}>
              <SectionHeader data={sectionHeader} className="center-content" />
-             <p style={{textAlign:'center'}}>Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate BOJI information.</p>
+             <p style={{textAlign:'center'}}>{t('Our community grows stronger every day. Please follow our social platforms to get the most up-to-date, accurate BOJI information.')}</p>
             <Row style={{textAlign:'-webkit-center'}}>
                 {
                     community.map(community => (

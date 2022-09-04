@@ -7,6 +7,7 @@ import "swiper/modules/pagination/pagination.min.css";
 // import required modules
 import { Pagination } from "swiper";
 import SectionHeader from './partials/SectionHeader';
+import Video from './Video';
 
 const Media = () => {
   
@@ -98,6 +99,8 @@ const Media = () => {
         </SwiperSlide>
         
       </Swiper>
+
+      {/* <Video/> */}
     </div>
   )
 }

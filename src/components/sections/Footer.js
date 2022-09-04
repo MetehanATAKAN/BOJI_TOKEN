@@ -10,18 +10,20 @@ const Footer = () => {
         <Row className='text-center'>
             <Col sm={12} md={3} xl={3}>
             <div className='mb-4'>
-            <Image
+            {/* <Image
                 src={require('../.././assets/images/mainBoji.png')}
                 alt="Boji Token Icon"
                 width={32}
-                height={32} />
+                height={32} /> */}
+                Boji TOKEN
             </div>
 
             <div>
-                <p className='text-start'>
-                VINU - VinuSwap - Metaverse - Events - NFTs - And more.
-                Join our fast-growing community!
-                </p>
+              <p className='text-start'>
+                A Bojify Product
+                Token - Web3 - NFTs - Social Impact
+                Play2Earn - Metaverse
+              </p>
             </div>
             </Col>
 

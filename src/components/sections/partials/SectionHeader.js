@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 const propTypes = {
   data: PropTypes.shape({
@@ -31,6 +32,8 @@ const SectionHeader = ({
 
   const Component = tag;
 
+  const { t } = useTranslation();
+
   return (
     <>
       {(data.title || data.paragraph) &&
@@ -45,7 +48,7 @@ const SectionHeader = ({
                 classNames(
                   'mt-0',
                   data.paragraph ? 'mb-16' : 'mb-0'
-                )}>{data.title}</Component>
+                )}>{t(data.title)}</Component>
             }
             {data.paragraph &&
               <p className="m-0">{data.paragraph}</p>

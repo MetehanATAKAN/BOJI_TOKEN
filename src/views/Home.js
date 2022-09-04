@@ -14,6 +14,7 @@ import Ecosystem from '../components/sections/Ecosystem';
 import AsSeenIn from '../components/sections/AsSeenIn';
 import About from '../components/sections/About';
 import OurPartners from '../components/sections/OurPartners';
+import HowToBuy from '../components/sections/HowToBuy';
 
 const Home = () => {
 
@@ -26,6 +27,7 @@ const Home = () => {
       <OurPartners/>
       <Ecosystem/>
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
+      <HowToBuy/>
       <RoadMap/>
       <Chart2/>
       <NftCollections/>

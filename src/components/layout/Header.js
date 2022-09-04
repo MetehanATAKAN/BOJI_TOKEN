@@ -1,10 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
+import {useDispatch} from 'react-redux'
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Logo from './partials/Logo';
 import FooterSocial from './partials/FooterSocial';
 import { useTranslation } from 'react-i18next';
 import Image from '../elements/Image';
+import { changeLanguage } from '../../actions';
+
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -32,6 +35,8 @@ const Header = ({
   ...props
 }) => {
 
+ 
+  const dispatch = useDispatch();
   const [isActive, setIsactive] = useState(false);
   const [isSelectLanguage, setIsSelectLanguage] = useState(localStorage.getItem('language') === 'Turkey' ? false : true);
   
@@ -40,6 +45,7 @@ const Header = ({
   const hamburger = useRef(null);
 
   const {  i18n } = useTranslation();
+  const { t } = useTranslation();
 
 
   useEffect(() => {
@@ -89,16 +95,18 @@ const Header = ({
    .then(result=>{
     if(result.country === 'Turkey'){
       setIsSelectLanguage(false);
+      dispatch(changeLanguage('TURKEY'));
       i18n.changeLanguage('tr');
     }
     else {
       setIsSelectLanguage(true);
+      dispatch(changeLanguage('en'));
       i18n.changeLanguage('en');
     }
     localStorage.setItem('language', result.country);
    })
    .catch(error=>console.log(error))
-  }, [i18n, ipAdress])
+  }, [dispatch, i18n, ipAdress])
   
   
 
@@ -108,36 +116,31 @@ const Header = ({
     .then(response=>setIpAdress(response.ip))
     .catch(error=>console.log(error))
   }, [])
+
+  
   
   
 
   const changeLanguage2 = (lng) => {
     setIsSelectLanguage(!isSelectLanguage);
-    console.log(isSelectLanguage);
-
+    
     if (isSelectLanguage === true) {
+      dispatch(changeLanguage('TURKEY'));
       localStorage.setItem('language', 'tr');
       i18n.changeLanguage('tr');
     }
     else {
+      dispatch(changeLanguage('en'));
       localStorage.setItem('language', 'en');
       i18n.changeLanguage('en');
     }
   }
 
   const [selectorLink] = useState([
-    // {
-    //   href:'#asSeenIn',
-    //   name:'As Seen In'
-    // },
     {
       href:'#about',
       name:'About'
     },
-    // {
-    //   href:'#ourpartners',
-    //   name:'Our Partners'
-    // },
     {
       href:'#ecosystem',
       name:'Ecosystem'
@@ -158,18 +161,6 @@ const Header = ({
       href:'#team',
       name:'Team'
     },
-    // {
-    //   href:'#media',
-    //   name:'Media'
-    // },
-    // {
-    //   href:'#community',
-    //   name:'Community'
-    // },
-    // {
-    //   href:'#faq',
-    //   name:'FAQ'
-    // },
   ])
 
   return (
@@ -212,7 +203,7 @@ const Header = ({
 
                       {
                         selectorLink.map((itemm,index)=>(
-                          <a href={itemm.href} key={index}>{itemm.name}</a>
+                          <a href={itemm.href} key={index}>{t(itemm.name)}</a>
                         ))
                       }
 

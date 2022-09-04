@@ -42,7 +42,9 @@ const FeaturesSplit = ({
     title: 'TOKENOMICS',
   };
 
-  const [marketcap, setMarketcap] = useState();
+  const [marketcap, setMarketcap] = useState('');
+
+  console.log(marketcap);
   
   const [data,] = useState({
     "56": [
@@ -60,7 +62,7 @@ const FeaturesSplit = ({
     body: JSON.stringify(data)
    })
    .then(response=>response.json())
-   .then(response=>setMarketcap(response[0].marketCapUsd.toString().slice(0,9)))
+   .then(response=>setMarketcap(response[0].marketCapUsd.toString().slice(0,6)))
    .catch(error=>console.log(error))
   }, [data])
   
@@ -96,7 +98,7 @@ const FeaturesSplit = ({
               <span>Total Supply: 700 Trillion</span>
             </p>
             <p>
-              <span>MarketCap: ${marketcap} </span>
+              <span>MarketCap: ${`${marketcap?.slice(0,3)},${marketcap?.slice(3,6)}`} </span>
             </p>
           </Col>
         </Row>

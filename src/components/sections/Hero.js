@@ -62,11 +62,11 @@ const Hero = ({
     {
       id:2,
       header:'Bojilogy',
-      class: 'Boji Wallet',
+      class: 'Bojilogy',
       imageSrc: require('../../assets/images/SWAP.png'),
       imageAlt: 'SWAP',
       bgColor: '#EFB42D',
-      backInfo:'End users will be able to produce content suitable for the "Bojify" theme themselves, and earn tokens as they are read and shown. Payments are made with BojiToken.'
+      backInfo:'End users will be able to produce content suitable for the Bojilogy theme themselves, and earn tokens as they are read and shown. Payments are made with BojiToken.'
     },
     {
       id:3,
@@ -80,7 +80,7 @@ const Hero = ({
     {
       id:4,
       header:'Boji Swap',
-      class:'Bojify',
+      class:'Boji Swap',
       imageSrc: require('../../assets/images/BOJILOGY.png'),
       imageAlt: 'BOJILOGY',
       bgColor: '#6FC7EA',

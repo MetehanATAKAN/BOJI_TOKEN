@@ -6,28 +6,28 @@ const Team = () => {
 
     const teamsInfo = [
         {
-            image: require('../../assets/images/paw.png'),
+            image: require('../../assets/images/team/paw.png'),
             name: 'Paw ',
             title: 'Co-Founder & CTO',
             instagram:'https://www.google.com.tr/?hl=tr',
             twitter:'https://www.google.com.tr/?hl=tr'
         },
         {
-            image: require('../../assets/images/claw.png'),
+            image: require('../../assets/images/team/claw.png'),
             name: 'Claw ',
             title: 'Co-Founder & COO',
             instagram:'https://www.google.com.tr/?hl=tr',
             twitter:'https://www.google.com.tr/?hl=tr'
         },
         {
-            image: require('../../assets/images/tail.png'),
+            image: require('../../assets/images/team/tail.png'),
             name: 'Tail ',
             title: 'CMO',
             instagram:'https://www.google.com.tr/?hl=tr',
             twitter:'https://www.google.com.tr/?hl=tr'
         },
         {
-            image: require('../../assets/images/mouth.png'),
+            image: require('../../assets/images/team/mouth.png'),
             name: 'Mouth ',
             title: 'Communication Director',
             instagram:'https://www.google.com.tr/?hl=tr',
@@ -38,6 +38,7 @@ const Team = () => {
     const sectionHeader = {
         title: 'TEAM',
       };
+      
     return (
         <section className='teams' id='team'>
             <div className="container">
