@@ -9,12 +9,17 @@
 		transform-style: preserve-3d;
 
 		&:hover {
-			background-color: rgb(56, 52, 52) !important;
 			transform: scale(2.5) rotateY(180deg);
-
+			z-index: 1 !important;
+			-webkit-transform:scale(2.5) rotateY(180deg);
+			-moz-transform:scale(2.5) rotateY(180deg);
+			-o-transform:scale(2.5) rotateY(180deg);
 			@media (max-width:692px) {
 				background-color: rgb(56, 52, 52) !important;
 				transform: scale(1.8) rotateY(180deg);
+				-webkit-transform:scale(1.8) rotateY(180deg);
+				-moz-transform:scale(1.8) rotateY(180deg);
+				-o-transform:scale(1.8) rotateY(180deg);
 			}
 		}
 
@@ -231,17 +236,17 @@
 	}
 }
 
-.circle-menu-box div.menu-item:hover {
-	// transform:scale(4.5);
-	z-index: 1;
-	// width:450px;
-	// height: 100%;
-	// -webkit-transform:scale(1.5);
-	// -moz-transform:scale(1.5);
-	// -o-transform:scale(1.5);
-	color: #fff;
-	background: #ff3333;
-}
+// .circle-menu-box div.menu-item:hover {
+// 	transform:scale(4.5);
+// 	z-index: 1;
+// 	width:450px;
+// 	height: 100%;
+// 	-webkit-transform:scale(1.5);
+// 	-moz-transform:scale(1.5);
+// 	-o-transform:scale(1.5);
+// 	color: #fff;
+// 	background: #ff3333;
+// }
 
 .apexcharts-legend {
 	top: 150px !important;
@@ -267,10 +272,16 @@
 		&:hover {
 			background-color: rgb(56, 52, 52) !important;
 			transform: scale(1.8) rotateY(180deg);
-
+			z-index: 1 !important;
+			-webkit-transform:scale(1.8) rotateY(180deg);
+			-moz-transform:scale(1.8) rotateY(180deg);
+			-o-transform:scale(1.8) rotateY(180deg);
 			@media (max-width:692px) {
 				background-color: rgb(56, 52, 52) !important;
 				transform: scale(1.8) rotateY(180deg);
+				-webkit-transform:scale(1.8) rotateY(180deg);
+				-moz-transform:scale(1.8) rotateY(180deg);
+				-o-transform:scale(1.8) rotateY(180deg);
 			}
 		}
 
@@ -511,14 +522,14 @@
 	// }
 }
 
-.hero-menu-box div.menu-item:hover {
-	// transform:scale(4.5);
-	z-index: 1;
-	// width:450px;
-	// height: 100%;
-	// -webkit-transform:scale(1.5);
-	// -moz-transform:scale(1.5);
-	// -o-transform:scale(1.5);
-	color: #fff;
-	background: #ff3333;
-}
+// .hero-menu-box div.menu-item:hover {
+// 	transform:scale(4.5);
+// 	z-index: 1;
+// 	width:450px;
+// 	height: 100%;
+// 	-webkit-transform:scale(1.5);
+// 	-moz-transform:scale(1.5);
+// 	-o-transform:scale(1.5);
+// 	color: #fff;
+// 	background: #ff3333;
+// }
