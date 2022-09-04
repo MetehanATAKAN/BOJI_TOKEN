@@ -10,7 +10,7 @@
 
 		&:hover {
 			transform: scale(2.5) rotateY(180deg);
-			z-index: 1 !important;
+			z-index: 9998 !important;
 			-webkit-transform:scale(2.5) rotateY(180deg);
 			-moz-transform:scale(2.5) rotateY(180deg);
 			-o-transform:scale(2.5) rotateY(180deg);
@@ -272,7 +272,7 @@
 		&:hover {
 			background-color: rgb(56, 52, 52) !important;
 			transform: scale(1.8) rotateY(180deg);
-			z-index: 1 !important;
+			z-index: 9998 !important;
 			-webkit-transform:scale(1.8) rotateY(180deg);
 			-moz-transform:scale(1.8) rotateY(180deg);
 			-o-transform:scale(1.8) rotateY(180deg);
