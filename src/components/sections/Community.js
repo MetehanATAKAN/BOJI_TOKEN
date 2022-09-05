@@ -1,5 +1,4 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap'
 import { useTranslation } from 'react-i18next'
 import Image from '../elements/Image'
 import SectionHeader from './partials/SectionHeader'
