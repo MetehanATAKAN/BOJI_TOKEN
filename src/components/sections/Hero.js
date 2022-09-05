@@ -198,41 +198,35 @@ const Hero = ({
 
           <Col md={12} lg={6} className='d-flex flex-column justify-content-between' >
             <Bounce right>
-            <div className="hero-menu-box">
-    {
-      ecosystemItems.map(item=>(
-        
-        <div  className={ `menu-item ${item.class}` } style={{backgroundColor:item.bgColor}} >
-          
-          <span className='front' style={{display:'flex',flexDirection:'column'}}>
-          <span> {item.header} </span>
-          <Image
+            <div className='box2'>
+          {
+            ecosystemItems.map(item=>(
+              <div className={`menu-item ${item.class}`} style={{backgroundColor:item.bgColor}}>
+              <div className='front'>
+                <span>{item.header}</span>
+                <Image
             src={item.imageSrc}
             alt={item.imageAlt}
             width={30}
             height={30}             
           />
-          </span>
-
-          <span className='back'>
-              <p style={{padding:'5px'}}>
-                {t(item.backInfo)}
-              </p>
-          </span>
-        </div>
-      ))
-    }
-    <div className='logo'>
+              </div>
+              <div className='back'>
+              {t(item.backInfo)}
+              </div>
+            </div>
+            ))
+          }
+          <div className='logo'>
       <img 
       src={require('../.././assets/images/mainBoji.png')} 
       alt="Boji Icon"
+      width={200}
+      height={200}
       />
    
     </div>
-  
-  
-  </div>
-
+        </div>
               {/* <Image
                 src={require('../.././assets/images/mainBoji.png')}
                 alt="Boji Icon"

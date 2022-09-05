@@ -663,18 +663,16 @@
 	}
 
 	.front {
-		display: block;
+		display: flex ;
+		flex-direction: column;
+		margin-top: 10px;
 		span {
 			font-size: 12px;
-
+			margin-bottom: 4px !important;
 			@media (max-width:610px) {
 				font-size: 7px;
 				margin-bottom: 4px;
 			}
-			// @media (max-width:610px) {
-			// 	font-size: 7px;
-		
-			// }
 		}
 
 		img {
@@ -686,7 +684,10 @@
 		@media (max-width:610px) {
 			display: flex;
 			flex-direction: column;
+			margin: 0;
 		}
+
+		
 
 		@media (max-width:445px) {
 			position: absolute;
@@ -868,4 +869,287 @@
 	}
 	
 }
+
+/**********************  box 2 */
+
+
+.box2 {
+
+	width: 600px;
+	height: 600px;
+	position: relative;
+	margin: 0 auto 30px auto;
+	@media (max-width:768px) {
+		width: 400px !important;
+		height: 400px !important;
+	}
+	@media (max-width:445px) {
+		display: none;
+	}
+	// @media (max-width:445px) {
+	// 	width: 375px !important;
+	// 	height: 375px !important;
+	// }
+	// @media (max-width:375px) {
+	// 	width: 300px !important;
+	// 	height: 300px !important;
+	// }
+	.menu-item {
+		&:hover {
+			transform: rotateY(180deg) scale(2.5);
+		-webkit-transform: rotateY(180deg) scale(2.5);
+			z-index: 9999;
+		.front {
+			display: none;
+		}
+		.back {
+			display: block;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+		}
+	}
+
+	
+	}
+
+	.logo {
+		width: 200px;
+		height: 200px;
+		right: 27%;
+		top: 33%;
+		position: absolute;
+
+		&:hover {
+			transform: rotateY(0) !important;
+			background-color: transparent !important;
+		}
+
+		img {
+			width: 170px;
+			max-width: max-content;
+
+			@media (max-width:768px) {
+				width: 110px;
+				
+			}
+			// @media (max-width:506px) {
+			// 	width: 110px;
+			// }
+			// @media (max-width:445px) {
+			// 	width: 95px;
+			// }
+			// @media (max-width:375px) {
+			// 	width: 75px;
+			// }
+		}
+
+		@media (max-width:768px) {
+			right: 14%;
+			
+		}
+	}
+
+	.front {
+		display: flex ;
+		flex-direction: column;
+		margin-top: 10px;
+		span {
+			font-size: 12px;
+			margin-bottom: 4px !important;
+			@media (max-width:768px) {
+				font-size: 7px;
+				margin-bottom: 4px;
+			}
+		}
+
+		img {
+			@media (max-width:445px) {
+				display: none;
+			}
+		}
+
+		@media (max-width:768px) {
+			display: flex;
+			flex-direction: column;
+			margin: 0;
+		}
+
+		
+
+		@media (max-width:445px) {
+			position: absolute;
+			width: 50px;
+			bottom: 30%;
+			right: 10%;
+		}
+	}
+
+		.back {
+			display: none;
+			font-size: 7px !important;
+			position: absolute;
+			height: 100%;
+			top: 35%;
+			left: 0;
+
+			@media (max-width:768px) {
+				font-size: 5px !important;
+				margin-bottom: 4px;
+			}
+		}
+
+
+		.TOKEN {
+			left: 40% !important;
+			top: 5% !important;
+	
+			&:hover {
+				background-color: #E88DA4 !important;
+				color: white !important;
+			}
+		}
+	
+		.Bojilogy {
+			left: 64.7487% !important;
+			top: 15.2513% !important;
+	
+			&:hover {
+				background-color: #EFB42D !important;
+				color: white !important;
+			}
+			.back {
+				font-size: 5.7px !important;
+				@media (max-width:768px) {
+					font-size: 4.7px !important;
+				}
+			}
+		}
+	
+		.NFT {
+			left: 75% !important;
+			top: 40% !important;
+	
+			&:hover {
+				background-color: #99BF55 !important;
+				color: white !important;
+			}
+	
+			.back {
+				font-size: 7px !important;
+				@media (max-width:768px) {
+					font-size: 4px !important;
+				}
+			}
+		}
+	
+		.Swap {
+			left: 64.7487% !important;
+			top: 64.7487% !important;
+	
+			&:hover {
+				background-color: #6FC7EA !important;
+				color: white !important;
+			}
+	
+			.back {
+				font-size: 7px !important;
+				@media (max-width:768px) {
+					font-size: 4px !important;
+				}
+			}
+		}
+	
+		.Charity {
+			left: 40% !important;
+			top: 75% !important;
+	
+			&:hover {
+				background-color: #4426BE !important;
+				color: white !important;
+			}
+		}
+	
+		.Earn {
+			left: 15.2513% !important;
+			top: 64.7487% !important;
+	
+			&:hover {
+				background-color: #5500B5 !important;
+				color: white !important;
+			}
+		}
+	
+		.v2 {
+			left: 5% !important;
+			top: 40% !important;
+	
+			&:hover {
+				background-color: #A28BEE !important;
+				color: white !important;
+			}
+	
+			.back {
+				font-size: 5.6px !important;
+				@media (max-width:768px) {
+					font-size: 4px !important;
+				}
+			}
+		}
+	
+		.shop {
+			left: 15.2513% !important;
+			top: 15.2513% !important;
+	
+			&:hover {
+				background-color: #DB415E !important;
+				color: white !important;
+			}
+		}
+	 div.menu-item {
+		display: block;
+		text-decoration: none;
+		border-radius: 100%;
+		margin: 20px;
+		text-align: center;
+		width: 130px;
+		height: 130px;
+		// color: #777;
+		padding: 27px;
+		position: absolute;
+		font-size: 27px;
+	
+		transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-o-transition: all 0.5s;
+	
+		img {
+			margin: auto;
+		}
+	
+		@media (max-width:768px) {
+			width: 80px;
+			height: 80px;
+		}
+	
+		@media (max-width:506px) {
+			width: 80px;
+			height: 80px;
+		}
+
+		@media (max-width:445px) {
+			width: 65px;
+			height: 65px;
+		}
+	
+		@media (max-width:368px) {
+			width: 65px;
+			height: 65px;
+		}
+	}
+	
+}
+
+
+
 
