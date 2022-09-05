@@ -21,6 +21,12 @@
 				-moz-transform:scale(1.8) rotateY(180deg);
 				-o-transform:scale(1.8) rotateY(180deg);
 			}
+			.front {
+				display: none !important;
+			}
+			.back {
+				display: block;
+			}
 		}
 
 	}
@@ -64,13 +70,11 @@
 		}
 	}
 
-	.back,
-	.front {
-
-
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-	}
+	// .back,
+	// .front {
+	// 	-webkit-backface-visibility: hidden;
+	// 	backface-visibility: hidden;
+	// }
 
 	.front {
 
@@ -78,6 +82,7 @@
 		font-size: 12px;
 		margin-bottom: 5px;
 		margin-top: 15px;
+		display: block;
 		img {
 			margin-top: 5px !important;
 		}
@@ -100,6 +105,7 @@
 		top: 30%;
 		-webkit-text-fill-color: #FFFFFF !important;
 		z-index: 9999 !important;
+		display: none;
 		p {
 			@media (max-width:770px) {
 				font-size: 3px !important;
@@ -301,6 +307,13 @@
 				-moz-transform:scale(1.8) rotateY(180deg);
 				-o-transform:scale(1.8) rotateY(180deg);
 			}
+
+			.front {
+				display: none !important;
+			}
+			.back {
+				display: block;
+			}
 		}
 
 	}
@@ -342,14 +355,14 @@
 		}
 	}
 
-	.back,
-	.front {
+	// .back,
+	// .front {
 
 
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-webkit-tap-highlight-color: #FFFFFF;
-	}
+	// 	-webkit-backface-visibility: hidden;
+	// 	backface-visibility: hidden;
+	// 	-webkit-tap-highlight-color: #FFFFFF;
+	// }
 
 	.front {
 
@@ -357,7 +370,7 @@
 		font-size: 12px;
 		margin-bottom: 5px;
 		margin-top: 15px;
-
+		display: block;
 		img {
 			margin-top: 5px !important;
 		}
@@ -382,7 +395,7 @@
 		top: 30%;
 		-webkit-text-fill-color: #FFFFFF !important;
 		z-index: 9999 !important;
-
+		display: none;
 		p {
 			@media (max-width:770px) {
 				font-size: 5px !important;
@@ -557,3 +570,32 @@
 // 	color: #fff;
 // 	background: #ff3333;
 // }
+
+
+/*************************/
+.box {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: red;
+    color: white;
+    transition: 0.4s;
+}
+
+.box:hover {
+    transform: rotateY(180deg) scale(150%);
+    -webkit-transform: rotateY(180deg) scale(1.5);
+}
+
+.box .front { display: block; }
+.box .back { display: none; }
+
+.box:hover .front { display: none; }
+.box:hover .back { 
+	display: block;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}

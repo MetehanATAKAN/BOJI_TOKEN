@@ -44,7 +44,6 @@ const FeaturesSplit = ({
 
   const [marketcap, setMarketcap] = useState('');
 
-  console.log(marketcap);
   
   const [data,] = useState({
     "56": [

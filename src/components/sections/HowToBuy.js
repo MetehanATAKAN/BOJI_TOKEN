@@ -6,8 +6,6 @@ const HowToBuy = () => {
 
     const country = useSelector(state=>state.langugeSwitch.language);
 
-    console.log(country);
-
     const sectionHeader = {
         title: 'HOW TO BUY',
       };

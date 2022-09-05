@@ -14,7 +14,7 @@ const FooterSocial = ({
 
   const [ipAdress, setIpAdress] = useState('');
   const [country, setCountry] = useState('');
- console.log(country);
+;
   useEffect(() => {
     fetch(`http://ip-api.com/json/${ipAdress}`)
     .then(response => response.json())

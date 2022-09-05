@@ -33,12 +33,15 @@
 	}
 
 	.coin-market {
-		margin-left: 140px;
+		margin-left: 120px;
 		@media (max-width:992px) {
+			margin-left: 40px;
+		}
+		@media (max-width:560px) {
 			margin: 0 !important;
 		}
 		@media (min-width:1400px) {
-			margin: 0 !important;
+			margin-right: 60px;
 		}
 		.coin-button {
 			// border: 1px solid;
