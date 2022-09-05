@@ -235,7 +235,7 @@ const Hero = ({
 
                     <div className='coin-market d-flex justify-content-evenly'>
                       <div className='coin-button coinmarketcap'>
-                        <a href='#/'>
+                        <a href='https://coinmarketcap.com/currencies/boji/'>
                         <Image
                 src={require('../.././assets/images/coinMarketCap3.png')}
                 alt="Coin Gecko"
@@ -245,7 +245,7 @@ const Hero = ({
                       </div>
 
                       <div className='coin-button'>
-                        <a href='#/'>
+                        <a href='https://www.coingecko.com/tr/coins/boji'>
                         <Image
                 src={require('../.././assets/images/coinGecko.png')}
                 alt="Coin Gecko"
