@@ -93,8 +93,28 @@ const Ecosystem = () => {
     <SectionHeader data={sectionHeader} className="center-content" />
     <div id='ecosystem' className="menu-container">
 
+        <div className='box'>
+          {
+            ecosystemItems.map(item=>(
+              <div className={`menu-item ${item.class}`} style={{backgroundColor:item.bgColor}}>
+              <div className='front'>
+                <span>{item.header}</span>
+                <Image
+            src={item.imageSrc}
+            alt={item.imageAlt}
+            width={30}
+            height={30}             
+          />
+              </div>
+              <div className='back'>
+              {t(item.backInfo)}
+              </div>
+            </div>
+            ))
+          }
+        </div>
       
-  <div className="circle-menu-box">
+  {/* <div className="circle-menu-box">
     {
       ecosystemItems.map(item=>(
         
@@ -127,7 +147,7 @@ const Ecosystem = () => {
       />
    
     </div>
-  </div>
+  </div> */}
 </div>
 
   </>
