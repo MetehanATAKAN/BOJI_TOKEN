@@ -221,7 +221,7 @@
 	}
 }
 
-.box div.menu-item {
+.circle-menu-box div.menu-item {
 	display: block;
 	text-decoration: none;
 	border-radius: 100%;
@@ -574,20 +574,27 @@
 
 /*************************/
 .box {
-	// display: flex;
-    // justify-content: center;
-    // align-items: center;
-	// width: 100px;
-    // height: 100px;
-    // border-radius: 100px;
-    // background: red;
-    // color: white;
-    // transition: 0.4s;
 
 	width: 600px;
 	height: 600px;
 	position: relative;
 	margin: 0 auto 30px auto;
+	@media (max-width:610px) {
+		width: 500px !important;
+		height: 500px !important;
+	}
+	@media (max-width:506px) {
+		width: 450px !important;
+		height: 450px !important;
+	}
+	@media (max-width:445px) {
+		width: 375px !important;
+		height: 375px !important;
+	}
+	@media (max-width:375px) {
+		width: 300px !important;
+		height: 300px !important;
+	}
 	.menu-item {
 		&:hover {
 			transform: rotateY(180deg) scale(2.5);
@@ -602,19 +609,111 @@
 		-webkit-transform: rotateY(180deg);
 		}
 	}
+
+	
+	}
+
+	.logo {
+		width: 200px;
+		height: 200px;
+		right: 27%;
+		top: 33%;
+		position: absolute;
+
+		&:hover {
+			transform: rotateY(0) !important;
+			background-color: transparent !important;
+		}
+
+		img {
+			width: 170px;
+			max-width: max-content;
+
+			@media (max-width:610px) {
+				width: 130px;
+				
+			}
+			@media (max-width:506px) {
+				width: 110px;
+			}
+			@media (max-width:445px) {
+				width: 95px;
+			}
+			@media (max-width:375px) {
+				width: 75px;
+			}
+		}
+
+		@media (max-width:610px) {
+			right: 22%;
+			
+		}
+		@media (max-width:506px) {
+			top: 32%;
+			right: 20%;
+		}
+		@media (max-width:445px) {
+			top: 29%;
+			right: 13%;
+		}
+		@media (max-width:375px) {
+			top: 29%;
+			right: 2%;
+		}
 	}
 
 	.front {
 		display: block;
 		span {
-			font-size: 8px;
+			font-size: 12px;
+
+			@media (max-width:610px) {
+				font-size: 7px;
+				margin-bottom: 4px;
+			}
+			// @media (max-width:610px) {
+			// 	font-size: 7px;
+		
+			// }
+		}
+
+		img {
+			@media (max-width:445px) {
+				display: none;
+			}
+		}
+
+		@media (max-width:610px) {
+			display: flex;
+			flex-direction: column;
+		}
+
+		@media (max-width:445px) {
+			position: absolute;
+			width: 50px;
+			bottom: 30%;
+			right: 10%;
 		}
 	}
 
-	.back {
-		display: none;
-		font-size: 7px !important;
-	}
+		.back {
+			display: none;
+			font-size: 7px !important;
+			position: absolute;
+			height: 100%;
+			top: 35%;
+			left: 0;
+
+			@media (max-width:610px) {
+				font-size: 5px !important;
+				margin-bottom: 4px;
+			}
+
+			@media (max-width:445px) {
+				font-size: 3px !important;
+				margin-bottom: 4px;
+			}
+		}
 
 
 	.TOKEN {
@@ -635,6 +734,12 @@
 			background-color: #EFB42D !important;
 			color: white !important;
 		}
+		.back {
+			font-size: 5.8px !important;
+			@media (max-width:445px) {
+				font-size: 3px !important;
+			}
+		}
 	}
 
 	.NFT {
@@ -647,6 +752,12 @@
 		}
 		.back {
 			font-size: 7px !important;
+			@media (max-width:610px) {
+				font-size: 5px !important;
+			}
+			@media (max-width:445px) {
+				font-size: 3px !important;
+			}
 		}
 	}
 
@@ -657,6 +768,11 @@
 		&:hover {
 			background-color: #6FC7EA !important;
 			color: white !important;
+		}
+		.back {
+			@media (max-width:445px) {
+				font-size: 2.7px !important;
+			}
 		}
 	}
 
@@ -689,7 +805,13 @@
 			color: white !important;
 		}
 		.back {
-			font-size: 6px !important;
+			font-size: 5.3px !important;
+			@media (max-width:610px) {
+				font-size: 4.3px !important;
+			}
+			@media (max-width:445px) {
+				font-size: 2.7px !important;
+			}
 		}
 	}
 
@@ -702,5 +824,48 @@
 			color: white !important;
 		}
 	}
+	 div.menu-item {
+		display: block;
+		text-decoration: none;
+		border-radius: 100%;
+		margin: 20px;
+		text-align: center;
+		width: 130px;
+		height: 130px;
+		// color: #777;
+		padding: 27px;
+		position: absolute;
+		font-size: 27px;
+	
+		transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-o-transition: all 0.5s;
+	
+		img {
+			margin: auto;
+		}
+	
+		@media (max-width:610px) {
+			width: 100px;
+			height: 100px;
+		}
+	
+		@media (max-width:506px) {
+			width: 80px;
+			height: 80px;
+		}
+
+		@media (max-width:445px) {
+			width: 65px;
+			height: 65px;
+		}
+	
+		@media (max-width:368px) {
+			width: 65px;
+			height: 65px;
+		}
+	}
+	
 }
 

@@ -112,6 +112,15 @@ const Ecosystem = () => {
             </div>
             ))
           }
+          <div className='logo'>
+      <img 
+      src={require('../.././assets/images/mainBoji.png')} 
+      alt="Boji Icon"
+      width={200}
+      height={200}
+      />
+   
+    </div>
         </div>
       
   {/* <div className="circle-menu-box">
