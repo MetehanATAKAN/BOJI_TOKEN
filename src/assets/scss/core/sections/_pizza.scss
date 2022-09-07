@@ -44,7 +44,7 @@
 		width: 200px;
 		height: 200px;
 		right: 27%;
-		top: 33%;
+		top: 40%;
 		position: absolute;
 
 		&:hover {
@@ -72,20 +72,20 @@
 		}
 
 		@media (max-width:610px) {
-			right: 22%;
-			
+			right: 19%;
+			top: 41%;
 		}
 		@media (max-width:506px) {
-			top: 32%;
-			right: 20%;
+			top: 41%;
+    		right: 15%;
 		}
 		@media (max-width:445px) {
-			top: 29%;
-			right: 13%;
+			top: 41%;
+    		right: 5%;
 		}
 		@media (max-width:375px) {
-			top: 29%;
-			right: 2%;
+			top: 46%;
+			left: 45%;
 		}
 	}
 
@@ -96,9 +96,11 @@
 		span {
 			font-size: 12px;
 			margin-bottom: 4px !important;
+			font-weight: 700;
 			@media (max-width:610px) {
 				font-size: 7px;
 				margin-bottom: 4px;
+				font-weight: normal;
 			}
 		}
 
@@ -138,10 +140,6 @@
 				margin-bottom: 4px;
 			}
 
-			@media (max-width:445px) {
-				font-size: 3px !important;
-				margin-bottom: 4px;
-			}
 		}
 
 
@@ -152,6 +150,13 @@
 		&:hover {
 			background-color: #E88DA4 !important;
 			color: white !important;
+		}
+		.back {
+			font-size: 6.5px !important;
+			@media (max-width:610px) {
+				font-size: 4.2px !important;
+				margin-bottom: 4px;
+			}
 		}
 	}
 
@@ -182,10 +187,10 @@
 		.back {
 			font-size: 7px !important;
 			@media (max-width:610px) {
-				font-size: 5px !important;
+				font-size: 4px !important;
 			}
 			@media (max-width:445px) {
-				font-size: 3px !important;
+				font-size: 2.6px !important;
 			}
 		}
 	}
@@ -213,6 +218,15 @@
 			background-color: #4426BE !important;
 			color: white !important;
 		}
+				.back {
+					@media (max-width:610px) {
+						font-size: 4px !important;
+					}
+		
+					@media (max-width:445px) {
+						font-size: 3px !important;
+					}
+				}
 	}
 
 	.Earn {
@@ -222,6 +236,15 @@
 		&:hover {
 			background-color: #5500B5 !important;
 			color: white !important;
+		}
+		.back {
+			font-size: 5.3px !important;
+			@media (max-width:610px) {
+				font-size: 4px !important;
+			}
+			@media (max-width:445px) {
+				font-size: 2.7px !important;
+			}
 		}
 	}
 
@@ -234,12 +257,12 @@
 			color: white !important;
 		}
 		.back {
-			font-size: 5.3px !important;
+			font-size: 5.1px !important;
 			@media (max-width:610px) {
-				font-size: 4.3px !important;
+				font-size: 4.1px !important;
 			}
 			@media (max-width:445px) {
-				font-size: 2.7px !important;
+				font-size: 2.5px !important;
 			}
 		}
 	}
@@ -251,6 +274,15 @@
 		&:hover {
 			background-color: #DB415E !important;
 			color: white !important;
+		}
+		.back {
+			font-size: 5.1px !important;
+			@media (max-width:610px) {
+				font-size: 4.7px !important;
+			}
+			@media (max-width:445px) {
+				font-size: 3px !important;
+			}
 		}
 	}
 	 div.menu-item {
@@ -343,8 +375,8 @@
 	.logo {
 		width: 200px;
 		height: 200px;
-		right: 27%;
-		top: 33%;
+		right: 29%;
+		top: 40%;
 		position: absolute;
 
 		&:hover {
@@ -372,7 +404,7 @@
 		}
 
 		@media (max-width:768px) {
-			right: 14%;
+			right: 20%;
 			
 		}
 	}
@@ -436,6 +468,13 @@
 				background-color: #E88DA4 !important;
 				color: white !important;
 			}
+			.back {
+				font-size: 6px !important;
+				@media (max-width:768px) {
+					font-size: 4px !important;
+					margin-bottom: 4px;
+				}
+			}
 		}
 	
 		.Bojilogy {
@@ -447,9 +486,9 @@
 				color: white !important;
 			}
 			.back {
-				font-size: 5.7px !important;
+				font-size: 5.2px !important;
 				@media (max-width:768px) {
-					font-size: 4.7px !important;
+					font-size: 4px !important;
 				}
 			}
 		}
@@ -466,7 +505,7 @@
 			.back {
 				font-size: 7px !important;
 				@media (max-width:768px) {
-					font-size: 4px !important;
+					font-size: 3.5px !important;
 				}
 			}
 		}
@@ -483,7 +522,7 @@
 			.back {
 				font-size: 7px !important;
 				@media (max-width:768px) {
-					font-size: 4px !important;
+					font-size: 3.5px !important;
 				}
 			}
 		}
@@ -496,6 +535,11 @@
 				background-color: #4426BE !important;
 				color: white !important;
 			}
+			.back  {
+				@media (max-width:768px) {
+					font-size: 4px !important;
+				}
+			}
 		}
 	
 		.Earn {
@@ -505,6 +549,12 @@
 			&:hover {
 				background-color: #5500B5 !important;
 				color: white !important;
+			}
+			.back {
+				font-size: 5.4px !important;
+				@media (max-width:768px) {
+					font-size: 3.3px !important;
+				}
 			}
 		}
 	
@@ -518,9 +568,9 @@
 			}
 	
 			.back {
-				font-size: 5.6px !important;
+				font-size: 5px !important;
 				@media (max-width:768px) {
-					font-size: 4px !important;
+					font-size: 3.3px !important;
 				}
 			}
 		}
@@ -532,6 +582,11 @@
 			&:hover {
 				background-color: #DB415E !important;
 				color: white !important;
+			}
+			.back {
+				@media (max-width:768px) {
+					font-size: 3.5px !important;
+				}
 			}
 		}
 	 div.menu-item {

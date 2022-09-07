@@ -1,6 +1,5 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import Image from '../elements/Image'
 import SectionHeader from './partials/SectionHeader'
 
 const Community = () => {
@@ -49,11 +48,12 @@ const Community = () => {
                             <div className='item'>
                                 <a href={community.href}>
                                 <div>
-                                    <Image
-                                        src={community.image}
-                                        alt="Features split 02"
-                                        width={50}
-                                        height={50} />
+                                    <img
+                                    className='m-auto'
+                                    src={community.image}
+                                    alt="Community"
+                                    width={50}
+                                    height={50} /> 
                                 </div>
                                 <div>{community.name}</div>
                             </a>

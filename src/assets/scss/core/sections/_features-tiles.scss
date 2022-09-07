@@ -18,6 +18,11 @@
 		.circle {
 			color: green;
 		}
+		.completed {
+			@media (max-width:762px) {
+				display: inline-flex !important;
+			}
+		}
 	}
 	
 	.audit-report {

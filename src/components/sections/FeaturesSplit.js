@@ -88,7 +88,7 @@ const FeaturesSplit = ({
               <span>Token: BOJI</span>
             </p>
             <p>
-              <span>Contract: 0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164</span>
+              <span>Contract: <span className='adress'>0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164</span></span>
             </p>
             <p>
               <span>Decimal: 9</span>

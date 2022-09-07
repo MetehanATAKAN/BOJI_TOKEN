@@ -120,12 +120,12 @@ const About = ({
         <Bounce right>
           <div className='tech-audit'>
             <Row className='tech-audit-main'>
-              <Col sm={4} md={3} >
+              <Col sm={12} md={3} >
                 <p className='font-weight-bold fs-6'>{t('Company')} : Techrate </p>
               </Col>
 
-              <Col sm={4} md={3}  >
-                <div className='d-flex'>
+              <Col sm={12} md={4}  >
+                <div className='d-flex completed'>
               
                 <div style={{marginRight:'10px'}}>
                   <p>
@@ -138,7 +138,7 @@ const About = ({
 
                 </div>
               </Col>
-              <Col md={5}>
+              <Col sm={12} md={5}>
 
                 <div className='audit-report'>
                   <a href='https://github.com/TechRate/Smart-Contract-Audits/blob/main/July_2022/BOJI%20Full%20Smart%20Contract%20Security%20Audit.pdf' target='_blank' rel="noopener noreferrer">

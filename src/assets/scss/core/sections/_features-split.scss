@@ -13,6 +13,11 @@
 			}
 		 }
 	}
+	.adress {
+		@media (max-width:470px) {
+			font-size: 15px;
+		}
+	}
 }
 
 .nft-collections {
@@ -33,5 +38,16 @@
 		img {
 			margin: auto;
 		}
+	}
+}
+
+.community {
+	@media (max-width:567px) {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.item {
+		margin-bottom: 20px;
 	}
 }
