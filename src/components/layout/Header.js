@@ -7,6 +7,7 @@ import FooterSocial from './partials/FooterSocial';
 import { useTranslation } from 'react-i18next';
 import Image from '../elements/Image';
 import { changeLanguage } from '../../actions';
+import { useHistory } from 'react-router-dom';
 
 
 const propTypes = {
@@ -162,6 +163,14 @@ const Header = ({
       name:'Team'
     },
   ])
+  
+  let history = useHistory();
+  
+  const navClick = () => {
+    history.push('/')
+  }
+  
+  
 
   return (
     <header
@@ -203,7 +212,7 @@ const Header = ({
 
                       {
                         selectorLink.map((itemm,index)=>(
-                          <a href={itemm.href} key={index}>{t(itemm.name)}</a>
+                          <a onClick={navClick} href={itemm.href} key={index}>{t(itemm.name)}</a>
                         ))
                       }
 

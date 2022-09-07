@@ -41,7 +41,10 @@
 			margin: 0 !important;
 		}
 		@media (min-width:1400px) {
-			margin-right: 60px;
+			margin-left: 60px !important;
+			display: flex !important;
+    		flex-direction: row;
+    		justify-content: center !important
 		}
 		.coin-button {
 			// border: 1px solid;
@@ -57,13 +60,15 @@
 				margin-top: 0px;
 			}
 		}
-	}
 
-	.coinmarketcap {
-		img {
-			padding-top: 11px !important;
+		.coinmarketcap {
+			margin-left: 5px;
+			img {
+				padding-top: 11px !important;
+			}
 		}
 	}
+
 }
 
 .hero-inner {

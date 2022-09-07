@@ -10,28 +10,32 @@ const Team = () => {
             name: 'Paw ',
             title: 'Co-Founder & CTO',
             instagram:'https://www.google.com.tr/?hl=tr',
-            twitter:'https://www.google.com.tr/?hl=tr'
+            twitter:'https://www.google.com.tr/?hl=tr',
+            mail:'paw@boji.finance'
         },
         {
             image: require('../../assets/images/team/claw.png'),
             name: 'Claw ',
             title: 'Co-Founder & COO',
             instagram:'https://www.google.com.tr/?hl=tr',
-            twitter:'https://www.google.com.tr/?hl=tr'
+            twitter:'https://www.google.com.tr/?hl=tr',
+            mail:'claw@boji.finance'
         },
         {
             image: require('../../assets/images/team/tail.png'),
             name: 'Tail ',
             title: 'CMO',
             instagram:'https://www.google.com.tr/?hl=tr',
-            twitter:'https://www.google.com.tr/?hl=tr'
+            twitter:'https://www.google.com.tr/?hl=tr',
+            mail:'tail@boji.finance'
         },
         {
             image: require('../../assets/images/team/mouth.png'),
             name: 'Mouth ',
             title: 'Communication Director',
             instagram:'https://www.google.com.tr/?hl=tr',
-            twitter:'https://www.google.com.tr/?hl=tr'
+            twitter:'https://www.google.com.tr/?hl=tr',
+            mail:'mouth@boji.finance'
         },
     ]
 
@@ -57,11 +61,9 @@ const Team = () => {
                                 <div className='name'>  {team.name} </div>
                                 <div className='title'> {team.title} </div>
                                 <div className='social'>
-                                    {/* <a href={team.instagram}>
-                                    <i className="fa-brands fa-instagram"></i>
-                                    </a> */}
-                                    <a href={team.instagram}>
-                                    <i class="fa-brands fa-twitter"></i>
+                                    
+                                    <a href={`mailto:${team.mail}`}>
+                                    <i class="fa-regular fa-envelope"></i>
                                     </a>
                                 </div>
                             </Col>

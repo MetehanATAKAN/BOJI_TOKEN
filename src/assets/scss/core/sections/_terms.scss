@@ -1,0 +1,78 @@
+.terms,
+.privacy {
+    margin-top: 66px;
+    text-align: start;
+
+    .section-heading {
+        margin-bottom: 42px;
+
+        .upperheading {
+            margin-bottom: 12px;
+            font-family: "Readex Pro", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #007aff;
+        }
+
+        h2 {
+            font-family: "Readex Pro", sans-serif;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 1;
+            color: #fff;
+        }
+    }
+
+    .block {
+        max-width: 780px;
+
+        h2 {
+            font-family: "Readex Pro", sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            color: #fff;
+            margin-bottom: 32px;
+        }
+
+        h3 {
+            margin-bottom: 16px;
+            font-family: "Readex Pro", sans-serif;
+            font-weight: 400;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        p {
+            font-family: "Readex Pro", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+
+            &:not(:last-child) {
+                margin-bottom: 24px;
+            }
+        }
+
+        ul {
+
+            // list-style: none;
+            li {
+                position: relative;
+                padding-left: 18px;
+                font-family: "Readex Pro", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #FFFFFF;
+
+                :not(:last-child) {
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+}

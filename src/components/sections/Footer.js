@@ -70,10 +70,10 @@ const Footer = () => {
             <div>
                 <nav>
                   <div>
-                    <a href="#/">Privacy Policy</a>
+                    <a href="/privacy">Privacy Policy</a>
                   </div>
                   <div>
-                    <a href="#/">Terms &amp; Conditions</a>
+                    <a href="/terms">Terms &amp; Conditions</a>
                   </div>
                 </nav>
             </div>
@@ -142,7 +142,7 @@ const Footer = () => {
             <div>
             <nav>
                   <div>
-                    <a href='#/'>hello@boji.org</a>
+                    <a href='mailto:info@boji.finance'>info@boji.finance</a>
                   </div>
                 </nav>
             </div>

@@ -224,7 +224,28 @@
 	}
 }
 
+.apexcharts-legend {
+	position: absolute !important;
+    top: 30% !important;
+    right: 5px !important;
+	.apexcharts-legend-text {
+		color: #FFFFFF !important;
+	}
+	
+	@media (max-width:1000px) {
+		left: 25% !important ;
+		top: unset !important;
+		right: unset !important;
+	}
 
-.apexcharts-legend-text {
-	color: #FFFFFF !important;
+	@media (max-width:768px) {
+		left: 18% !important ;
+	}
+
+	@media (max-width:578px) {
+		left: 13% !important ;
+	}
+	@media (max-width:468px) {
+		left: 5% !important ;
+	}
 }
