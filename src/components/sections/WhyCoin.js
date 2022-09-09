@@ -92,20 +92,20 @@ const WhyCoin = ({
                 type: 'custom'
               }}
               modules={[Pagination,Autoplay]}
-              loop={true}
+              loop={false}
               className="mySwiper"
               allowSlideNext={true}
               allowTouchMove={true}
-              autoplay={{
-                delay:2500,
-                disableOnInteraction:false,
-                pauseOnMouseEnter:true,
-              }}
+              // autoplay={{
+              //   delay:2500,
+              //   disableOnInteraction:false,
+              //   pauseOnMouseEnter:true,
+              // }}
             >
               {
                 question.map(item=>(
                   <SwiperSlide>
-                    <Row className='mt-5'>
+                    {/* <Row className='mt-5'>
                       <Col sm={5}>
                       <img className='m-auto mb-4' alt='img-12'   src={require('../../assets/images/faq.png')}></img>
                       </Col>
@@ -117,9 +117,9 @@ const WhyCoin = ({
                          <span style={{color:'green'}}>{t('Answer')}: </span>{t(item.answer)}
                         </p>
                       </Col>
-                    </Row>
-                  {/* <div className="split-item">
-                    <div 
+                    </Row> */}
+                  <div className="split-item">
+                    <div className='split-item-image'
                       >
                         <img className='m-auto mb-4' alt='img-12'  style={{width:'500px'}} src={require('../../assets/images/faq.png')}></img>
                     </div>
@@ -133,7 +133,7 @@ const WhyCoin = ({
                         </p>
                       </div>
                     
-                  </div> */}
+                  </div>
                 </SwiperSlide>
                 ))
               }

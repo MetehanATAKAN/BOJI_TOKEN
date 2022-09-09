@@ -210,3 +210,17 @@
 		}
 	}
 }
+
+.footer-copyright {
+	height: 80px;
+	.copyright {
+
+	}
+
+	@media (max-width:900px) {
+		height: 130px;
+	}
+	@media (max-width:426px) {
+		height: 160px;
+	}
+}

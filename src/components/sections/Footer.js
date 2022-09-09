@@ -151,7 +151,7 @@ const Footer = () => {
        
     </div>
 
-<div style={{height:'80px'}}>
+<div className='footer-copyright' >
     <Row className='text-center'>
       <div>
       A Bojify Product.
