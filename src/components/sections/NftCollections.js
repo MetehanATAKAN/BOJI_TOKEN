@@ -7,25 +7,25 @@ const NftCollections = () => {
 
     const [nftCollections] = useState([
         {
-            src:require('../../assets/images/bojiv1.png'),
+            src:require('../../assets/images/bojiv1.gif'),
             imgAlt:'Boji V1',
             name:'Boji V1',
             href:'https://opensea.io/collection/bojitoken'
         },
         {
-            src:require('../../assets/images/bojiForce.jpg'),
+            src:require('../../assets/images/bojiForceGif.gif'),
             imgAlt:'BojiForce NFT',
             name:'BojiForce NFT',
             href:'#/'
         },
         {
-            src:require('../../assets/images/mainBoji.png'),
+            src:require('../../assets/images/soon.png'),
             imgAlt:'Boji V2',
             name:'Boji V2',
             href:'#/'
         },
         {
-            src:require('../../assets/images/mainBoji.png'),
+            src:require('../../assets/images/soon.png'),
             imgAlt:'Soon',
             name:'Soon',
             href:'#/'
@@ -59,7 +59,7 @@ const NftCollections = () => {
                             }}  
                             >
                                 <div> {data.name} </div>
-                            <a href={data.href} >
+                            <a href={data.href}  target={'_blank'} rel="noopener noreferrer">
                             <Image
                                 src={require('./../../assets/images/opensea3.png')}
                                 />

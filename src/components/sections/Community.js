@@ -46,7 +46,7 @@ const Community = () => {
 
                         community.map(community=>(
                             <div className='item'>
-                                <a href={community.href}>
+                                <a href={community.href} target={'_blank'} rel="noopener noreferrer"  >
                                 <div>
                                     <img
                                     className='m-auto'

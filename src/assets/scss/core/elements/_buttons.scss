@@ -726,7 +726,10 @@ body {
 			display: block !important;
 	}
 		.split-item-image {
-			width: 500 !important;
+			width: 500px !important;
+			@media (max-width:572px) {
+				width: auto !important;
+		}
 		}
 	}
 		img {
