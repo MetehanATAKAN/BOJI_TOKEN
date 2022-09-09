@@ -4,7 +4,6 @@ import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react';
 import { Pagination,Autoplay } from "swiper";
-import { Row, Col } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 const propTypes = {
@@ -126,10 +125,10 @@ const WhyCoin = ({
                     
                       <div className='split-item-info'>
                         <h3 className="mt-0 mb-12">
-                          <span style={{color:'red'}}>Question: </span>{item.question}
+                          <span style={{color:'red'}}>{t('Question')}: </span>{t(item.question)}
                         </h3>
                         <p className="m-0">
-                         <span style={{color:'green'}}>Answer: </span>{item.answer}
+                         <span style={{color:'green'}}>{t('Answer')}: </span>{t(item.answer)}
                         </p>
                       </div>
                     
