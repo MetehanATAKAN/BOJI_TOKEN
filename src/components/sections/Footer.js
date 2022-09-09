@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='container footer'>
        
         <Row className='text-center'>
-            <Col sm={12} md={3} xl={3}>
+            <Col sm={12} md={3} xl={3} className='mb-4'>
             <div className='mb-2 headers'>
             {/* <Image
                 src={require('../.././assets/images/mainBoji.png')}
