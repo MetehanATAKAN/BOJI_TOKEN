@@ -107,7 +107,9 @@ const Ecosystem = () => {
           />
               </div>
               <div className='back'>
+              <p>
               {t(item.backInfo)}
+              </p>
               </div>
             </div>
             ))
