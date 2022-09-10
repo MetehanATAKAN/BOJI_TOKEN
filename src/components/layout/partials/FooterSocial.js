@@ -64,6 +64,16 @@ const FooterSocial = ({
           </a>
         </div>
         <a 
+        className="btn-flip" 
+        data-back="Pitchdeck" 
+        data-front="Pitchdeck"
+        href={country !== 'Turkey' ? 'https://pitchdeck.boji.finance/Pitchdeck.pdf' : 'https://trpitchdeck.boji.finance/'} 
+        target={'_blank'}
+        rel="noopener noreferrer"
+        >
+          </a>
+{/* 
+        <a 
         href={country !== 'Turkey' ? 'https://pitchdeck.boji.finance/Pitchdeck.pdf' : 'https://trpitchdeck.boji.finance/'} 
         className='pitchdeck' 
         target={'_blank'}
@@ -72,7 +82,7 @@ const FooterSocial = ({
           <span>
           Pitchdeck
           </span>
-        </a>
+        </a> */}
 
         {/* <div className='header-social'>
           <a href="https://google.com/">
