@@ -24,8 +24,10 @@
 	}
 	.menu-item {
 		&:hover {
-			transform: rotateY(180deg) scale(2.5);
-		-webkit-transform: rotateY(180deg) scale(2.5);
+			right: 30%;
+			top: 10%;
+			transform: rotateY(180deg) scale(3);
+		-webkit-transform: rotateY(180deg) scale(3);
 			z-index: 9999;
 		.front {
 			display: none;
