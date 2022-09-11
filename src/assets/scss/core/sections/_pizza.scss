@@ -22,21 +22,27 @@
 		width: 300px !important;
 		height: 300px !important;
 	}
+	.menu-card {
+		background-color: transparent;
+	width: auto;
+	height: auto;
+	
+	}
 	.menu-item {
 		&:hover {
 			right: 30%;
 			top: 10%;
-			transform: rotateY(180deg) scale(2.5);
-		-webkit-transform: rotateY(180deg) scale(2.5);
+		// 	transform: rotateY(180deg) scale(2.5);
+		// -webkit-transform: rotateY(180deg) scale(2.5);
 			z-index: 9999;
 		.front {
 			display: none;
 		}
-		.back {
-			display: block;
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		}
+		// .back {
+		// 	display: block;
+		// transform: rotateY(180deg);
+		// -webkit-transform: rotateY(180deg);
+		// }
 	}
 
 	
@@ -152,12 +158,31 @@
 		&:hover {
 			background-color: #E88DA4 !important;
 			color: white !important;
+			transform: rotateY(180deg) scale(2.5) !important;
+		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+		.back {
+			display: block;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+		}
 		}
 		.back {
 			font-size: 6.5px !important;
 			@media (max-width:610px) {
 				font-size: 4.2px !important;
 				margin-bottom: 4px;
+			}
+		}
+		@media (max-width:445px) {
+			&:hover {
+				top: 40% !important;
+				transform: rotateY(180deg) scale(5.1) !important;
+			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 			}
 		}
 	}
@@ -169,11 +194,33 @@
 		&:hover {
 			background-color: #EFB42D !important;
 			color: white !important;
+			transform: rotateY(180deg) scale(2.5) !important;
+		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+		.back {
+			display: block;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+		}
 		}
 		.back {
 			font-size: 5.8px !important;
 			@media (max-width:445px) {
-				font-size: 3px !important;
+				top: 30% !important;
+				font-size: 4.2px !important;
+			}
+		}
+
+		@media (max-width:445px) {
+			&:hover {
+				top: 40% !important;
+				left: 40% !important;
+				transform: rotateY(180deg) scale(5.1) !important;
+			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 			}
 		}
 	}
@@ -185,6 +232,14 @@
 		&:hover {
 			background-color: #99BF55 !important;
 			color: white !important;
+
+			transform: rotateY(180deg) scale(2.5) !important;
+		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+		.back {
+			display: block;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+		}
 		}
 		.back {
 			font-size: 7px !important;
@@ -193,6 +248,20 @@
 			}
 			@media (max-width:445px) {
 				font-size: 2.6px !important;
+			}
+		}
+
+		@media (max-width:445px) {
+			&:hover {
+				top: 40% !important;
+				left: 40% !important;
+				transform: rotateY(180deg) scale(5.1) !important;
+			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 			}
 		}
 	}
@@ -204,10 +273,32 @@
 		&:hover {
 			background-color: #6FC7EA !important;
 			color: white !important;
+
+			transform: rotateY(180deg) scale(2.5) !important;
+		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+		.back {
+			display: block;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+		}
 		}
 		.back {
 			@media (max-width:445px) {
 				font-size: 2.7px !important;
+			}
+		}
+
+		@media (max-width:445px) {
+			&:hover {
+				top: 40% !important;
+				left: 40% !important;
+				transform: rotateY(180deg) scale(5.1) !important;
+			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 			}
 		}
 	}
@@ -219,6 +310,15 @@
 		&:hover {
 			background-color: #4426BE !important;
 			color: white !important;
+
+			transform: rotateY(180deg) scale(2.5) !important;
+		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+		.back {
+			display: block;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+		}
+			
 		}
 				.back {
 					@media (max-width:610px) {
@@ -227,6 +327,20 @@
 		
 					@media (max-width:445px) {
 						font-size: 3px !important;
+					}
+				}
+
+				@media (max-width:445px) {
+					&:hover {
+						top: 40% !important;
+						left: 40% !important;
+						transform: rotateY(180deg) scale(5.1) !important;
+					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
 					}
 				}
 	}
@@ -238,6 +352,15 @@
 		&:hover {
 			background-color: #5500B5 !important;
 			color: white !important;
+
+			
+			transform: rotateY(180deg) scale(2.5) !important;
+		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+		.back {
+			display: block;
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+		}
 		}
 		.back {
 			font-size: 5.3px !important;
@@ -246,6 +369,20 @@
 			}
 			@media (max-width:445px) {
 				font-size: 2.7px !important;
+			}
+		}
+
+		@media (max-width:445px) {
+			&:hover {
+				top: 40% !important;
+				left: 40% !important;
+				transform: rotateY(180deg) scale(5.1) !important;
+			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 			}
 		}
 	}
@@ -257,6 +394,14 @@
 		&:hover {
 			background-color: #A28BEE !important;
 			color: white !important;
+
+			transform: rotateY(180deg) scale(2.5) !important;
+			-webkit-transform: rotateY(180deg) scale(2.5) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 		}
 		.back {
 			font-size: 5.1px !important;
@@ -265,6 +410,20 @@
 			}
 			@media (max-width:445px) {
 				font-size: 2.5px !important;
+			}
+		}
+
+		@media (max-width:445px) {
+			&:hover {
+				top: 40% !important;
+				left: 40% !important;
+				transform: rotateY(180deg) scale(5.1) !important;
+			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 			}
 		}
 	}
@@ -276,6 +435,14 @@
 		&:hover {
 			background-color: #DB415E !important;
 			color: white !important;
+
+			transform: rotateY(180deg) scale(2.5) !important;
+			-webkit-transform: rotateY(180deg) scale(2.5) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 		}
 		.back {
 			font-size: 5.1px !important;
@@ -284,6 +451,20 @@
 			}
 			@media (max-width:445px) {
 				font-size: 3px !important;
+			}
+		}
+
+		@media (max-width:445px) {
+			&:hover {
+				top: 40% !important;
+				left: 40% !important;
+				transform: rotateY(180deg) scale(5.1) !important;
+			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+			.back {
+				display: block;
+			transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg);
+			}
 			}
 		}
 	}

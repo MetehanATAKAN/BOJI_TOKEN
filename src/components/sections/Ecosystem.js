@@ -96,24 +96,41 @@ const Ecosystem = () => {
         <div className='box'>
           {
             ecosystemItems.map(item=>(
-              <div className='menu-item-inner'>
-              <div className={`menu-item ${item.class}`} style={{backgroundColor:item.bgColor}}>
-              <div className='front'>
-                <span>{item.header}</span>
+          //     <div className='menu-item-inner'>
+          //     <div className={`menu-item ${item.class}`} style={{backgroundColor:item.bgColor}}>
+          //     <div className='front'>
+          //       <span>{item.header}</span>
+          //       <Image
+          //   src={item.imageSrc}
+          //   alt={item.imageAlt}
+          //   width={30}
+          //   height={30}             
+          // />
+          //     </div>
+          //     <div className='back'>
+          //     <p>
+          //     {t(item.backInfo)}
+          //     </p>
+          //     </div>
+          //   </div>
+          //   </div>
+          <div className="menu-card m-auto">
+          <div className={`menu-item menu-item-inner ${item.class}`} style={{backgroundColor:item.bgColor}}>
+            <div className="front">
+            <span>{item.header}</span>
                 <Image
             src={item.imageSrc}
             alt={item.imageAlt}
             width={30}
-            height={30}             
-          />
-              </div>
-              <div className='back'>
-              <p>
-              {t(item.backInfo)}
-              </p>
-              </div>
+            height={30} />
             </div>
+            <div className="back">
+            <p>
+               {t(item.backInfo)}
+               </p>
             </div>
+          </div>
+        </div>
             ))
           }
           <div className='logo'>

@@ -184,7 +184,7 @@ const Hero = ({
                 </div>
                 <div className='adress' onCopy={true} >0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164</div>
                 <div className='copy-icon' ref={target} onClick={() => copyAdress('0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164')}><i className="fa-solid fa-copy"></i></div>
-                <Overlay target={target.current} show={show} placement="right">
+                <Overlay target={target.current} show={show} placement="bottom">
                   {(props) => (
                     <Tooltip id="overlay-example" {...props}>
                     Copied
