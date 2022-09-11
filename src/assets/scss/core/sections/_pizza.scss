@@ -833,3 +833,10 @@
 
 
 
+.box {
+	.flip-card {
+		width: 0;
+		height: 0;
+		perspective: none;
+	}
+}

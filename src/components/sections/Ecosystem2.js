@@ -89,11 +89,12 @@ const Ecosystem2 = () => {
 
       <div className='container'>
 
+<div className='box'>
         {
             ecosystemItems.map(item=>(
                 <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
+  <div className={`menu-item flip-card-inner ${item.class}`} style={{backgroundColor:item.bgColor}}>
+    <div class="front">
      
     <span>{item.header}</span>
                 <Image
@@ -103,7 +104,7 @@ const Ecosystem2 = () => {
             height={30} />
      
     </div>
-    <div class="flip-card-back">
+    <div class="back">
     <p>
                {item.backInfo}
                </p>
@@ -112,6 +113,7 @@ const Ecosystem2 = () => {
 </div>
             ))
         }
+        </div>
     </div>
     </>
     
