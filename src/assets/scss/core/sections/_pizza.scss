@@ -1,7 +1,839 @@
 
-/*************************/
-.box {
+// /*************************/
+// .box {
 
+// 	width: 600px;
+// 	height: 600px;
+// 	position: relative;
+// 	margin: 0 auto 30px auto;
+// 	@media (max-width:610px) {
+// 		width: 500px !important;
+// 		height: 500px !important;
+// 	}
+// 	@media (max-width:506px) {
+// 		width: 450px !important;
+// 		height: 450px !important;
+// 	}
+// 	@media (max-width:445px) {
+// 		width: 375px !important;
+// 		height: 375px !important;
+// 	}
+// 	@media (max-width:375px) {
+// 		width: 300px !important;
+// 		height: 300px !important;
+// 	}
+// 	.menu-card {
+// 		background-color: transparent;
+// 	width: auto;
+// 	height: auto;
+	
+// 	}
+// 	.menu-item {
+// 		&:hover {
+// 			right: 30%;
+// 			top: 10%;
+// 		// 	transform: rotateY(180deg) scale(2.5);
+// 		// -webkit-transform: rotateY(180deg) scale(2.5);
+// 			z-index: 9999;
+// 		.front {
+// 			display: none;
+// 		}
+// 		// .back {
+// 		// 	display: block;
+// 		// transform: rotateY(180deg);
+// 		// -webkit-transform: rotateY(180deg);
+// 		// }
+// 	}
+
+	
+// 	}
+
+// 	.logo {
+// 		width: auto;
+// 		height: auto;
+// 		right: 31%;
+// 		top: 40%;
+// 		position: absolute;
+
+// 		&:hover {
+// 			transform: rotateY(0) !important;
+// 			background-color: transparent !important;
+// 		}
+
+// 		img {
+// 			width: 170px;
+// 			max-width: max-content;
+
+// 			@media (max-width:610px) {
+// 				width: 130px;
+				
+// 			}
+// 			@media (max-width:506px) {
+// 				width: 110px;
+// 			}
+// 			@media (max-width:445px) {
+// 				width: 95px;
+// 			}
+// 			@media (max-width:375px) {
+// 				width: 75px;
+// 			}
+// 		}
+
+// 		@media (max-width:610px) {
+// 			right: 33%;
+// 			top: 41%;
+// 		}
+// 		// @media (max-width:506px) {
+// 		// 	top: 41%;
+//     	// 	right: 34%;
+// 		// }
+// 		// @media (max-width:445px) {
+// 		// 	top: 41%;
+//     	// 	right: 5%;
+// 		// }
+// 		@media (max-width:375px) {
+// 			top: 46%;
+// 			left: 45%;
+// 		}
+// 	}
+
+// 	.front {
+// 		display: flex ;
+// 		flex-direction: column;
+// 		margin-top: 10px;
+// 		span {
+// 			font-size: 12px;
+// 			margin-bottom: 4px !important;
+// 			font-weight: 700;
+// 			@media (max-width:610px) {
+// 				font-size: 7px;
+// 				margin-bottom: 4px;
+// 				font-weight: normal;
+// 			}
+// 		}
+
+// 		img {
+// 			@media (max-width:445px) {
+// 				display: none;
+// 			}
+// 		}
+
+// 		@media (max-width:610px) {
+// 			display: flex;
+// 			flex-direction: column;
+// 			margin: 0;
+// 		}
+
+		
+
+// 		@media (max-width:445px) {
+// 			position: absolute;
+// 			width: 50px;
+// 			bottom: 30%;
+// 			right: 10%;
+// 		}
+// 	}
+
+// 		.back {
+// 			display: none;
+// 			font-size: 6.5px !important;
+// 			position: absolute;
+// 			height: 100%;
+// 			top: 35%;
+// 			left: 0;
+// 			color: #FFFFFF;
+// 			// font-weight: 700;
+// 			@media (max-width:610px) {
+// 				font-size: 5px !important;
+// 				margin-bottom: 4px;
+// 			}
+
+// 		}
+
+
+// 	.TOKEN {
+// 		left: 40% !important;
+// 		top: 5% !important;
+
+// 		&:hover {
+// 			background-color: #E88DA4 !important;
+// 			color: white !important;
+// 			transform: rotateY(180deg) scale(2.5) !important;
+// 		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+// 		.back {
+// 			display: block;
+// 		transform: rotateY(180deg);
+// 		-webkit-transform: rotateY(180deg);
+// 		}
+// 		}
+// 		.back {
+// 			font-size: 6.5px !important;
+// 			@media (max-width:610px) {
+// 				font-size: 4.2px !important;
+// 				margin-bottom: 4px;
+// 			}
+// 		}
+// 		@media (max-width:445px) {
+// 			&:hover {
+// 				top: 40% !important;
+// 				transform: rotateY(180deg) scale(5.1) !important;
+// 			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 			}
+// 		}
+// 	}
+
+// 	.Wallet {
+// 		left: 64.7487% !important;
+// 		top: 15.2513% !important;
+
+// 		&:hover {
+// 			background-color: #EFB42D !important;
+// 			color: white !important;
+// 			transform: rotateY(180deg) scale(2.5) !important;
+// 		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+// 		.back {
+// 			display: block;
+// 		transform: rotateY(180deg);
+// 		-webkit-transform: rotateY(180deg);
+// 		}
+// 		}
+// 		.back {
+// 			font-size: 5.8px !important;
+// 			@media (max-width:445px) {
+// 				top: 30% !important;
+// 				font-size: 4.2px !important;
+// 			}
+// 		}
+
+// 		@media (max-width:445px) {
+// 			&:hover {
+// 				top: 40% !important;
+// 				left: 40% !important;
+// 				transform: rotateY(180deg) scale(5.1) !important;
+// 			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 			}
+// 		}
+// 	}
+
+// 	.NFT {
+// 		left: 75% !important;
+// 		top: 40% !important;
+
+// 		&:hover {
+// 			background-color: #99BF55 !important;
+// 			color: white !important;
+
+// 			transform: rotateY(180deg) scale(2.5) !important;
+// 		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+// 		.back {
+// 			display: block;
+// 		transform: rotateY(180deg);
+// 		-webkit-transform: rotateY(180deg);
+// 		}
+// 		}
+// 		.back {
+// 			font-size: 7px !important;
+// 			@media (max-width:610px) {
+// 				font-size: 4px !important;
+// 			}
+// 			@media (max-width:445px) {
+// 				font-size: 2.6px !important;
+// 			}
+// 		}
+
+// 		@media (max-width:445px) {
+// 			&:hover {
+// 				top: 40% !important;
+// 				left: 40% !important;
+// 				transform: rotateY(180deg) scale(5.1) !important;
+// 			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 			}
+// 		}
+// 	}
+
+// 	.Bojify {
+// 		left: 64.7487% !important;
+// 		top: 64.7487% !important;
+
+// 		&:hover {
+// 			background-color: #6FC7EA !important;
+// 			color: white !important;
+
+// 			transform: rotateY(180deg) scale(2.5) !important;
+// 		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+// 		.back {
+// 			display: block;
+// 		transform: rotateY(180deg);
+// 		-webkit-transform: rotateY(180deg);
+// 		}
+// 		}
+// 		.back {
+// 			@media (max-width:445px) {
+// 				font-size: 2.7px !important;
+// 			}
+// 		}
+
+// 		@media (max-width:445px) {
+// 			&:hover {
+// 				top: 40% !important;
+// 				left: 40% !important;
+// 				transform: rotateY(180deg) scale(5.1) !important;
+// 			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 			}
+// 		}
+// 	}
+
+// 	.Charity {
+// 		left: 40% !important;
+// 		top: 75% !important;
+
+// 		&:hover {
+// 			background-color: #4426BE !important;
+// 			color: white !important;
+
+// 			transform: rotateY(180deg) scale(2.5) !important;
+// 		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+// 		.back {
+// 			display: block;
+// 		transform: rotateY(180deg);
+// 		-webkit-transform: rotateY(180deg);
+// 		}
+			
+// 		}
+// 				.back {
+// 					@media (max-width:610px) {
+// 						font-size: 4px !important;
+// 					}
+		
+// 					@media (max-width:445px) {
+// 						font-size: 3px !important;
+// 					}
+// 				}
+
+// 				@media (max-width:445px) {
+// 					&:hover {
+// 						top: 40% !important;
+// 						left: 40% !important;
+// 						transform: rotateY(180deg) scale(5.1) !important;
+// 					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+// 					.back {
+// 						display: block;
+// 					transform: rotateY(180deg);
+// 					-webkit-transform: rotateY(180deg);
+// 					}
+// 					}
+// 				}
+// 	}
+
+// 	.Earn {
+// 		left: 15.2513% !important;
+// 		top: 64.7487% !important;
+
+// 		&:hover {
+// 			background-color: #5500B5 !important;
+// 			color: white !important;
+
+			
+// 			transform: rotateY(180deg) scale(2.5) !important;
+// 		-webkit-transform: rotateY(180deg) scale(2.5) !important;
+// 		.back {
+// 			display: block;
+// 		transform: rotateY(180deg);
+// 		-webkit-transform: rotateY(180deg);
+// 		}
+// 		}
+// 		.back {
+// 			font-size: 5.3px !important;
+// 			@media (max-width:610px) {
+// 				font-size: 4px !important;
+// 			}
+// 			@media (max-width:445px) {
+// 				font-size: 2.7px !important;
+// 			}
+// 		}
+
+// 		@media (max-width:445px) {
+// 			&:hover {
+// 				top: 40% !important;
+// 				left: 40% !important;
+// 				transform: rotateY(180deg) scale(5.1) !important;
+// 			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 			}
+// 		}
+// 	}
+
+// 	.v2 {
+// 		left: 5% !important;
+// 		top: 40% !important;
+
+// 		&:hover {
+// 			background-color: #A28BEE !important;
+// 			color: white !important;
+
+// 			transform: rotateY(180deg) scale(2.5) !important;
+// 			-webkit-transform: rotateY(180deg) scale(2.5) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 		}
+// 		.back {
+// 			font-size: 5.1px !important;
+// 			@media (max-width:610px) {
+// 				font-size: 4.1px !important;
+// 			}
+// 			@media (max-width:445px) {
+// 				font-size: 2.5px !important;
+// 			}
+// 		}
+
+// 		@media (max-width:445px) {
+// 			&:hover {
+// 				top: 40% !important;
+// 				left: 40% !important;
+// 				transform: rotateY(180deg) scale(5.1) !important;
+// 			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 			}
+// 		}
+// 	}
+
+// 	.shop {
+// 		left: 15.2513% !important;
+// 		top: 15.2513% !important;
+
+// 		&:hover {
+// 			background-color: #DB415E !important;
+// 			color: white !important;
+
+// 			transform: rotateY(180deg) scale(2.5) !important;
+// 			-webkit-transform: rotateY(180deg) scale(2.5) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 		}
+// 		.back {
+// 			font-size: 5.1px !important;
+// 			@media (max-width:610px) {
+// 				font-size: 4.7px !important;
+// 			}
+// 			@media (max-width:445px) {
+// 				font-size: 3px !important;
+// 			}
+// 		}
+
+// 		@media (max-width:445px) {
+// 			&:hover {
+// 				top: 40% !important;
+// 				left: 40% !important;
+// 				transform: rotateY(180deg) scale(5.1) !important;
+// 			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+// 			.back {
+// 				display: block;
+// 			transform: rotateY(180deg);
+// 			-webkit-transform: rotateY(180deg);
+// 			}
+// 			}
+// 		}
+// 	}
+// 	 div.menu-item {
+// 		display: block;
+// 		text-decoration: none;
+// 		border-radius: 100%;
+// 		margin: 20px;
+// 		text-align: center;
+// 		width: 130px;
+// 		height: 130px;
+// 		// color: #777;
+// 		padding: 27px;
+// 		position: absolute;
+// 		font-size: 27px;
+	
+// 		transition: all 0.5s;
+// 		-moz-transition: all 0.5s;
+// 		-webkit-transition: all 0.5s;
+// 		-o-transition: all 0.5s;
+	
+// 		img {
+// 			margin: auto;
+// 		}
+	
+// 		@media (max-width:610px) {
+// 			width: 100px;
+// 			height: 100px;
+// 		}
+	
+// 		@media (max-width:506px) {
+// 			width: 80px;
+// 			height: 80px;
+// 		}
+
+// 		@media (max-width:445px) {
+// 			width: 65px;
+// 			height: 65px;
+// 		}
+	
+// 		@media (max-width:368px) {
+// 			width: 65px;
+// 			height: 65px;
+// 		}
+// 	}
+	
+// }
+
+// /**********************  box 2 */
+
+
+// .box2 {
+
+// 	width: 600px;
+// 	height: 600px;
+// 	position: relative;
+// 	margin: 0 auto 30px auto;
+// 	@media (max-width:1199px) {
+// 		width: 510px !important;
+// 		height: 510px !important;
+// 	}
+// 	@media (max-width:768px) {
+// 		width: 400px !important;
+// 		height: 400px !important;
+// 	}
+// 	@media (max-width:445px) {
+// 		display: none;
+// 	}
+// 	// @media (max-width:445px) {
+// 	// 	width: 375px !important;
+// 	// 	height: 375px !important;
+// 	// }
+// 	// @media (max-width:375px) {
+// 	// 	width: 300px !important;
+// 	// 	height: 300px !important;
+// 	// }
+// 	.menu-item {
+// 		&:hover {
+// 			transform: rotateY(180deg) scale(2.5);
+// 				-webkit-transform: rotateY(180deg) scale(2.5);
+// 				z-index: 9999;
+// 		.front {
+// 			display: none;
+// 		}
+// 		.back {
+// 			display: block;
+// 		transform: rotateY(180deg);
+// 		-webkit-transform: rotateY(180deg);
+// 		}
+// 	}
+
+	
+// 	}
+
+// 	.logo {
+// 		width: auto;
+// 		height: auto;
+// 		right: 32%;
+// 		top: 40%;
+// 		position: absolute;
+
+// 		&:hover {
+// 			transform: rotateY(0) !important;
+// 			background-color: transparent !important;
+// 		}
+
+// 		img {
+// 			width: 170px;
+// 			max-width: max-content;
+
+// 			@media (max-width:768px) {
+// 				width: 110px;
+				
+// 			}
+// 			// @media (max-width:506px) {
+// 			// 	width: 110px;
+// 			// }
+// 			// @media (max-width:445px) {
+// 			// 	width: 95px;
+// 			// }
+// 			// @media (max-width:375px) {
+// 			// 	width: 75px;
+// 			// }
+// 		}
+// 		@media (max-width:1199px) {
+// 			right: 31%;
+// 		}
+// 		// @media (max-width:768px) {
+// 		// 	right: 20%;
+			
+// 		// }
+// 	}
+
+// 	.front {
+// 		display: flex ;
+// 		flex-direction: column;
+// 		margin-top: 10px;
+// 		span {
+// 			font-size: 12px;
+// 			margin-bottom: 4px !important;
+// 			font-weight: 700;
+// 			@media (max-width:768px) {
+// 				font-size: 7px;
+// 				margin-bottom: 4px;
+// 			}
+// 		}
+
+// 		img {
+// 			@media (max-width:445px) {
+// 				display: none;
+// 			}
+// 		}
+
+// 		@media (max-width:1199px) {
+// 			margin: 0;
+// 		}
+
+// 		@media (max-width:768px) {
+// 			display: flex;
+// 			flex-direction: column;
+// 			margin: 0;
+// 		}
+
+		
+
+// 		@media (max-width:445px) {
+// 			position: absolute;
+// 			width: 50px;
+// 			bottom: 30%;
+// 			right: 10%;
+// 		}
+// 	}
+
+// 		.back {
+// 			display: none;
+// 			font-size: 7px !important;
+// 			position: absolute;
+// 			height: 100%;
+// 			top: 35%;
+// 			left: 0;
+// 			color: #FFFFFF;
+// 			// font-weight: 700;
+// 			@media (max-width:768px) {
+// 				font-size: 5px !important;
+// 				margin-bottom: 4px;
+// 			}
+// 		}
+
+
+// 		.TOKEN {
+// 			left: 40% !important;
+// 			top: 5% !important;
+	
+// 			&:hover {
+// 				background-color: #E88DA4 !important;
+// 				color: white !important;
+// 			}
+// 			.back {
+// 				font-size: 6px !important;
+// 				@media (max-width:768px) {
+// 					font-size: 4px !important;
+// 					margin-bottom: 4px;
+// 				}
+// 			}
+// 		}
+	
+// 		.Bojilogy {
+// 			left: 64.7487% !important;
+// 			top: 15.2513% !important;
+	
+// 			&:hover {
+// 				background-color: #EFB42D !important;
+// 				color: white !important;
+// 			}
+// 			.back {
+// 				font-size: 5.2px !important;
+// 				@media (max-width:768px) {
+// 					font-size: 4px !important;
+// 				}
+// 			}
+// 		}
+	
+// 		.NFT {
+// 			left: 75% !important;
+// 			top: 40% !important;
+	
+// 			&:hover {
+// 				background-color: #99BF55 !important;
+// 				color: white !important;
+// 			}
+	
+// 			.back {
+// 				font-size: 7px !important;
+// 				@media (max-width:768px) {
+// 					font-size: 3.5px !important;
+// 				}
+// 			}
+// 		}
+	
+// 		.Swap {
+// 			left: 64.7487% !important;
+// 			top: 64.7487% !important;
+	
+// 			&:hover {
+// 				background-color: #6FC7EA !important;
+// 				color: white !important;
+// 			}
+	
+// 			.back {
+// 				font-size: 7px !important;
+// 				@media (max-width:768px) {
+// 					font-size: 3.5px !important;
+// 				}
+// 			}
+// 		}
+	
+// 		.Charity {
+// 			left: 40% !important;
+// 			top: 75% !important;
+	
+// 			&:hover {
+// 				background-color: #4426BE !important;
+// 				color: white !important;
+// 			}
+// 			.back  {
+// 				@media (max-width:768px) {
+// 					font-size: 4px !important;
+// 				}
+// 			}
+// 		}
+	
+// 		.Earn {
+// 			left: 15.2513% !important;
+// 			top: 64.7487% !important;
+	
+// 			&:hover {
+// 				background-color: #5500B5 !important;
+// 				color: white !important;
+// 			}
+// 			.back {
+// 				font-size: 5.4px !important;
+// 				@media (max-width:768px) {
+// 					font-size: 3.3px !important;
+// 				}
+// 			}
+// 		}
+	
+// 		.v2 {
+// 			left: 5% !important;
+// 			top: 40% !important;
+	
+// 			&:hover {
+// 				background-color: #A28BEE !important;
+// 				color: white !important;
+// 			}
+	
+// 			.back {
+// 				font-size: 5px !important;
+// 				@media (max-width:768px) {
+// 					font-size: 3.3px !important;
+// 				}
+// 			}
+// 		}
+	
+// 		.shop {
+// 			left: 15.2513% !important;
+// 			top: 15.2513% !important;
+	
+// 			&:hover {
+// 				background-color: #DB415E !important;
+// 				color: white !important;
+// 			}
+// 			.back {
+// 				@media (max-width:768px) {
+// 					font-size: 3.5px !important;
+// 				}
+// 			}
+// 		}
+// 	 div.menu-item {
+// 		display: block;
+// 		text-decoration: none;
+// 		border-radius: 100%;
+// 		margin: 20px;
+// 		text-align: center;
+// 		width: 130px;
+// 		height: 130px;
+// 		// color: #777;
+// 		padding: 27px;
+// 		position: absolute;
+// 		font-size: 27px;
+	
+// 		transition: all 0.5s;
+// 		-moz-transition: all 0.5s;
+// 		-webkit-transition: all 0.5s;
+// 		-o-transition: all 0.5s;
+	
+// 		img {
+// 			margin: auto;
+// 		}
+// 		@media (max-width:1199px) {
+// 			width: 110px ;
+// 			height: 110px ;
+// 		}
+// 		@media (max-width:768px) {
+// 			width: 80px;
+// 			height: 80px;
+// 		}
+	
+// 		@media (max-width:506px) {
+// 			width: 80px;
+// 			height: 80px;
+// 		}
+
+// 		@media (max-width:445px) {
+// 			width: 65px;
+// 			height: 65px;
+// 		}
+	
+// 		@media (max-width:368px) {
+// 			width: 65px;
+// 			height: 65px;
+// 		}
+// 	}
+	
+// }
+
+
+
+.box {
 	width: 600px;
 	height: 600px;
 	position: relative;
@@ -22,82 +854,39 @@
 		width: 300px !important;
 		height: 300px !important;
 	}
-	.menu-card {
+	
+	.flip-card {
 		background-color: transparent;
-	width: auto;
-	height: auto;
-	
-	}
-	.menu-item {
-		&:hover {
-			right: 30%;
-			top: 10%;
-		// 	transform: rotateY(180deg) scale(2.5);
-		// -webkit-transform: rotateY(180deg) scale(2.5);
-			z-index: 9999;
-		.front {
-			display: none;
-		}
-		// .back {
-		// 	display: block;
-		// transform: rotateY(180deg);
-		// -webkit-transform: rotateY(180deg);
-		// }
-	}
-
-	
-	}
-
-	.logo {
-		width: auto;
-		height: auto;
-		right: 31%;
-		top: 40%;
+		width: auto !important;
+		height: auto !important;
+		perspective: none !important;
+	  }
+	  
+	  .flip-card-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.6s;
+		transform-style: preserve-3d;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  }
+	  
+	  .flip-card:hover .flip-card-inner {
+		transform: rotateY(180deg);
+	  }
+	  
+	  .flip-card-front, .flip-card-back {
 		position: absolute;
+		width: 100%;
+		height: 100%;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	  }
+	  
+	  .flip-card-front {
+		color: black;
 
-		&:hover {
-			transform: rotateY(0) !important;
-			background-color: transparent !important;
-		}
-
-		img {
-			width: 170px;
-			max-width: max-content;
-
-			@media (max-width:610px) {
-				width: 130px;
-				
-			}
-			@media (max-width:506px) {
-				width: 110px;
-			}
-			@media (max-width:445px) {
-				width: 95px;
-			}
-			@media (max-width:375px) {
-				width: 75px;
-			}
-		}
-
-		@media (max-width:610px) {
-			right: 33%;
-			top: 41%;
-		}
-		// @media (max-width:506px) {
-		// 	top: 41%;
-    	// 	right: 34%;
-		// }
-		// @media (max-width:445px) {
-		// 	top: 41%;
-    	// 	right: 5%;
-		// }
-		@media (max-width:375px) {
-			top: 46%;
-			left: 45%;
-		}
-	}
-
-	.front {
 		display: flex ;
 		flex-direction: column;
 		margin-top: 10px;
@@ -111,225 +900,87 @@
 				font-weight: normal;
 			}
 		}
+	  }
+	  
+		  .flip-card-back {
+		  
+		  	transform: rotateY(180deg);
+	
+	
+		  	font-size: 6.5px !important;
+		  	position: absolute;
+		  	height: 100%;
+		  	top: 35%;
+		  	left: 0;
+		  	color: #FFFFFF;
+	
+		  	// font-weight: 700;
+		  	@media (max-width:610px) {
+		  		font-size: 5px !important;
+		  		margin-bottom: 4px;
+		  	}
+		  }
 
-		img {
-			@media (max-width:445px) {
-				display: none;
-			}
-		}
 
-		@media (max-width:610px) {
-			display: flex;
-			flex-direction: column;
-			margin: 0;
-		}
-
+	  .TOKEN {
+				left: 40% !important;
+				top: 5% !important;
 		
-
-		@media (max-width:445px) {
-			position: absolute;
-			width: 50px;
-			bottom: 30%;
-			right: 10%;
-		}
-	}
-
-		.back {
-			display: none;
-			font-size: 6.5px !important;
-			position: absolute;
-			height: 100%;
-			top: 35%;
-			left: 0;
-			color: #FFFFFF;
-			// font-weight: 700;
-			@media (max-width:610px) {
-				font-size: 5px !important;
-				margin-bottom: 4px;
-			}
-
-		}
-
-
-	.TOKEN {
-		left: 40% !important;
-		top: 5% !important;
-
-		&:hover {
-			background-color: #E88DA4 !important;
-			color: white !important;
-			transform: rotateY(180deg) scale(2.5) !important;
-		-webkit-transform: rotateY(180deg) scale(2.5) !important;
-		.back {
-			display: block;
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		}
-		}
-		.back {
-			font-size: 6.5px !important;
-			@media (max-width:610px) {
-				font-size: 4.2px !important;
-				margin-bottom: 4px;
-			}
-		}
-		@media (max-width:445px) {
-			&:hover {
-				top: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
-			}
-			}
-		}
-	}
-
-	.Wallet {
-		left: 64.7487% !important;
-		top: 15.2513% !important;
-
-		&:hover {
-			background-color: #EFB42D !important;
-			color: white !important;
-			transform: rotateY(180deg) scale(2.5) !important;
-		-webkit-transform: rotateY(180deg) scale(2.5) !important;
-		.back {
-			display: block;
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		}
-		}
-		.back {
-			font-size: 5.8px !important;
-			@media (max-width:445px) {
-				top: 30% !important;
-				font-size: 4.2px !important;
-			}
-		}
-
-		@media (max-width:445px) {
-			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
-			}
-			}
-		}
-	}
-
-	.NFT {
-		left: 75% !important;
-		top: 40% !important;
-
-		&:hover {
-			background-color: #99BF55 !important;
-			color: white !important;
-
-			transform: rotateY(180deg) scale(2.5) !important;
-		-webkit-transform: rotateY(180deg) scale(2.5) !important;
-		.back {
-			display: block;
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		}
-		}
-		.back {
-			font-size: 7px !important;
-			@media (max-width:610px) {
-				font-size: 4px !important;
-			}
-			@media (max-width:445px) {
-				font-size: 2.6px !important;
-			}
-		}
-
-		@media (max-width:445px) {
-			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
-			}
-			}
-		}
-	}
-
-	.Bojify {
-		left: 64.7487% !important;
-		top: 64.7487% !important;
-
-		&:hover {
-			background-color: #6FC7EA !important;
-			color: white !important;
-
-			transform: rotateY(180deg) scale(2.5) !important;
-		-webkit-transform: rotateY(180deg) scale(2.5) !important;
-		.back {
-			display: block;
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		}
-		}
-		.back {
-			@media (max-width:445px) {
-				font-size: 2.7px !important;
-			}
-		}
-
-		@media (max-width:445px) {
-			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
-			}
-			}
-		}
-	}
-
-	.Charity {
-		left: 40% !important;
-		top: 75% !important;
-
-		&:hover {
-			background-color: #4426BE !important;
-			color: white !important;
-
-			transform: rotateY(180deg) scale(2.5) !important;
-		-webkit-transform: rotateY(180deg) scale(2.5) !important;
-		.back {
-			display: block;
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		}
-			
-		}
+				&:hover {
+					background-color: #E88DA4 !important;
+					color: white !important;
+					transform: rotateY(180deg) scale(2.5) !important;
+				-webkit-transform: rotateY(180deg) scale(2.5) !important;
 				.back {
+					display: block;
+				transform: rotateY(180deg);
+				-webkit-transform: rotateY(180deg);
+				}
+				}
+				.back {
+					font-size: 6.5px !important;
 					@media (max-width:610px) {
-						font-size: 4px !important;
-					}
-		
-					@media (max-width:445px) {
-						font-size: 3px !important;
+						font-size: 4.2px !important;
+						margin-bottom: 4px;
 					}
 				}
-
+				@media (max-width:445px) {
+					&:hover {
+						top: 40% !important;
+						transform: rotateY(180deg) scale(5.1) !important;
+					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
+					}
+				}
+			}
+		
+			.Wallet {
+				left: 64.7487% !important;
+				top: 15.2513% !important;
+		
+				&:hover {
+					background-color: #EFB42D !important;
+					color: white !important;
+					transform: rotateY(180deg) scale(2.5) !important;
+				-webkit-transform: rotateY(180deg) scale(2.5) !important;
+				.back {
+					display: block;
+				transform: rotateY(180deg);
+				-webkit-transform: rotateY(180deg);
+				}
+				}
+				.back {
+					font-size: 5.8px !important;
+					@media (max-width:445px) {
+						top: 30% !important;
+						font-size: 4.2px !important;
+					}
+				}
+		
 				@media (max-width:445px) {
 					&:hover {
 						top: 40% !important;
@@ -343,132 +994,253 @@
 					}
 					}
 				}
-	}
-
-	.Earn {
-		left: 15.2513% !important;
-		top: 64.7487% !important;
-
-		&:hover {
-			background-color: #5500B5 !important;
-			color: white !important;
-
-			
-			transform: rotateY(180deg) scale(2.5) !important;
-		-webkit-transform: rotateY(180deg) scale(2.5) !important;
-		.back {
-			display: block;
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		}
-		}
-		.back {
-			font-size: 5.3px !important;
-			@media (max-width:610px) {
-				font-size: 4px !important;
 			}
-			@media (max-width:445px) {
-				font-size: 2.7px !important;
-			}
-		}
-
-		@media (max-width:445px) {
-			&:hover {
+		
+			.NFT {
+				left: 75% !important;
 				top: 40% !important;
+		
+				&:hover {
+					background-color: #99BF55 !important;
+					color: white !important;
+		
+					transform: rotateY(180deg) scale(2.5) !important;
+				-webkit-transform: rotateY(180deg) scale(2.5) !important;
+				.back {
+					display: block;
+				transform: rotateY(180deg);
+				-webkit-transform: rotateY(180deg);
+				}
+				}
+				.back {
+					font-size: 7px !important;
+					@media (max-width:610px) {
+						font-size: 4px !important;
+					}
+					@media (max-width:445px) {
+						font-size: 2.6px !important;
+					}
+				}
+		
+				@media (max-width:445px) {
+					&:hover {
+						top: 40% !important;
+						left: 40% !important;
+						transform: rotateY(180deg) scale(5.1) !important;
+					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
+					}
+				}
+			}
+		
+			.Bojify {
+				left: 64.7487% !important;
+				top: 64.7487% !important;
+		
+				&:hover {
+					background-color: #6FC7EA !important;
+					color: white !important;
+		
+					transform: rotateY(180deg) scale(2.5) !important;
+				-webkit-transform: rotateY(180deg) scale(2.5) !important;
+				.back {
+					display: block;
+				transform: rotateY(180deg);
+				-webkit-transform: rotateY(180deg);
+				}
+				}
+				.back {
+					@media (max-width:445px) {
+						font-size: 2.7px !important;
+					}
+				}
+		
+				@media (max-width:445px) {
+					&:hover {
+						top: 40% !important;
+						left: 40% !important;
+						transform: rotateY(180deg) scale(5.1) !important;
+					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
+					}
+				}
+			}
+		
+			.Charity {
 				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
+				top: 75% !important;
+		
+				&:hover {
+					background-color: #4426BE !important;
+					color: white !important;
+		
+					transform: rotateY(180deg) scale(2.5) !important;
+				-webkit-transform: rotateY(180deg) scale(2.5) !important;
+				.back {
+					display: block;
+				transform: rotateY(180deg);
+				-webkit-transform: rotateY(180deg);
+				}
+					
+				}
+						.back {
+							@media (max-width:610px) {
+								font-size: 4px !important;
+							}
+				
+							@media (max-width:445px) {
+								font-size: 3px !important;
+							}
+						}
+		
+						@media (max-width:445px) {
+							&:hover {
+								top: 40% !important;
+								left: 40% !important;
+								transform: rotateY(180deg) scale(5.1) !important;
+							-webkit-transform: rotateY(180deg) scale(5.1) !important;
+							.back {
+								display: block;
+							transform: rotateY(180deg);
+							-webkit-transform: rotateY(180deg);
+							}
+							}
+						}
 			}
+		
+			.Earn {
+				left: 15.2513% !important;
+				top: 64.7487% !important;
+		
+				&:hover {
+					background-color: #5500B5 !important;
+					color: white !important;
+		
+					
+					transform: rotateY(180deg) scale(2.5) !important;
+				-webkit-transform: rotateY(180deg) scale(2.5) !important;
+				.back {
+					display: block;
+				transform: rotateY(180deg);
+				-webkit-transform: rotateY(180deg);
+				}
+				}
+				.back {
+					font-size: 5.3px !important;
+					@media (max-width:610px) {
+						font-size: 4px !important;
+					}
+					@media (max-width:445px) {
+						font-size: 2.7px !important;
+					}
+				}
+		
+				@media (max-width:445px) {
+					&:hover {
+						top: 40% !important;
+						left: 40% !important;
+						transform: rotateY(180deg) scale(5.1) !important;
+					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
+					}
+				}
 			}
-		}
-	}
-
-	.v2 {
-		left: 5% !important;
-		top: 40% !important;
-
-		&:hover {
-			background-color: #A28BEE !important;
-			color: white !important;
-
-			transform: rotateY(180deg) scale(2.5) !important;
-			-webkit-transform: rotateY(180deg) scale(2.5) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
-			}
-		}
-		.back {
-			font-size: 5.1px !important;
-			@media (max-width:610px) {
-				font-size: 4.1px !important;
-			}
-			@media (max-width:445px) {
-				font-size: 2.5px !important;
-			}
-		}
-
-		@media (max-width:445px) {
-			&:hover {
+		
+			.v2 {
+				left: 5% !important;
 				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
+		
+				&:hover {
+					background-color: #A28BEE !important;
+					color: white !important;
+		
+					transform: rotateY(180deg) scale(2.5) !important;
+					-webkit-transform: rotateY(180deg) scale(2.5) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
+				}
+				.back {
+					font-size: 5.1px !important;
+					@media (max-width:610px) {
+						font-size: 4.1px !important;
+					}
+					@media (max-width:445px) {
+						font-size: 2.5px !important;
+					}
+				}
+		
+				@media (max-width:445px) {
+					&:hover {
+						top: 40% !important;
+						left: 40% !important;
+						transform: rotateY(180deg) scale(5.1) !important;
+					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
+					}
+				}
 			}
+		
+			.shop {
+				left: 15.2513% !important;
+				top: 15.2513% !important;
+		
+				&:hover {
+					background-color: #DB415E !important;
+					color: white !important;
+		
+					transform: rotateY(180deg) scale(2.5) !important;
+					-webkit-transform: rotateY(180deg) scale(2.5) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
+				}
+				.back {
+					font-size: 5.1px !important;
+					@media (max-width:610px) {
+						font-size: 4.7px !important;
+					}
+					@media (max-width:445px) {
+						font-size: 3px !important;
+					}
+				}
+		
+				@media (max-width:445px) {
+					&:hover {
+						top: 40% !important;
+						left: 40% !important;
+						transform: rotateY(180deg) scale(5.1) !important;
+					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+					.back {
+						display: block;
+					transform: rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					}
+					}
+				}
 			}
-		}
-	}
 
-	.shop {
-		left: 15.2513% !important;
-		top: 15.2513% !important;
-
-		&:hover {
-			background-color: #DB415E !important;
-			color: white !important;
-
-			transform: rotateY(180deg) scale(2.5) !important;
-			-webkit-transform: rotateY(180deg) scale(2.5) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
-			}
-		}
-		.back {
-			font-size: 5.1px !important;
-			@media (max-width:610px) {
-				font-size: 4.7px !important;
-			}
-			@media (max-width:445px) {
-				font-size: 3px !important;
-			}
-		}
-
-		@media (max-width:445px) {
-			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
-			.back {
-				display: block;
-			transform: rotateY(180deg);
-			-webkit-transform: rotateY(180deg);
-			}
-			}
-		}
-	}
-	 div.menu-item {
+				 .menu-item {
 		display: block;
 		text-decoration: none;
 		border-radius: 100%;
@@ -509,334 +1281,5 @@
 			width: 65px;
 			height: 65px;
 		}
-	}
-	
-}
-
-/**********************  box 2 */
-
-
-.box2 {
-
-	width: 600px;
-	height: 600px;
-	position: relative;
-	margin: 0 auto 30px auto;
-	@media (max-width:1199px) {
-		width: 510px !important;
-		height: 510px !important;
-	}
-	@media (max-width:768px) {
-		width: 400px !important;
-		height: 400px !important;
-	}
-	@media (max-width:445px) {
-		display: none;
-	}
-	// @media (max-width:445px) {
-	// 	width: 375px !important;
-	// 	height: 375px !important;
-	// }
-	// @media (max-width:375px) {
-	// 	width: 300px !important;
-	// 	height: 300px !important;
-	// }
-	.menu-item {
-		&:hover {
-			transform: rotateY(180deg) scale(2.5);
-				-webkit-transform: rotateY(180deg) scale(2.5);
-				z-index: 9999;
-		.front {
-			display: none;
-		}
-		.back {
-			display: block;
-		transform: rotateY(180deg);
-		-webkit-transform: rotateY(180deg);
-		}
-	}
-
-	
-	}
-
-	.logo {
-		width: auto;
-		height: auto;
-		right: 32%;
-		top: 40%;
-		position: absolute;
-
-		&:hover {
-			transform: rotateY(0) !important;
-			background-color: transparent !important;
-		}
-
-		img {
-			width: 170px;
-			max-width: max-content;
-
-			@media (max-width:768px) {
-				width: 110px;
-				
-			}
-			// @media (max-width:506px) {
-			// 	width: 110px;
-			// }
-			// @media (max-width:445px) {
-			// 	width: 95px;
-			// }
-			// @media (max-width:375px) {
-			// 	width: 75px;
-			// }
-		}
-		@media (max-width:1199px) {
-			right: 31%;
-		}
-		// @media (max-width:768px) {
-		// 	right: 20%;
-			
-		// }
-	}
-
-	.front {
-		display: flex ;
-		flex-direction: column;
-		margin-top: 10px;
-		span {
-			font-size: 12px;
-			margin-bottom: 4px !important;
-			font-weight: 700;
-			@media (max-width:768px) {
-				font-size: 7px;
-				margin-bottom: 4px;
-			}
-		}
-
-		img {
-			@media (max-width:445px) {
-				display: none;
-			}
-		}
-
-		@media (max-width:1199px) {
-			margin: 0;
-		}
-
-		@media (max-width:768px) {
-			display: flex;
-			flex-direction: column;
-			margin: 0;
-		}
-
-		
-
-		@media (max-width:445px) {
-			position: absolute;
-			width: 50px;
-			bottom: 30%;
-			right: 10%;
-		}
-	}
-
-		.back {
-			display: none;
-			font-size: 7px !important;
-			position: absolute;
-			height: 100%;
-			top: 35%;
-			left: 0;
-			color: #FFFFFF;
-			// font-weight: 700;
-			@media (max-width:768px) {
-				font-size: 5px !important;
-				margin-bottom: 4px;
-			}
-		}
-
-
-		.TOKEN {
-			left: 40% !important;
-			top: 5% !important;
-	
-			&:hover {
-				background-color: #E88DA4 !important;
-				color: white !important;
-			}
-			.back {
-				font-size: 6px !important;
-				@media (max-width:768px) {
-					font-size: 4px !important;
-					margin-bottom: 4px;
-				}
-			}
-		}
-	
-		.Bojilogy {
-			left: 64.7487% !important;
-			top: 15.2513% !important;
-	
-			&:hover {
-				background-color: #EFB42D !important;
-				color: white !important;
-			}
-			.back {
-				font-size: 5.2px !important;
-				@media (max-width:768px) {
-					font-size: 4px !important;
-				}
-			}
-		}
-	
-		.NFT {
-			left: 75% !important;
-			top: 40% !important;
-	
-			&:hover {
-				background-color: #99BF55 !important;
-				color: white !important;
-			}
-	
-			.back {
-				font-size: 7px !important;
-				@media (max-width:768px) {
-					font-size: 3.5px !important;
-				}
-			}
-		}
-	
-		.Swap {
-			left: 64.7487% !important;
-			top: 64.7487% !important;
-	
-			&:hover {
-				background-color: #6FC7EA !important;
-				color: white !important;
-			}
-	
-			.back {
-				font-size: 7px !important;
-				@media (max-width:768px) {
-					font-size: 3.5px !important;
-				}
-			}
-		}
-	
-		.Charity {
-			left: 40% !important;
-			top: 75% !important;
-	
-			&:hover {
-				background-color: #4426BE !important;
-				color: white !important;
-			}
-			.back  {
-				@media (max-width:768px) {
-					font-size: 4px !important;
-				}
-			}
-		}
-	
-		.Earn {
-			left: 15.2513% !important;
-			top: 64.7487% !important;
-	
-			&:hover {
-				background-color: #5500B5 !important;
-				color: white !important;
-			}
-			.back {
-				font-size: 5.4px !important;
-				@media (max-width:768px) {
-					font-size: 3.3px !important;
-				}
-			}
-		}
-	
-		.v2 {
-			left: 5% !important;
-			top: 40% !important;
-	
-			&:hover {
-				background-color: #A28BEE !important;
-				color: white !important;
-			}
-	
-			.back {
-				font-size: 5px !important;
-				@media (max-width:768px) {
-					font-size: 3.3px !important;
-				}
-			}
-		}
-	
-		.shop {
-			left: 15.2513% !important;
-			top: 15.2513% !important;
-	
-			&:hover {
-				background-color: #DB415E !important;
-				color: white !important;
-			}
-			.back {
-				@media (max-width:768px) {
-					font-size: 3.5px !important;
-				}
-			}
-		}
-	 div.menu-item {
-		display: block;
-		text-decoration: none;
-		border-radius: 100%;
-		margin: 20px;
-		text-align: center;
-		width: 130px;
-		height: 130px;
-		// color: #777;
-		padding: 27px;
-		position: absolute;
-		font-size: 27px;
-	
-		transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-webkit-transition: all 0.5s;
-		-o-transition: all 0.5s;
-	
-		img {
-			margin: auto;
-		}
-		@media (max-width:1199px) {
-			width: 110px ;
-			height: 110px ;
-		}
-		@media (max-width:768px) {
-			width: 80px;
-			height: 80px;
-		}
-	
-		@media (max-width:506px) {
-			width: 80px;
-			height: 80px;
-		}
-
-		@media (max-width:445px) {
-			width: 65px;
-			height: 65px;
-		}
-	
-		@media (max-width:368px) {
-			width: 65px;
-			height: 65px;
-		}
-	}
-	
-}
-
-
-
-.box {
-	.flip-card {
-		width: 0;
-		height: 0;
-		perspective: none;
 	}
 }

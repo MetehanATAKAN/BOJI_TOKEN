@@ -10,7 +10,7 @@ import Community from '../components/sections/Community';
 import RoadMap from '../components/sections/RoadMap';
 import Footer from '../components/sections/Footer';
 import NftCollections from '../components/sections/NftCollections';
-import Ecosystem from '../components/sections/Ecosystem';
+// import Ecosystem from '../components/sections/Ecosystem';
 import AsSeenIn from '../components/sections/AsSeenIn';
 import About from '../components/sections/About';
 import OurPartners from '../components/sections/OurPartners';
@@ -26,7 +26,7 @@ const Home = () => {
       <AsSeenIn/>
       <About imageFill />
       <OurPartners/>
-      <Ecosystem/>
+      {/* <Ecosystem/> */}
       <Ecosystem2/>
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       <HowToBuy/>
