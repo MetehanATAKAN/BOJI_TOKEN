@@ -96,8 +96,8 @@ const Ecosystem = () => {
         <div className='box'>
           {
             ecosystemItems.map(item=>(
+              <div className='menu-item-inner'>
               <div className={`menu-item ${item.class}`} style={{backgroundColor:item.bgColor}}>
-                <div className='menu-item-inner'>
               <div className='front'>
                 <span>{item.header}</span>
                 <Image
@@ -112,7 +112,7 @@ const Ecosystem = () => {
               {t(item.backInfo)}
               </p>
               </div>
-              </div>
+            </div>
             </div>
             ))
           }
