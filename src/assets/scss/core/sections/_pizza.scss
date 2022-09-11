@@ -26,8 +26,8 @@
 		&:hover {
 			right: 30%;
 			top: 10%;
-			transform: rotateY(180deg) scale(3);
-		-webkit-transform: rotateY(180deg) scale(3);
+			transform: rotateY(180deg) scale(2.5);
+		-webkit-transform: rotateY(180deg) scale(2.5);
 			z-index: 9999;
 		.front {
 			display: none;
@@ -649,7 +649,6 @@
 	}
 	
 }
-
 
 
 
