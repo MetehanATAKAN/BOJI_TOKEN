@@ -40,11 +40,12 @@
 		@media (max-width:560px) {
 			margin: 0 !important;
 		}
+		@media (min-width:1200px) {
+			margin-left: 172px !important;
+			justify-content: flex-start !important;    		
+		}
 		@media (min-width:1400px) {
-			margin-left: 60px !important;
-			display: flex !important;
-    		flex-direction: row;
-    		
+			margin-left: 180px !important;	
 		}
 		.coin-button {
 			// border: 1px solid;
