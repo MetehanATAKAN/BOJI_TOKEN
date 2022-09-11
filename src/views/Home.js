@@ -10,12 +10,11 @@ import Community from '../components/sections/Community';
 import RoadMap from '../components/sections/RoadMap';
 import Footer from '../components/sections/Footer';
 import NftCollections from '../components/sections/NftCollections';
-// import Ecosystem from '../components/sections/Ecosystem';
+import Ecosystem from '../components/sections/Ecosystem';
 import AsSeenIn from '../components/sections/AsSeenIn';
 import About from '../components/sections/About';
 import OurPartners from '../components/sections/OurPartners';
 import HowToBuy from '../components/sections/HowToBuy';
-import Ecosystem2 from '../components/sections/Ecosystem2';
 
 const Home = () => {
 
@@ -26,8 +25,7 @@ const Home = () => {
       <AsSeenIn/>
       <About imageFill />
       <OurPartners/>
-      {/* <Ecosystem/> */}
-      <Ecosystem2/>
+      <Ecosystem/>
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       <HowToBuy/>
       <RoadMap/>
