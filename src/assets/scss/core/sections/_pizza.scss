@@ -160,6 +160,8 @@
 			color: white !important;
 			transform: rotateY(180deg)  !important;
 		-webkit-transform: rotateY(180deg)  !important;
+		width: 350px;
+		height: 350px;
 		.back {
 			display: block;
 		transform: rotateY(180deg);
@@ -167,15 +169,16 @@
 		}
 		}
 		.back {
-			font-size: 6.5px !important;
+			font-size: 16.5px !important;
 			@media (max-width:610px) {
-				font-size: 4.2px !important;
+				// font-size: 4.2px !important;
 				margin-bottom: 4px;
 			}
 		}
 		@media (max-width:445px) {
 			&:hover {
-				top: 40% !important;
+				top: 5% !important;
+				left: 3% !important;
 				transform: rotateY(180deg)  !important;
 			-webkit-transform: rotateY(180deg)  !important;
 			.back {
