@@ -15,6 +15,7 @@ import AsSeenIn from '../components/sections/AsSeenIn';
 import About from '../components/sections/About';
 import OurPartners from '../components/sections/OurPartners';
 import HowToBuy from '../components/sections/HowToBuy';
+import Ecosystem2 from '../components/sections/Ecosystem2';
 
 const Home = () => {
 
@@ -26,6 +27,7 @@ const Home = () => {
       <About imageFill />
       <OurPartners/>
       <Ecosystem/>
+      <Ecosystem2/>
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       <HowToBuy/>
       <RoadMap/>
