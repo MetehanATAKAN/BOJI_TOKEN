@@ -256,3 +256,9 @@
 		left: 5% !important ;
 	}
 }
+
+.boji_chart {
+	&::after {
+		padding-bottom: 0 !important;
+	}
+}

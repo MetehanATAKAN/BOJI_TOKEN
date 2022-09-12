@@ -11,12 +11,18 @@ const Price = () => {
     .catch(error=>console.log(error))
   }, [])
 
+  const addClass = () => {
+    document.querySelector('.hero-gradient').classList.add = 'metehanatakan';
+  }
+
   return (
     <>
-        <div className='price'>
+        <div onClick={addClass} className='price'>
           <div>
-          $
+         <a href='/chart' target={'_blank'} >
+         $
           {bojiPrice}
+         </a>
           </div>
         </div>
     </>

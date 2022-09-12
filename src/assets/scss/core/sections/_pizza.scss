@@ -156,13 +156,11 @@
 		top: 5% !important;
 
 		&:hover {
-			left: 27% !important;
-			width: 300px;
-		height: 300px;
+			
 			background-color: #E88DA4 !important;
 			color: white !important;
-			transform: rotateY(180deg)  !important;
-		-webkit-transform: rotateY(180deg)  !important;
+			transform: rotateY(180deg) scale(2.5)  !important;
+		-webkit-transform: rotateY(180deg) scale(2.5) !important;
 		.back {
 			display: block;
 		transform: rotateY(180deg);
@@ -170,7 +168,7 @@
 		}
 		}
 		.back {
-			font-size: 16.5px !important;
+			
 			@media (max-width:610px) {
 				// font-size: 4.2px !important;
 				margin-bottom: 4px;
@@ -179,10 +177,13 @@
 		@media (max-width:445px) {
 			&:hover {
 				top: 5% !important;
-				left: 3% !important;
-				transform: rotateY(180deg)  !important;
-			-webkit-transform: rotateY(180deg)  !important;
+				left: 1% !important;
+				transform: rotateY(180deg)   !important;
+			-webkit-transform: rotateY(180deg)   !important;
+			width: 350px;
+			height: 350px;
 			.back {
+				font-size: 15px !important;
 				display: block;
 			transform: rotateY(180deg);
 			-webkit-transform: rotateY(180deg);
@@ -196,15 +197,13 @@
 		top: 15.2513% !important;
 
 		&:hover {
-			// left: 44% !important;
+			
 			background-color: #EFB42D !important;
 			color: white !important;
-			transform: rotateY(180deg) !important;
-			transform: scale(2.5) !important;
-		-webkit-transform: rotateY(180deg)  !important;
+			transform: rotateY(180deg) scale(2.5) !important;
+		-webkit-transform: rotateY(180deg) scale(2.5) !important;
 
-		// width: 300px;
-		// height: 300px;
+		
 
 		.back {
 			display: block;
@@ -212,21 +211,19 @@
 		-webkit-transform: rotateY(180deg);
 		}
 		}
-		.back {
-			font-size: 15px !important;
-			@media (max-width:445px) {
-				top: 30% !important;
-				font-size: 4.2px !important;
-			}
-		}
 
 		@media (max-width:445px) {
 			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg)  !important;
+				top: 5% !important;
+				left: 1% !important;
+				transform: rotateY(180deg)   !important;
 			-webkit-transform: rotateY(180deg)  !important;
+			width: 350px;
+			height: 350px;
 			.back {
+				
+				font-size: 20px !important;
+				padding: 0 10px;
 				display: block;
 			transform: rotateY(180deg);
 			-webkit-transform: rotateY(180deg);
@@ -264,11 +261,14 @@
 
 		@media (max-width:445px) {
 			&:hover {
-				top: 40% !important;
-				left: 40% !important;
+				top: 5% !important;
+				left: 1% !important;
 				transform: rotateY(180deg)  !important;
 			-webkit-transform: rotateY(180deg)  !important;
+			width: 350px;
+			height: 350px;
 			.back {
+				font-size: 15px !important;
 				display: block;
 			transform: rotateY(180deg);
 			-webkit-transform: rotateY(180deg);
@@ -293,19 +293,18 @@
 		-webkit-transform: rotateY(180deg);
 		}
 		}
-		.back {
-			@media (max-width:445px) {
-				font-size: 4px !important;
-			}
-		}
 
 		@media (max-width:445px) {
 			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+				top: 5% !important;
+				left: 1% !important;
+				transform: rotateY(180deg)  !important;
+			-webkit-transform: rotateY(180deg)  !important;
+			width: 350px;
+			height: 350px;
 			.back {
+				padding: 0 10px;
+				font-size: 16px !important;
 				display: block;
 			transform: rotateY(180deg);
 			-webkit-transform: rotateY(180deg);
@@ -335,19 +334,19 @@
 					@media (max-width:610px) {
 						font-size: 4px !important;
 					}
-		
-					@media (max-width:445px) {
-						font-size: 4px !important;
-					}
 				}
 
 				@media (max-width:445px) {
 					&:hover {
-						top: 40% !important;
-						left: 40% !important;
-						transform: rotateY(180deg) scale(5.1) !important;
-					-webkit-transform: rotateY(180deg) scale(5.1) !important;
+						top: 5% !important;
+						left: 1% !important;
+						transform: rotateY(180deg)  !important;
+					-webkit-transform: rotateY(180deg)  !important;
+					width: 350px;
+					height: 350px;
 					.back {
+						font-size: 16px !important;
+						padding: 0 10px;
 						display: block;
 					transform: rotateY(180deg);
 					-webkit-transform: rotateY(180deg);
@@ -378,19 +377,18 @@
 			@media (max-width:610px) {
 				font-size: 4px !important;
 			}
-			@media (max-width:445px) {
-				font-size: 3.4px !important;
-				top: 32% !important;
-			}
 		}
 
 		@media (max-width:445px) {
 			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+				top: 5% !important;
+				left: 1% !important;
+				transform: rotateY(180deg)  !important;
+			-webkit-transform: rotateY(180deg)  !important;
+			width: 350px;
+			height: 350px;
 			.back {
+				font-size: 15px !important;
 				display: block;
 			transform: rotateY(180deg);
 			-webkit-transform: rotateY(180deg);
@@ -427,11 +425,15 @@
 
 		@media (max-width:445px) {
 			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+				top: 5% !important;
+				left: 1% !important;
+				transform: rotateY(180deg)  !important;
+			-webkit-transform: rotateY(180deg)  !important;
+			width: 350px;
+			height: 350px;
 			.back {
+				font-size: 15px !important;
+				padding: 0 5px;
 				display: block;
 			transform: rotateY(180deg);
 			-webkit-transform: rotateY(180deg);
@@ -461,19 +463,19 @@
 			@media (max-width:610px) {
 				font-size: 4.7px !important;
 			}
-			@media (max-width:445px) {
-				font-size: 4.5px !important;
-				top: 35% !important;
-			}
 		}
 
 		@media (max-width:445px) {
 			&:hover {
-				top: 40% !important;
-				left: 40% !important;
-				transform: rotateY(180deg) scale(5.1) !important;
-			-webkit-transform: rotateY(180deg) scale(5.1) !important;
+				top: 5% !important;
+				left: 1% !important;
+				transform: rotateY(180deg)  !important;
+			-webkit-transform: rotateY(180deg)  !important;
+			width: 350px;
+			height: 350px;
 			.back {
+				font-size: 19px !important;
+				padding: 0 10px;
 				display: block;
 			transform: rotateY(180deg);
 			-webkit-transform: rotateY(180deg);
