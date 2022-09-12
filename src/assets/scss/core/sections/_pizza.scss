@@ -156,12 +156,13 @@
 		top: 5% !important;
 
 		&:hover {
+			left: 27% !important;
+			width: 300px;
+		height: 300px;
 			background-color: #E88DA4 !important;
 			color: white !important;
 			transform: rotateY(180deg)  !important;
 		-webkit-transform: rotateY(180deg)  !important;
-		width: 350px;
-		height: 350px;
 		.back {
 			display: block;
 		transform: rotateY(180deg);
@@ -195,10 +196,16 @@
 		top: 15.2513% !important;
 
 		&:hover {
+			// left: 44% !important;
 			background-color: #EFB42D !important;
 			color: white !important;
 			transform: rotateY(180deg) !important;
+			transform: scale(2.5) !important;
 		-webkit-transform: rotateY(180deg)  !important;
+
+		// width: 300px;
+		// height: 300px;
+
 		.back {
 			display: block;
 		transform: rotateY(180deg);
@@ -206,7 +213,7 @@
 		}
 		}
 		.back {
-			font-size: 5.8px !important;
+			font-size: 15px !important;
 			@media (max-width:445px) {
 				top: 30% !important;
 				font-size: 4.2px !important;
