@@ -23,6 +23,11 @@
 				display: inline-flex !important;
 			}
 		}
+		.tech-audit-div {
+			@media (max-width:767px) {
+				flex-direction: column;
+			}
+		}
 	}
 	
 	.audit-report {

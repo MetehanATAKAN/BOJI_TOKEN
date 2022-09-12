@@ -91,7 +91,7 @@ const Ecosystem = () => {
   return (
     <>
     <SectionHeader data={sectionHeader} className="center-content" />
-    <div id='ecosystem' className="menu-container">
+    <div id='ecosystem' className="container">
 
         <div className='box'>
           {
