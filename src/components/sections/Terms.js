@@ -9,7 +9,7 @@ const Terms = () => {
     <section className='hero section center-content illustration-section-01'>
      <div class="container terms">
         <div class="section-heading">
-          <div class="upperheading">Our terms</div>
+          <div class="upperheading">{t('Our terms')}</div>
           <h2>
             {t('Terms & Conditions')}
           </h2>

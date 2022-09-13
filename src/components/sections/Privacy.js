@@ -9,7 +9,7 @@ const Privacy = () => {
     <section className='hero section center-content illustration-section-01'>
         <div class="container privacy">
         <div class="section-heading">
-          <div class="upperheading">your privacy matters</div>
+          <div class="upperheading">{t('your privacy matters')}</div>
           <h2>{t('Privacy Policy')}</h2>
         </div>
         <div class="block">
