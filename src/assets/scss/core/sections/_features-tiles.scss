@@ -28,6 +28,9 @@
 				flex-direction: column;
 			}
 		}
+		@media (max-width:762px) {
+			padding: 20px 0;
+		}
 	}
 	
 	.audit-report {
