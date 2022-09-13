@@ -18,7 +18,7 @@ const Terms = () => {
           <h2>{t('Contact email')}</h2>
           <p>
             {
-              t('These Terms & Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and BojiFY LLC. (“Company”, “we”, “us”, or “our”), concerning your access to and use of the https://boji.finance website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “platform”). You agree that by accessing the platform, you have read, understood, and agreed to be bound by all of these Terms & Conditions. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND YOU MUST DISCONTINUE USE IMMEDIATELY.')
+              t('These Terms & Conditions constitute a legally binding agreement made between you, whether personally or on behalf of an entity (“you”) and BojiFY. (“Company”, “we”, “us”, or “our”), concerning your access to and use of the https://boji.finance website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the “platform”). You agree that by accessing the platform, you have read, understood, and agreed to be bound by all of these Terms & Conditions. IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND YOU MUST DISCONTINUE USE IMMEDIATELY.')
             }
           </p>
           <p>

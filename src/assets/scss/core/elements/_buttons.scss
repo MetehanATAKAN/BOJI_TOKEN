@@ -150,6 +150,13 @@
 	> [class*=button] {
 		margin: $button-group-padding * 0.5;
 	}
+
+	@media (max-width:550px) {
+		flex-direction: column;
+		.blob-btn{
+			width: 180.42px !important;
+		}
+	}
 }
 
 @include media( '<=medium' ) {
