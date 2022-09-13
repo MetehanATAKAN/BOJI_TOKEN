@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import classNames from 'classnames';
 
 const FooterSocial = ({
@@ -11,26 +12,7 @@ const FooterSocial = ({
     className
   );
 
-
-  const [ipAdress, setIpAdress] = useState('');
-  const [country, setCountry] = useState('');
-;
-  useEffect(() => {
-    fetch(`http://ip-api.com/json/${ipAdress}`)
-    .then(response => response.json())
-    .then(result=>setCountry(result.country))
-    .catch(error=>console.log(error))
-   }, [ipAdress])
-   
-   
- 
-   useEffect(() => {
-     fetch('https://api64.ipify.org?format=json')
-     .then(response=>response.json())
-     .then(response=>setIpAdress(response.ip))
-     .catch(error=>console.log(error))
-   }, [])
-  
+  const country = useSelector(state=>state.langugeSwitch.language);
 
   return (
     <div
@@ -39,7 +21,10 @@ const FooterSocial = ({
     >
       <div className="header">
         <div className='header-social'>
-          <a href="https://web.telegram.org/">
+          <a 
+          href="https://t.me/bojitoken"
+          target={'_blank'} 
+          rel="noopener noreferrer">
           <svg 
           xmlns="http://www.w3.org/2000/svg" 
           width="16"
@@ -51,7 +36,10 @@ const FooterSocial = ({
           </a>
         </div>
         <div className='header-social'>
-          <a href="https://twitter.com/">
+          <a 
+          href={country !== 'TURKEY' ? "https://www.twitter.com/bojitoken" : "https://www.twitter.com/bojitr"} 
+          target={'_blank'} 
+          rel="noopener noreferrer" >
             <svg
               width="16"
               height="16"
@@ -67,31 +55,11 @@ const FooterSocial = ({
         className="btn-flip" 
         data-back="Pitchdeck" 
         data-front="Pitchdeck"
-        href={country !== 'Turkey' ? 'https://pitchdeck.boji.finance/Pitchdeck.pdf' : 'https://trpitchdeck.boji.finance/'} 
+        href={country !== 'TURKEY' ? 'https://pitchdeck.boji.finance/Pitchdeck.pdf' : 'https://trpitchdeck.boji.finance/'} 
         target={'_blank'}
         rel="noopener noreferrer"
         >
           </a>
-{/* 
-        <a 
-        href={country !== 'Turkey' ? 'https://pitchdeck.boji.finance/Pitchdeck.pdf' : 'https://trpitchdeck.boji.finance/'} 
-        className='pitchdeck' 
-        target={'_blank'}
-        rel="noopener noreferrer"
-        >
-          <span>
-          Pitchdeck
-          </span>
-        </a> */}
-
-        {/* <div className='header-social'>
-          <a href="https://google.com/">
-            <p
-             >
-             price
-            </p>
-          </a>
-        </div> */}
       </div>
     </div>
   );

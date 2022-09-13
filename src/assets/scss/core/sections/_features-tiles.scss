@@ -47,5 +47,17 @@
 			color: white !important;
 			border: 2px solid transparent;
 		}
+
+		.audit-report-icon{
+			position: absolute;
+			left: 62%;
+		}
+
+		@media (max-width:762px) {
+			.audit-report-icon{
+				position: absolute;
+				left: 10%;
+			}
+		}
 	}
 }

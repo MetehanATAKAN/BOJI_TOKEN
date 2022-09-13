@@ -143,7 +143,7 @@ const About = ({
                 <div className='audit-report'>
                   <a href='https://github.com/TechRate/Smart-Contract-Audits/blob/main/July_2022/BOJI%20Full%20Smart%20Contract%20Security%20Audit.pdf' target='_blank' rel="noopener noreferrer">
                     <div>
-                      <span>
+                      <span className='audit-report-icon'>
                         <i className="fa-solid fa-eye"></i>
                       </span>
                       <span>

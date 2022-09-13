@@ -123,6 +123,7 @@ const Header = ({
   
 
   const changeLanguage2 = (lng) => {
+    console.log('change language 2 de');
     setIsSelectLanguage(!isSelectLanguage);
     
     if (isSelectLanguage === true) {

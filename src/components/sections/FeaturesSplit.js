@@ -105,7 +105,7 @@ const FeaturesSplit = ({
         <Row className='text-center mt-5'>
           <Col sm={12} md={3} className='mb-3' >
             <p className='percent'>1%</p>
-            <p>Holders Rewards Distribution</p>
+            <p>Auto Staking Rewards</p>
           </Col>
           <Col sm={12} md={3} className='mb-3'>
             <p className='percent'>2%</p>
