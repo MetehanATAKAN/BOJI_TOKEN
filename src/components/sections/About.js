@@ -120,7 +120,6 @@ const About = ({
         <Bounce right>
           <div className='tech-audit'>
             <Row className='tech-audit-main'>
-              <div className='d-flex tech-audit-div'>
               <Col sm={12} md={3} >
                 <p className='font-weight-bold fs-6'>{t('Company')} : Techrate </p>
               </Col>
@@ -154,7 +153,6 @@ const About = ({
                   </a>
                 </div>
               </Col>
-              </div>
             </Row>
           </div>
         </Bounce>

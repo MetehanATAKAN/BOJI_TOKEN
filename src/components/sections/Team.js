@@ -50,7 +50,7 @@ const Team = () => {
                 <Row style={{textAlign:'-webkit-center'}}>
                     {
                         teamsInfo.map(team => (
-                            <Col sm={3} className='team-card mb-5'>
+                            <Col md={3} className='team-card mb-5'>
                                 <div className='image'> {
                                     <Image
                                     src={team.image}
