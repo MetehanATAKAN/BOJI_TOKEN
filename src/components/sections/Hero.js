@@ -151,6 +151,11 @@ const Hero = ({
               </p>
               <div className='button-group' style={{ display: 'flex', justifyContent: 'space-evenly' }}>
 
+               <a 
+               href='https://pancakeswap.finance/swap?outputCurrency=0x1b19c6bb5ea3290dc8b4cb722dee9eea7bc7b164'
+               target={'_blank'}
+               rel="noopener noreferrer"
+               >
                 <button class="blob-btn">
                   {t('Buy Now')}
                   <span class="blob-btn__inner">
@@ -162,7 +167,13 @@ const Hero = ({
                     </span>
                   </span>
                 </button>
+                </a>
 
+               <a
+               href='https://docs.theboji.com/'
+               target={'_blank'}
+               rel="noopener noreferrer"
+               >
                 <button class="blob-btn">
                  {t('Read Whitepaper')}
                   <span class="blob-btn__inner">
@@ -174,6 +185,26 @@ const Hero = ({
                     </span>
                   </span>
                 </button>
+                </a>
+
+                <a
+               href='/chart'
+               target={'_blank'}
+               rel="noopener noreferrer"
+               >
+                <button class="blob-btn">
+                 {t('Chart')}
+                  <span class="blob-btn__inner">
+                    <span class="blob-btn__blobs">
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                      <span class="blob-btn__blob"></span>
+                    </span>
+                  </span>
+                </button>
+                </a>
+
               </div>
               <div className='contract-adress'>
                 <div >
